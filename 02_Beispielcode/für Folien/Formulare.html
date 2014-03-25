@@ -1,0 +1,21 @@
+<!-- Formulare -->
+<form action="auswertung.php" method="post">
+	<fieldset>
+		<input name="vorname" type="text">
+		<textarea name="adresse" rows="3">
+		</textarea>
+	</fieldset>
+
+	<fieldset>
+		<select name="star">
+     		<option>Heino</option>
+      		<option>Michael Jackson</option>
+      		<option>Tom Waits</option>
+    	</select>
+    	<input name="geschlecht" type="radio" value="weiblich"> weiblich
+    	<input name="geschlecht" type="radio" value="weiblich"> weiblich
+    	<br>
+    	<input name="bild" type="file" maxlength="100000" accept="image/jpeg">
+	</fieldset>
+	<input type="submit" value="Senden">
+</form>
