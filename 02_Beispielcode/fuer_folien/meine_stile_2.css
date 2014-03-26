@@ -1,0 +1,17 @@
+img {
+	margin: 20px;
+	padding: 30px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.fliesstext {
+	margin: 1em;
+	font-family: Times, serif;
+	font-size: 12px;
+}
+
+#start {
+	font-size: 36px;
+	color: #006;
+}
