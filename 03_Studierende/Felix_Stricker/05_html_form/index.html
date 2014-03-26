@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML Basics - Form!</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Ein Formular</h1>
+		
+		<form method="post">
+			<fieldset>
+				<legend>Persöhnliche Daten</legend>
+				Name: <input type="text" name="name" /><br />
+				Mail: <input type="email" name="mail" /><br />
+				Geburtstag: <input type="date" name="geburtstag" /><br />
+				Telefon: <input type="tel" name="telefon" /><br />
+				Lebenslauf (PDF): <input type="file" name="lebenslauf" /><br />
+			</fieldset>
+			
+			<fieldset>
+				<legend>Lieblingsfarbe</legend>
+				Rot <input type="radio" name="farbe" value="rot" />
+				Blau <input type="radio" name="farbe" value="blau" />
+				Grün <input type="radio" name="farbe" value="gruen" />
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>Zugangsdaten</legend>
+				Benutzername <input type="text" name="benutzername" /><br />
+				Passwort <input type="password" name="passwort1" /><br />
+				Passwort wiederholen <input type="password" name="passwort2" /><br />
+			</fieldset>
+			
+			Bemerkungen: <br /><textarea name="bemerkungen"></textarea><br />
+			
+			<input type="checkbox" /> Formular korrekt ausgefüllt <br />
+			
+			<button>Abschicken</button>
+		</form>
+		
+	</body>
+</html>
+
+<input type="password"
