@@ -1,0 +1,19 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	font-weight: normal;
+	list-style: none;
+}
+
+html { }
+
+body { }
+
+#content h1 {
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	width: intrinsic;
+	margin: 40px auto 0 auto;
+	
+}
