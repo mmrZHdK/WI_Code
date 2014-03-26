@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<title>Form</title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<div id="content">
+	<form>
+		<fieldset>
+		<legend>Required</legend>
+		<label>First Name:</label>
+		<input type="text" name="firstname" value="Jones" required>
+		<br>
+		<label>Last Name:</label>
+		<input type="text" name="lastname" value="Jabulani" required>
+		<br>
+		<label>Email Address:</label>
+		<input type="email" name="email" value="hans@muster.ch" required>
+		</fieldset>
+		<br>
+		<fieldset>
+		<legend>Additional</legend>
+		<label>Your URL:</label>
+		<input type="url" name="url" value="www.dammit.ch" >
+		<br>
+		<label>Telephone:</label>
+		<input type="tel" name="tel" id="tel" value="0444444444" >
+		<br>
+		<label>Shoe Size:</label>
+		<input type="number" min="28" max="46" step="0.5" value="42" name="shoe-size">
+		<br>
+		<label>Web Skills:</label>
+		<input type="range" min="1" max="100" value="0">
+		<br>
+		<label>Date (dd.mm.yyyy)*:</label>
+		<input name="date" type="date">
+		<br>
+		<label>Favorite Color*:</label>
+		<input name="color" type="color">
+		</fieldset>
+	</form>
+	<br>
+	<br>
+	<br>
+	<p>* May not working in your browser. Use chrome for example...</p>
+</div>
+</body>
+</html>
