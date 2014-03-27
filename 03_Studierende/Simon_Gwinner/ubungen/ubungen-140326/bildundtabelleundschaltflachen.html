@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<img src="wordart.png" width="50%" height="50%" alt="wordart"></p>
+<p>Text unter dem Bild</p>
+
+</head>
+<body>
+
+<h1>Tabelle</h1>
+
+<table border="1">
+   <tr>
+    <th colspan="3">Colspan</th>
+  </tr>
+  <tr>
+    <th>Titel1</th>
+    <th>Titel2</th>
+    <th>Titel3</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Rowspan</th>
+   <th colspan="3">Colspan</th>
+  </tr>
+  <tr>
+    <td>Inhalt1</td>
+    <td>Inhalt2</td>
+  </tr>
+  </table>
+    
+  <form action="input_text.htm">
+  <p>Vorname:<br><input name="vorname" type="text" size="30" maxlength="30"></p>
+</form>
+
+<form action="textarea.htm">
+  <p>Bla bla bla<br>
+    <textarea name="user_eingabe" cols="50" rows="10"></textarea>
+  </p>
+</form>
+
+<form action="select.htm">
+  <p>
+    <select name="top5" size="3">
+      <option>yolo</option>
+      <option>Michi Jackson</option>
+    </select>
+</form>
+
+<form action="input_radio.htm"> 
+  <p>Geben Sie Ihre Zahlungsweise an:</p>
+  <p>
+    <input type="radio" name="Auswahl" value="Auswahl 1"> Auswahl 1<br>
+    <input type="checkbox" name="Auswahl" value="Auswahl 2"> Auswahl 2<br>
+  </p>
+</form>
+
+<form action="input_radio_legend.htm">
+<fieldset>
+<legend>Absender</legend>
+<input type="radio" name="Auswahl" value="Auswahl 1"> Auswahl 1<br>
+    <input type="checkbox" name="Auswahl" value="Auswahl 2"> Auswahl 2<br>
+  </p></fieldset>
+</form>
+
+<form action="input_file.htm" method="post" enctype="multipart/form-data">
+  <p>Bild hochladen<br>
+    <input name="jpg" type="file" size="50" maxlength="100000" accept="jpg/*">
+  </p>
+</form>
+
+<form action="input_button.htm">
+  <p>
+    <textarea cols="20" rows="4" name="textfeld"></textarea>
+    <input type="button" name="Text 1" value="Text 1 anzeigen"
+      onclick="this.form.textfeld.value='Text Nr 1 ganz härt'">
+    <input type="button" name="Text 2" value="Text 2 anzeigen"
+      onclick="this.form.textfeld.value='Text 2 viel härter'">
+  </p>
+</form>
+
+
