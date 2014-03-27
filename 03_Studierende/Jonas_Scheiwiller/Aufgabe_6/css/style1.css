@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	font-weight: normal;
+	list-style: none;
+}
+
+html { }
+
+body { }
+
+.articleimg {
+	width: 100%;
+}
+
+article {
+	margin: 60px auto 0 auto ;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 6vw;
+	font-weight: 200;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+p.author, p.day, p.my, p.category { font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 16px;}
+p.day, p.my, p.category {display: inline;}
+p.my {}
+p.category { padding-left: 13px}
+p.author { 
+	background:#ffffff url("../img/author.png") no-repeat left top; 
+	height: 27px;
+	line-height: 27px;
+	padding: 0 0 0 38px;
+}
+
+p.text { 
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 400; 
+	font-size: 16px;
+	padding: 20px 0 20px 0;
+}
+
+p.likes {
+	float: right;
+}
+
+p.views {
+	float: right;
+}
+
+@media screen and (min-width: 1100px){
+	.articleimg {
+		margin: -400px 0 0 0;	
+	}
+}
+
+@media screen and (min-width: 900px){
+	article {
+		width: 50%;
+	}
+	.articleimg {
+		margin: -180px 0 0 0;	
+	}	
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+	article {
+		width: 95%;
+	}
+
+}
+
+
+
