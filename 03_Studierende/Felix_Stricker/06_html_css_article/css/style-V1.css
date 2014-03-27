@@ -1,0 +1,51 @@
+body {
+	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 35px;
+	margin: 0 20px;
+}
+h2 {
+	font-weight: normal;
+	font-size: 30px;
+}
+h3 {
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 150%;
+}
+h3.teaser {
+	font-style: italic;
+}
+
+article {
+	
+	
+	padding: 2px 19px;
+	padding-bottom: 20px;
+	max-width: 800px;
+}
+article:first-of-type {
+	border-bottom: 5px dotted #c7c7c7;
+}
+
+article figure {
+	margin: 0;
+}
+article figure img {
+	width: 100%;
+	border-radius: 10px;
+}
+article figure figcaption {
+	font-size: 12px;
+	color: #2e2e2e;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+article p {
+	line-height: 160%;
+	margin: 20px 0;
+}
