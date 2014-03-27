@@ -1,0 +1,92 @@
+body {
+	width:70%;
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+h1 {
+	width:100%;
+	font-size: 40px;
+	font-style:normal;
+	font-weight: bold;
+}
+
+
+#first {
+	margin-top: 0px;
+	width: 100%;
+	
+
+}
+
+#einleitung {
+	width:100%;
+	font-size: 20px;
+	font-style: oblique;
+	text-align: left
+ 
+	
+}
+
+h3 {
+	margin-top: 50px;
+	text-align:left;
+}
+
+p {
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+
+
+}
+
+	
+.spezi {
+
+	
+}
+
+
+figure {
+padding-bottom: 50px;
+	display: block;
+	width: 95%; 
+	float:right;
+
+	
+
+	
+}
+
+img {
+	width: 100%;	
+	float:right;
+
+}
+
+
+#huelle	{
+	width: 70%;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+
+}
