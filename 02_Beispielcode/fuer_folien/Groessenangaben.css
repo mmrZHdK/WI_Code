@@ -1,0 +1,14 @@
+/* Grössenangaben */
+
+body {
+	/* absolut, Einheit px */
+	font-size: 17px;
+}
+h1 {
+	/* relativ zu 1 Fontsize */
+	margin-top: 1.5em;
+}
+img {
+	/* relativ zu Breite des umschliessenden */
+	width: 45%;
+}

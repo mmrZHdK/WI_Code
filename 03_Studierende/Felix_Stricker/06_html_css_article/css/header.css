@@ -1,0 +1,27 @@
+body {
+	margin: 0px;
+	padding-top: 50px;
+}
+
+header {
+	background: #333;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+}
+header a {
+	padding: 10px;
+	display: inline-block;
+	background: #333;
+	color: white;
+	text-decoration: none;
+}
+header a:hover {
+	background: black;
+}
+header a:active {
+	padding-top: 12px;
+	padding-bottom: 8px;
+}

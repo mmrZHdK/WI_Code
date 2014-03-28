@@ -1,0 +1,123 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	font-weight: normal;
+	list-style: none;
+}
+
+html { 
+	background: url("../img/background.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body { }
+
+#content {
+	width: 70%;
+	margin: 70px auto 0 auto;
+}
+
+.crop {
+	overflow:hidden; /* this is important */
+	float: left;
+}
+
+.articleimg {
+	margin: -100px -450px 0 -530px;
+	width: 1200px;
+}
+
+article {
+	background-color: #e6e8ec;
+	height: 570px;
+	padding: 40px;
+	padding-left: 270px;
+}
+
+h1 {
+	font-family: 'Candal', sans-serif;
+	font-size: 34px;
+}
+
+h2 {
+	padding: 10px 0 30px 0;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 17px;
+}
+
+.date { 
+	position: relative;
+	left: -220px;
+	top: -120px;
+	height: 0;
+		 
+}
+p.day { 
+	font-family: 'Candal', sans-serif;
+	font-size: 80px;
+	color: white;
+}
+p.my {
+	font-family: 'Candal', sans-serif;
+	font-size: 29px;
+	color: white;
+}
+
+p.text {
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-size: 13px;
+	padding: 25px 0 25px 0;
+	min-height: 67%;
+}
+
+p.category {
+	background: #e6e8ec url("../img/dot.gif") no-repeat left center;
+	font-family: 'Droid Serif', serif;
+	font-weight: 700;
+	font-size: 16px;
+	padding-left: 30px;
+	line-height: 20px;
+	color: #fe404b;
+}
+span.black { color: black; font-weight: 700; }
+
+p.author {
+	float: right;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 13px;
+}
+p.likes, p.views {
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 13px;
+	padding-left: 30px; 
+	float: left; 
+}
+p.likes { background:#e6e8ec url("../img/likes2.png") no-repeat left center;  margin-right: 12px;}
+
+p.views { background:#e6e8ec url("../img/views2.png") no-repeat left center; }
+
+
+
+@media screen and (min-width: 0px) and (max-width: 859px) {
+	#content {
+		width: 95%;
+		margin: 40px auto 0 auto;
+	}
+
+}
+
+
+
+

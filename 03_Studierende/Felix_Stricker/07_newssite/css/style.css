@@ -1,0 +1,186 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	
+}
+
+body {
+	font-family: "helvetica neue", helvetica, "Gudea", sans-serif;
+}
+
+section#logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.76);
+	padding: 10px;
+	z-index: 2;
+}
+section#logo img {
+	width: 130px;
+}
+
+section#navigation_button {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: rgba(0,0,0,0.76);
+	padding: 15px;
+	z-index: 2;
+}
+section#navigation_button img {
+	width: 15px;
+}
+
+main {
+	margin: 0 auto;
+	width: 1136px;
+	overflow: hidden;
+}
+.clear {
+	clear: both;
+}
+
+/* font */
+h1 {
+	font-size: 26px;
+}
+h2 {
+	font-family: "helvetica neue", helvetica, arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+
+/* boxen */
+
+.row {
+	float: left;
+	width: 100.7%;
+}
+
+article {
+	position: relative;
+}
+article .description {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(255,255,255,0.8);
+	padding: 10px;
+}
+article.size3 {
+	width: 100%;
+	height: 600px;
+	margin-bottom: 5px;
+	float: left;
+	
+	background-position: center center;
+	background-size: cover;
+}
+article.size1 {
+	width: 33.333333%;
+	padding-right: 5px;
+	
+	margin-bottom: 5px;
+	float: left;
+}
+article.size1 .content {
+	height: 302px;
+	
+	background-position: center center;
+	background-size: cover;
+}
+
+article.size2-2 {
+	width: 66.666666%;
+	padding-right: 5px;
+	
+	margin-bottom: 5px;
+	float: left;
+}
+article.size2-2 .content {
+	background: yellow;
+	height: 604px;
+	
+	background-position: center center;
+	background-size: cover;
+}
+
+article.size1-2 {
+	width: 33.333333%;
+	padding-right: 5px;
+	
+	margin-bottom: 5px;
+	float: left;
+}
+article.size1-2 .content {
+	height: 604px;
+	
+	background-position: center center;
+	background-size: cover;
+}
+
+section.newslist {
+	float: right;
+	width: 33.333333%;
+}
+
+section.newslist .content {
+	height: 609px;
+	background: black;
+	color: white;
+}
+
+div.promotion {
+	float: left;
+	width: 100%;
+	height: 80px;
+	background: grey;
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+	margin-bottom: 5px;
+}
+
+article .content h1 {
+    font-size: 18px;
+}
+article .content h2 {
+    font-size: 12px;
+}
+
+
+@media all and (max-width: 1136px) {
+	main { width: 100%; }
+}
+
+@media all and (max-width: 1000px) {
+	
+	article.size1-2,
+	article.size2-2,
+	article.size1 {
+		width: 50%;
+	}
+	
+	section.newslist {
+		float: right;
+		width: 50%;
+		padding-right: 5px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.row { width: 100%; }
+	
+	section.newslist,
+	article.size1-2,
+	article.size2-2,
+	article.size1 {
+		width: 100%;
+		padding-right: 0;
+	}
+}

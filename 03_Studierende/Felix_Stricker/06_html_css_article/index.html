@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML/CSS Basics - Artikel</title>
+		<meta charset="utf-8">
+		<link href="css/header.css" rel="stylesheet" type="text/css" />
+		<link href="css/style-V2.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Jacques+Francois' rel='stylesheet' type='text/css'>		
+		
+		<script type="text/javascript">
+			var currentCss = 2;
+			function switchCss() {
+				currentCss = (currentCss == 1 ? 2 : 1);
+				document.getElementsByTagName('link')[1].href='css/style-V'+currentCss+'.css';
+			}
+		</script>
+	</head>
+	<body>
+		<header id="switcher">
+			<a href="#" onclick="switchCss(); return false;">CSS Wechsel</a>
+		</header>
+		<h1>Hallo, zwei Artikel vom Tagesanzeiger</h1>
+		<article>
+			<h2>Obama-Leibwächter lag betrunken in Hotel</h2>
+			<h3 class="teaser">Der US-Geheimdienst Secret Service hat einen fehlbaren Agenten in die USA zurückbeordert. Beim Warten auf Obama wurde ihm offenbar langweilig.</h3>
+			<figure>
+				<img src="image/obama.jpg" alt="obama" />
+				<figcaption>Treffen der G7-Minister: Obama mit Angela Merkel und David Cameron.</figcaption>
+			</figure>
+			
+			<p>Der US-Geheimdienst Secret Service hat drei zum Schutz von Präsident Barack Obama abgestellte Agenten vorzeitig aus den Niederlanden abberufen. Disziplinarische Verfehlungen seien der Grund gewesen, sagte der Sprecher der Behörde, Ed Donovan. Weitere Ausführungen zu dem Vorfall machte er nicht.</p>
+			<p>Die «Washington Post» hatte jedoch berichtet, dass einer der drei Agenten in einem Hotel in Amsterdam schwer betrunken aufgefunden worden sei. Das Personal habe daraufhin die US-Botschaft verständigt. Der betroffene Agent sei am Sonntag zurück in die USA beordert worden. Mit ihm mussten auch zwei Kollegen die Niederlande verlassen, weil sie den Mann nicht von seinem Fehlverhalten abgebracht hatten, wie es weiter hiess.</p>
+			<h3>Leibwächter des US-Präsidenten</h3>
+			<p>Der Secret Service ist eine amerikanische Bundesbehörde, die vor allem für den Schutz des Präsidenten zuständig ist. Zuletzt war der Secret Service bereits durch das Fehlverhalten führender Beamter in die Schlagzeilen geraten.</p>
+			<p>Die Behörde betonte, die Sicherheit Obamas sei durch den Vorfall nicht beeinträchtigt gewesen. Obama war am Montag in den Niederlanden eingetroffen und am späten Dienstag nach Brüssel weitergereist.</p>
+		</article>
+		
+		<article>
+			<h2>Facebook setzt mit Milliarden auf Datenbrillen</h2>
+			<h3 class="teaser">Mark Zuckerberg bleibt auf Einkaufstour: Facebook hat die Datenbrillen-Entwicklerin Oculus VR erworben – und mit ihr das Modell Rift, mit dem die Datenbrille massentauglich gemacht werden soll.</h3>
+			
+			<figure>
+				<img src="image/brille.jpg" alt="" />
+				<figcaption>Wird bis jetzt hauptsächlich bei Games eingesetzt: Datenbrille von Oculus VR.</figcaption>
+			</figure>
+			
+			<p>Sind Datenbrillen das nächste grosse Ding? Facebook-Gründer Mark Zuckerberg jedenfalls ist davon überzeugt und kauft für bis zu 2,3 Milliarden Dollar den Spezialisten Oculus VR.</p>
+			<p>Nur wenige Wochen nach dem Deal mit WhatsApp fädelt Zuckerberg damit bereits den nächsten Milliarden-Zukauf ein. Die erst vor zwei Jahren gegründete Oculus VR stellt Datenbrillen her, mit denen Nutzer bei Computerspielen in eine virtuelle Realität eintauchen können. Viele Experten rechnen damit, dass solche tragbaren Geräte nach Smartphone und Tablet-PC den nächsten Innovationsschub in der Branche auslösen werden.</p>
+			<h3>«Die sozialste Plattform aller Zeiten»</h3>
+			<p>«Wir gehen eine langfristige Wette ein, dass eine umfassende, virtuelle und erweiterte Realität ein Teil des Alltags der Menschen wird», sagte Zuckerberg. «Oculus hat die Chance, die sozialste Plattform aller Zeiten zu erschaffen und damit die Art und Weise zu verändern, wie wir arbeiten, spielen und kommunizieren.»</p>
+			<p>In der Vergangenheit war dem 29-Jährigen vorgeworfen worden, er habe verschlafen, dass immer mehr Internetnutzer auf ihr Smartphone setzen und den PC ausgeschaltet lassen.</p>
+			<p>Mit der Übernahme von Oculus VR steigt das weltgrösste soziale Netz erstmals in ein Hardware-Unternehmen ein. Facebook (FB 64.89 1.23%) zahlt für Oculus VR 400 Millionen Dollar in bar und etwa 1,6 Milliarden Dollar in eigenen Aktien. Hinzu kommen später bis zu 300 Millionen Dollar, wenn bestimmte Ziele erreicht werden, wie Facebook nach Börsenschluss mitteilte.</p>
+			<p>....</p>
+		</article>
+	</body>
+</html>

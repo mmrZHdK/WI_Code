@@ -2,15 +2,39 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-			<title>Article</title>
+		<title>Article</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet1.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript">
+	      function changeCSS(cssFile, cssLinkIndex) {
+	 
+	        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+	 
+	        var newlink = document.createElement("link");
+	        newlink.setAttribute("rel", "stylesheet");
+	        newlink.setAttribute("type", "text/css");
+	        newlink.setAttribute("href", cssFile);
+	 
+	        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+    </script>
+
 	</head>
   
 	<body>
+		<div id="Navi">
+	    <div id="Switcher_left"><a href="#" onclick="changeCSS('stylesheet1.css', 0);">STYLE 1</a></div>
+		<div id="Switcher_right"><a href="#" onclick="changeCSS('stylesheet2.css', 0);">STYLE 2</a></div>
+		</div>
+
+		<div id="Container">
 		<article>
 			<h1>Die wahren Vorlieben der Spitzenköche</h1>
 
-			<div>
-				<span>Allgemein</span> vom 22. März 2014<br> <span id="paginationNav"> <span id="authorLinkTop">Christian Seiler schreibt regelmäßig für „Das Magazin“.</span> </span>
+			<div id="Infos">
+				<span id="Kategorie">Allgemein</span> vom 22. März 2014<br> <span id="Author">Christian Seiler schreibt regelmäßig für „Das Magazin“.</span>
 			</div>
 
 			<div id="lauftext">
@@ -36,5 +60,6 @@
 				<p>Bei Phaidon ist dazu das Büchlein «Where Chefs Eat» erschienen, ein Vademecum, in dem grosse Köche ihre Lieblingskneipen empfehlen. Der Befund «Doppelleben» wird darin bestätigt.</p>
 			</div>
 		</article>
+		</div>
 	</body>
 </html>

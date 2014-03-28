@@ -1,0 +1,88 @@
+* {
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+body {
+	font-family: 'Jacques Francois', serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 0 20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+h2 {
+	font-weight: normal;
+	font-size: 30px;
+	background: #196671;
+	padding: 20px 30px;
+	margin-top: 0;
+	color: white;
+}
+h3 {
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 150%;
+	padding: 5px 20px;
+}
+h3.teaser {
+	font-style: italic;
+}
+
+article {
+	float: left;
+	width: 46%;
+	margin-left: 2%; 
+	margin-right: 2%;
+	border: 1px solid #196671;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+
+article figure {
+	margin: 0;
+	width: 30%;
+	float: right;
+	margin-right: 20px;
+	margin-left: 10px;
+	
+	-webkit-transition: .1s;
+	transition: .1s;
+}
+article figure:hover {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+}
+article figure img {
+	width: 100%;
+	
+}
+article figure figcaption {
+	font-size: 12px;
+	color: #2e2e2e;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+article p {
+	line-height: 160%;
+	margin: 20px 0;
+	padding: 0 20px;
+}
+
+
+@media all and (max-width: 700px) { 
+	article {
+		width: 96%;
+	}
+}
