@@ -7,6 +7,7 @@
 	font-size: 12px;
 	margin:auto;
 	min-width: 500px;
+	height: 1000px;
 }
 
 .header {
@@ -17,7 +18,7 @@
 
 h1{
 	font-style: normal;
-	font-size: 1.5em;
+	font-size: 2em;
 	margin: 0;
 
 }
@@ -76,13 +77,14 @@ figcaption{
 
 }
 
-.text
-
-
-
-.footer{
-	text-align: center;
-	clear: both;
-
-	
+.text {
+	margin-bottom: 10px;
 }
+
+
+.footer {
+	clear: both;
+	background-color: grey;
+	text-align: center;
+}
+
