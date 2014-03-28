@@ -17,6 +17,7 @@ body { }
 
 article {
 	margin: 60px auto 0 auto ;
+	padding-bottom: 40px;
 }
 
 h1 {
@@ -30,7 +31,7 @@ h2 {
 	font-weight: 700;
 }
 
-p.author, p.day, p.my, p.category { font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 16px;}
+p.author, p.day, p.my, p.category, p.likes, p.views { font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 16px;}
 p.day, p.my, p.category {display: inline;}
 p.my {}
 p.category { padding-left: 13px}
@@ -39,6 +40,7 @@ p.author {
 	height: 27px;
 	line-height: 27px;
 	padding: 0 0 0 38px;
+	display: inline-block;
 }
 
 p.text { 
@@ -48,13 +50,18 @@ p.text {
 	padding: 20px 0 20px 0;
 }
 
-p.likes {
+p.likes, p.views {
 	float: right;
+	padding-right: 38px;
+	height: 27px;
+	line-height: 27px;
 }
+p.likes { background:#ffffff url("../img/likes.png") no-repeat right center;  }
 
-p.views {
-	float: right;
-}
+p.views { background:#ffffff url("../img/views.png") no-repeat right center; margin-right: 20px; }
+
+
+
 
 @media screen and (min-width: 1100px){
 	.articleimg {
@@ -71,10 +78,24 @@ p.views {
 	}	
 }
 
-@media screen and (min-width: 0px) and (max-width: 700px) {
+@media screen and (min-width: 520px) and (max-width: 899px) {
 	article {
-		width: 95%;
+		width: 82%;
 	}
+
+}
+
+@media screen and (min-width: 10px) and (max-width: 519px){
+	article {
+		width: 90%;
+	}
+	p.author, p.likes, p.views {
+		display: block;
+		float: none;
+	}
+	p.likes { background:#ffffff url("../img/likes.png") no-repeat left center;  padding-left: 38px;  }
+	p.views { background:#ffffff url("../img/views.png") no-repeat left center;  padding-left: 38px;  }
+
 
 }
 
