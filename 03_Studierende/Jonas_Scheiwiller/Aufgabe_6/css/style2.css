@@ -52,10 +52,11 @@ h2 {
 	font-size: 17px;
 }
 
-p.day, p.my { 
+.date { 
 	position: relative;
 	left: -220px;
 	top: -120px;
+	height: 0;
 		 
 }
 p.day { 
@@ -68,3 +69,4 @@ p.my {
 	font-size: 29px;
 	color: white;
 }
+
