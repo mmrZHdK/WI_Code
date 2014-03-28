@@ -1,11 +1,28 @@
 
-html {
-	background: #16565;
-}
-body{
+body {
+      background: #eeac9d;
+	  }
+
+h1 	{
+	font-style: italic;
+	color:#f46b6b; font-family:Helvetica; 
+	font-size:200%
+	}
 	
+img	{
+	width: 30%
+	}
+
+div {
+	font-size: small;
+	color:#f46b6b;
+	}	
+
+header {
+	color:#8a2828;
 }
 
-h1 {color:#a16565; font-weight:bold; font-family:Arial; font-size:120%; }
-
-
+li {
+	list-style-type: hebrew
+	}
+	
