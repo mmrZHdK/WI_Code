@@ -67,14 +67,17 @@ p.views { background:#ffffff url("../img/views.png") no-repeat right center; mar
 	.articleimg {
 		margin: -400px 0 0 0;	
 	}
+	article {
+		width: 50%;
+	}
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) and (max-width: 1099px) {
 	article {
 		width: 50%;
 	}
 	.articleimg {
-		margin: -180px 0 0 0;	
+		margin: -220px 0 0 0;	
 	}	
 }
 
