@@ -10,9 +10,22 @@
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		var activeCSS = "style1";
+		function changeStyle() {
+			if (activeCSS == "style2") {
+				activeCSS == "style2";
+			} else {
+				activeCSS == "style1"; //und
+			}
+			document.getElementsByTagName('link')[2].href='css/'+activeCSS+'.css';
+		}
+	</script>
 </head>
 <body>
 <div id="content">
+	<div id="changecss"><a href="#" onclick="changeStyle(); return false;">Change Style</a></div>
+	
 	<div class="crop">
 		<img class="articleimg" src="img/blurredlights.jpg" alt="blurredlights" title="blurredlights" />
 	</div>
