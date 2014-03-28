@@ -107,3 +107,17 @@ p.likes, p.views {
 p.likes { background:#e6e8ec url("../img/likes2.png") no-repeat left center;  margin-right: 12px;}
 
 p.views { background:#e6e8ec url("../img/views2.png") no-repeat left center; }
+
+
+
+@media screen and (min-width: 0px) and (max-width: 859px) {
+	#content {
+		width: 95%;
+		margin: 40px auto 0 auto;
+	}
+
+}
+
+
+
+
