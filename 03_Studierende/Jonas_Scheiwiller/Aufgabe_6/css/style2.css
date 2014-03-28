@@ -11,8 +11,12 @@ html { }
 
 body { }
 
+.crop {
+	overflow:hidden; /* this is important */
+	float: left;
+}
+
 .articleimg {
-	margin: -190px -50px 0 -50px;
+	margin: -100px -450px 0 -530px;
 	width: 1200px;
-	overflow: hidden;
 }
