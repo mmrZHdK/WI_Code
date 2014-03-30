@@ -1,0 +1,160 @@
+body {
+	font-family: 'Libre Baskerville', serif;
+	height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6em;
+    min-height: 100%;
+    width: 100%;
+	}
+
+div {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	}
+	
+div.figure {
+	margin-top: 1.6em;
+	}
+
+img {
+	width:100%;
+	height:auto;
+	}
+	
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 2.6em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 0em;
+	}
+
+.bildunterschrift{
+	font-size: 0.8em;
+	font-weight: 800;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	}
+
+.content {
+	position:relative;
+	top: 4em;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 1.2em;
+	max-width: 800px;
+	}
+
+.lauftext {
+	font-weight: 400;
+	font-size: 0.9em;
+	}
+	
+#Infos {
+	width: 80%;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	font-weight: 400;
+	font-size: 1em;
+
+	}
+	
+#Kategorie {
+	font-style: italic;
+	}
+	
+#Autor {
+	font-weight: 800;
+	}
+	
+	
+
+@media only screen and (max-width: 9999999999px) {
+    h1 {
+		font-size: 2em;
+    }
+    
+    #content {
+    width: 80%;
+	}
+        
+}
+
+
+@media only screen and (max-width: 960px) {
+    h1 {
+		font-size: 2em;
+    }
+    
+    #content {
+    width: 80%;
+	}
+        
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+		font-size: 1.8em;
+    }
+    
+    #lauftext {
+	font-size: 0.83em;
+	}
+
+	#Infos {
+	font-size: 0.93em;
+	}
+	
+    #content {
+    width: 80%;
+	}
+
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+		font-size: 2em;
+    }
+    
+    #lauftext {
+	font-size: 0.93em;
+	}
+
+	#Infos {
+	font-size: 1.03em;
+	}
+	
+    #content {
+    width: 80%;
+	}
+
+}
+	
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+{
+	#content {
+	position:relative;
+	top: 4em;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0.5em;
+	width: 100%;
+	}
+	
+	h1 {
+	font-size: 6em;
+    }
+    
+    #lauftext {
+	font-size: 2em;
+	}
+
+	#Infos {
+	font-size: 2.3em;
+	}
+}

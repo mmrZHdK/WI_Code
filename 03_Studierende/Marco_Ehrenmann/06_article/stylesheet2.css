@@ -1,0 +1,95 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6em;
+    min-height: 100%;
+    width: 100%;
+	}
+
+div {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	}
+	
+img {
+	width:100%;
+	height:auto;
+	}
+	
+h1 {
+	font-family: 'Ultra', serif;
+	font-weight: 400;
+	font-size: 2em;
+	text-align: left;
+	padding-top: 0em;
+	}
+
+.bildunterschrift{
+	font-size: 0.8em;
+	font-weight: 800;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	}
+
+.content {
+	position:relative;
+	top: 4em;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 1.2em;
+	max-width: 800px;
+	}
+
+.lauftext {
+	font-weight: 300;
+	font-size: 0.9em;
+	}
+	
+.zweispaltig{
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px;
+	text-align: justify;
+	}
+	
+.zweispaltig p:first-child{
+	margin-top: 0em;
+	}
+
+.figure {
+	margin-top: 1.6em;
+	}
+
+#Infos {
+	text-align: left;
+	font-weight: 300;
+	font-size: 1em;
+
+	}
+	
+#Kategorie {
+	font-style: italic;
+	}
+	
+#Autor {
+	font-weight: 700;
+	}
+
+@media only screen and (max-width: 450px) {
+    .zweispaltig{
+	-moz-column-count: 1;
+	-moz-column-gap: 0px;
+	-webkit-column-count: 1;
+	-webkit-column-gap: 0px;
+	column-count: 1;
+	column-gap: 0px;
+	text-align: justify;
+	}
+}

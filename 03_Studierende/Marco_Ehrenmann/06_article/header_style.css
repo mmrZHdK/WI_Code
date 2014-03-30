@@ -1,0 +1,61 @@
+#Navi {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	position: relative;
+	text-align: center;
+	top: 1em;
+	width: 22em;
+	height: 2em;
+	margin: auto;
+	}
+	
+@media only screen and (max-width: 960px) {
+    #Navi {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #Navi {
+        font-size: 0.8em;
+
+    }
+}
+
+	
+#Switcher_left {
+	width: 10em;
+	padding: 0.3em;
+	float: left;
+	-webkit-box-shadow: 2px 2px 10px 0 rgba(30,30,30,50);
+	box-shadow: 2px 2px 10px 0 rgba(30,30,30,50);
+	}
+	
+#Switcher_right {
+	width: 10em;
+	padding: 0.3em;
+	float: right;
+	-webkit-box-shadow: 2px 2px 10px 0 rgba(30,30,30,50);
+	box-shadow: 2px 2px 10px 0 rgba(30,30,30,50);
+	}
+	
+a:link {
+	color:#000000;
+	text-decoration:none;
+	}
+
+a:visited {
+	color:#000000;
+	text-decoration:none;
+	}
+
+a:hover {
+	color:#000000;
+	text-decoration:underline;
+	}
+
+a:active {
+	color:#000000;
+	text-decoration:none;
+	}
+
