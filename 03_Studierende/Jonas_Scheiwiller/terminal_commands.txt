@@ -1,5 +1,6 @@
 Commands:
 
+
 1) cd
 
 Cd is short for change directory. This will change the current directory to the directory specified. To access the “Desktop” directory, type:
@@ -20,6 +21,7 @@ But for now let’s keep the path to the “Desktop” (cd Desktop).
 Mkdir is short for make directory (make folder). To make a test directory, type:
 
 mkdir test
+
 
 3) pwd
 
@@ -44,15 +46,13 @@ Notice after the command “cp” we type “pathdir+old name” space, than “
 
 Change (cd) directory to the “test” directory (see above for help).
 
+
 5) ls
-
 Ls is short for list. Ls will list files in a directory. Type:
-
 ls
+or ls -a
+to list all (including hidden files)
 
-will output.
-
-test2.txt
 
 6) mv
 
@@ -61,6 +61,7 @@ Mv will change the name of a file. From the test directory type:
 mv test2.txt test3.txt
 
 Notice after the command “mv” we type “old name” space, than “new name”. Type “ls” to check if it worked.
+
 
 7) rm
 
@@ -71,6 +72,7 @@ rm test3.txt
 Or remove a folder with or without items in side
 
 sudo rm -rf /path/folder_name
+
 
 8) man
 
