@@ -1,0 +1,88 @@
+Commands:
+
+1) cd
+
+Cd is short for change directory. This will change the current directory to the directory specified. To access the “Desktop” directory, type:
+
+cd Desktop
+
+Hit return to execute the command (do this every time to execute each command line).
+
+To return to your home directory, type:
+
+cd ~
+
+But for now let’s keep the path to the “Desktop” (cd Desktop).
+
+
+2) mkdir
+
+Mkdir is short for make directory (make folder). To make a test directory, type:
+
+mkdir test
+
+3) pwd
+
+Pwd displays the path of the current directory. Type:
+
+pwd
+
+will display something like this:
+
+/Users/alex/Desktop
+
+
+4) cp
+
+Cp is short for copy. To copy the “test.txt” file inside of the “test” directory on the “Desktop”, type:
+
+cp /Users/alex/Desktop/test.txt test/test2.txt
+
+This placed a copy of the “test.txt” file inside the “test” directory and named it “test2.txt”.
+
+Notice after the command “cp” we type “pathdir+old name” space, than “dir+new name”.
+
+Change (cd) directory to the “test” directory (see above for help).
+
+5) ls
+
+Ls is short for list. Ls will list files in a directory. Type:
+
+ls
+
+will output.
+
+test2.txt
+
+6) mv
+
+Mv will change the name of a file. From the test directory type:
+
+mv test2.txt test3.txt
+
+Notice after the command “mv” we type “old name” space, than “new name”. Type “ls” to check if it worked.
+
+7) rm
+
+Rm is short for remove (delete). To remove the “test3.txt” file inside the current directory type:
+
+rm test3.txt
+
+Or remove a folder with or without items in side
+
+sudo rm -rf /path/folder_name
+
+8) man
+
+Man is short for manual. For example to display the manual for “rm” type:
+
+man rm
+
+This will display information about the “rm” command. You can type any command after “man” to access additional information on that topic.
+
+
+9) “Q” key
+
+Q is short for quit. To escape the manual screen, hit the “Q” key:
+
+If you have any questions, please search or post a question to the forum.
