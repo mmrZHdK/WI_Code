@@ -1,0 +1,64 @@
+/* === Stildefinitionen für feste Topnaviagtion === */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+/* --- Layout Container */
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  padding: 1em;
+  background-color: #fdd;
+}
+nav {
+  position: absolute;
+  top: 5em;
+  right: 0;
+  bottom: 3em;
+  width: 25%;
+  padding: 0.5em;
+  background-color: #ddf;
+}
+section#inhalt {
+  position: absolute;
+  top: 5em;
+  bottom: 3em;
+  width: 75%;
+  padding: 2em;
+  overflow: auto;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  padding: 1em;
+  background-color: #fdd;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin: 0.2em 0em;
+  background-color: white;
+}
+
+/* --- spezielle Elemente */
+
+h1 {
+  color: #660;
+  font-size: 2em;
+}
