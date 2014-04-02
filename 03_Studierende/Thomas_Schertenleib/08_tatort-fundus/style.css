@@ -48,17 +48,20 @@ header {
 	width: 275px;
 	padding-left: 20%;
 	padding-top: 0;
+	float: left;
+	border: 0px;
+	display:block;
 	
 }
 
 
-#grauerkasten {
+#schwarzerkasten {
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
 	height: 100px;
 	padding: 20px;
-	border-radius: 0px;
+
 
 	
 	background: rgb(69,72,77); /* Old browsers */
@@ -73,12 +76,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 	
 	}
 
-#logo {
-
-	float: left;
-	border: 0px;
-	display:block;
-}
 
 
 /* Sidebar ------------------------------- */
@@ -94,6 +91,7 @@ aside {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	padding-left: 100px;
+	
 }
 
 
@@ -151,7 +149,6 @@ nav li:hover .unterliste	{
 	
 	background: black;
 	
-	
 	min-width: 150px;
 
 	z-index: 1;
@@ -172,7 +169,6 @@ nav a:visited {
 	padding-left: 10px;
 	display: inline-block;
 	color: #ffffff;
-	
 }
 
 
