@@ -1,0 +1,55 @@
+
+ <div{
+	 font-family: Georgia;
+	 font-size: 16px;
+	 line-height:1.4em;
+ }
+ 
+	 
+ }
+ 	  #one {
+      	box-sizing:border-box;
+      	font-style:oblique;
+     	width:60%;
+	 	float:right;
+	 	padding: 1.3em;
+	 	background-color:#ff8700;
+      }
+      
+      #two {
+      
+	    width:100%;
+		padding:1.2em;
+	    background-color:#f92929;
+      }
+      
+      #three{
+        width:97.2%;
+        padding-top:2em;
+        padding-left:3em;
+        padding-bottom: 2em;
+        background-color: #fdd;
+      }
+
+	  #four{
+	 	box-sizing:border-box;
+		width: 100%;
+		padding:1em;
+		background-color:#fd7373
+		
+	  }
+	  
+	  #five {
+		  box-sizing:border-box;
+		  float:left;
+		  width:50%;
+		  margin:2em;
+		  background-color: #ffff25;
+	  }
+	  
+	  #six {
+		  float:right;
+		  width:40%
+		  margin:2em;
+		  background-color: #ffff25 
+	  }

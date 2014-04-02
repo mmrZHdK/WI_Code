@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<title>Form</title>
+	</head>
+
+	<body>
+		<h1>Form</h1>
+
+		<div style="">
+			<form oninput="total.value = (value1.valueAsNumber * 100) + 
+			((value2.valueAsNumber - 1) * 10)">
+		
+			<label>Progress (doesn't work with pure HTML:</label>
+			<progress max=100 value=50>50%</progress>
+
+			<br>
+
+			<label>Slider:</label>
+			<input type="range" name="slidy" min="0" max="100">
+
+			<br>
+
+			<label>Name:</label>
+			<input type="text" id="name" name="name" placeholder="Rainer Zufall" required>
+
+			<br>
+
+			<label>Email address:</label>
+			<input type="email" id="email_addr" name="email_addr" placeholder="adress@provider.com"required>
+
+			<br>
+
+			<label>Date:</label>
+			<input type="date" id="date" name="date" required>
+
+			<br>
+			
+			<label>Add 100 to my number:</label>
+			<input type="number" id="value1" name="value1" value="1" min="1" max="30" required>
+
+			<br>
+
+			<label>Add 10 to my number for 4 times max:</label>
+			<input type="number" id="value2" name="value2" value="1" min="1" max="5" required>
+
+			<br>
+
+			<label>Total:</label>
+			<output id="total" name="total">100</output>
+
+			<br><br>
+
+			<label>Write 10 characters:</label>
+			<input type="text" maxlength=10 id="message" name="message" title="My message">
+
+			<br>
+			
+			<label>My message:</label>
+			<textarea></textarea>
+
+			<br>
+
+			<input type="submit" value="Send" /> 
+			</form>
+		</div>
+	</body>
+</html>
+
+
