@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+
+  <body>
+
+   <h1>FORM<wbr>ULAR</h1>
+      
+   
+   <div id="one">
+      <header>PERSONALIEN</header>
+      <p id="typesmall"> <br> BITTE GEBEN SIE IHRE PERSONALIEN AN:</p>
+
+      <form action="select_optgroup.htm">
+
+      <select name="Namen" size="6">
+        <optgroup label="Vorname">
+         <option label="Anna">Anna</option>
+         <option label="Jeremy">Jeremy</option>
+    
+       </optgroup>
+       <optgroup label="Nachname">
+         <option label="Müller">Müller</option>
+         <option label="Meier">Meier</option>
+       </optgroup>
+      </select>
+   </div>
+
+     
+
+
+</form>
+
+<form action="input_radio.htm">
+  
+  <div id="two">
+    <header>ERFAHRUNGEN</header>
+    <p id="typesmall"><br>Haben Sie schon mal ein Formular ausgefüllt?<br>
+    <input type="radio" name="Erfahrung" value="ja"> ja<br>
+    <input type="radio" name="Erfahrung" value="nein"> nein<br>
+  </div>  
+  
+ 
+ 
+</form>
+
+<form action="auswertung.php" method="post">
+  
+  <div id="three">
+    <header>BEMERKUN<wbr>GEN </header> 
+    <textarea name="Bemerkungen" rows="3">
+    
+    </textarea>
+  </div>
+  
+
+</body>
+</html>
