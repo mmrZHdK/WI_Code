@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Tatortify</title>
+    <style>
+        #tatortify {
+            position:fixed;
+            width:200%;
+            height:200%;
+            top:-50%;
+            left:-50%;
+            z-index: 10000;
+        }
+        #tatortify .shade {
+            position: absolute;
+            width:50%;
+            height:50%;
+            background:#00c;
+        }
+        #tatortify .shade.top {
+            top:-151px;
+            width:100%;
+        }
+        #tatortify .shade.right {
+            height:100%;
+            right:-151px;
+        }
+        #tatortify .shade.bottom {
+            bottom:-151px;
+            width:100%;
+        }
+        #tatortify .shade.left {
+            height:100%;
+            left:-151px;
+        }
+        #tatortify .cross.horizontal {
+            position:absolute;
+            width:100%;
+            height:50%;
+            border-bottom:1px solid #000;
+        }
+        #tatortify .cross.vertical {
+            position:absolute;
+            height:100%;
+            width:50%;
+            border-right:1px solid #000;
+        }
+        #tatortify .innercircle {
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: -76px;
+            margin-top: -76px;
+            width:150px;
+            height:150px;
+            border:1px solid #000;
+            border-radius: 50%;
+        }
+        #tatortify .outercircle {
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: -150px;
+            margin-top: -150px;
+            width:298px;
+            height:298px;
+            border:1px solid #000;
+            border-radius: 50%;
+        }
+        #tatortify .blindcircle {
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: -450px;
+            margin-top: -450px;
+            width:300px;
+            height:300px;
+            border:300px solid #00c;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="tatortify">
+        <div class="innercircle"></div>
+        <div class="outercircle"></div>
+        <div class="blindcircle"></div>
+        <div class="shade top"></div>
+        <div class="shade right"></div>
+        <div class="shade bottom"></div>
+        <div class="shade left"></div>
+        <div class="cross vertical"></div>
+        <div class="cross horizontal"></div>
+    </div>
+    TatortTatortTatortTatortTatortTatortTatortTatortTatortTatortTatortTatortTatort
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).mousemove(function(e){
+            $("#tatortify").css({left:-$("#tatortify").width()/2+e.pageX, top:-$("#tatortify").height()/2+e.pageY});
+        });
+    </script>
+</body>
+</html>
