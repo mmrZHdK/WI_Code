@@ -1,39 +1,7 @@
 @charset "UTF-8";
 $text-color-primary: #111;
-
-
-// user_resoluting_03_11-04_01.json
-// 0-480: 6.64%
-// 480-640: 8.00%
-// 640-1024: 12.83%
-// 1024-1280: 21.53%
-// ---------––------
-// 1280-1400: 14.74%
-// 1400-1680: 22.01%
-// 1680-1920: 12.38%
-// 1920-10000: 1.86%
-
-// Breakpoints
-$w-mobile: 479px;
-$w-mobile-l: 767px;
-$w-tablet: 959px;
-$w-desktop: 1140px; // über 50% darüber
-$w-full: 1440px;
-
-$mobile: new-breakpoint(max-width $w-mobile 12);
-$mobile-wide: new-breakpoint(max-width $w-mobile-l 12);
-$tablet: new-breakpoint(max-width $w-tablet 12);
-$desktop: new-breakpoint(max-width $w-desktop 12);
-$full: new-breakpoint(min-width $w-full 12);
-
-$mobile-wide-only: new-breakpoint(min-width $w-mobile+1px max-width $w-mobile-l 12);
-$tablet-only: new-breakpoint(min-width $w-mobile-l+1px max-width $w-tablet 12);
-$desktop-only: new-breakpoint(min-width $w-tablet+1px max-width $w-desktop 12);
-
-$tablet-desktop-only: new-breakpoint(min-width $w-mobile-l+1px max-width $w-desktop 12);
-
-$tablet-and-up: new-breakpoint(min-width $w-mobile-l+1px);
-$desktop-and-up: new-breakpoint(min-width $w-tablet+1px 12);
+$grey-lighter: #f1f1f1;
+$grey-light: #f1f1f1;
 
 @mixin dev {
     border: 1px solid #000;

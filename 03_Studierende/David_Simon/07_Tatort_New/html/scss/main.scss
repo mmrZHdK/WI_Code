@@ -2,11 +2,7 @@
 @import "_reset";
 
 @import "bourbon";
-$max-width: em(1440);
-$visual-grid-color: #c44;
-$visual-grid: false;
-@import "neat";
-
+@import "_grid-settings";
 @import "_vars";
 @import "_typo";
 
@@ -24,12 +20,12 @@ img {
     width:100%;
 }
 
-$base-height: 250px;
-
 .layout {
     &__header {
-        height: $base-height;
-        background: #eee;
+        height: 150px;
+        background: $grey-lighter;
+        background-size: cover;
+        background-position: center center;
         margin-bottom: 15px;
     }
     &__wrapper{
@@ -75,7 +71,7 @@ $base-height: 250px;
         font-weight: bold;
     }
     &__content {
-        background: #eee;
+        background: $grey-lighter;
         &--indented {
             padding:5px 10px;
         }
