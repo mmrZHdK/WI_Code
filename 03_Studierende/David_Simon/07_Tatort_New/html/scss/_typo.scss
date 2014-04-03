@@ -23,11 +23,6 @@ a {
 
 p {
     position: relative;
-    @include x-rem(font-size, 1.4);
-    line-height: 1.75;
-    @include media($mobile-wide) {
-        @include x-rem(font-size, 1.2);
-    }
     margin-bottom:30px;
 }
 
@@ -46,22 +41,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    @include x-rem(font-size, 3);
+    @include x-rem(font-size, 2.25);
     line-height: 1.33333;
 }
 
 h2 {
-    @include x-rem(font-size, 2.25);
+    @include x-rem(font-size, 1.875);
     line-height: 1.6;
 }
 
 h3 {
-    @include x-rem(font-size, 1.875);
+    @include x-rem(font-size, 1.5);
     line-height: 1;
 }
 
 h4 {
-    @include x-rem(font-size, 1.5);
+    @include x-rem(font-size, 1.25);
     line-height: 1.2;
 }
 

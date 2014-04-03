@@ -2,6 +2,9 @@
 @import "_reset";
 
 @import "bourbon";
+$max-width: em(1440);
+$visual-grid-color: #c44;
+$visual-grid: false;
 @import "neat";
 
 @import "_vars";
@@ -10,8 +13,134 @@
 /* main.scss */
 
 html, body{
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     height: 100%;
     min-height: 100%;
+}
+
+img {
+    display: block;
+    width:100%;
+}
+
+$base-height: 250px;
+
+.layout {
+    &__header {
+        height: $base-height;
+        background: #eee;
+        margin-bottom: 15px;
+    }
+    &__wrapper{
+        @include outer-container;
+        padding: 0 15px;
+    }
+    &__main {
+        @include span-columns(8);
+        @include media($mobile) {
+            @include span-columns(12);
+        }
+        @include media($mobile-wide-only) {
+            @include span-columns(6);
+        }
+        @include media($tablet-only) {
+            @include span-columns(7);
+        }
+    }
+    &__sidebar {
+        @include span-columns(4);
+        @include media($mobile) {
+            @include span-columns(12);
+        }
+        @include media($mobile-wide-only) {
+            @include span-columns(6);
+        }
+        @include media($tablet-only) {
+            @include span-columns(5);
+        }
+    }
+    &__footer {
+        @include outer-container;
+        padding: 0 15px;
+    }
+}
+
+.blockbox {
+    overflow:hidden;
+    &__title {
+        margin: 0;
+        padding: 0;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    &__content {
+        background: #eee;
+        &--indented {
+            padding:5px 10px;
+        }
+        margin-bottom:20px;
+    }
+}
+
+.newsarticle {
+    position: relative;
+    padding-bottom:10px;
+    &__title {
+        &--main {
+            line-height:1.2;
+            margin:8px 10px 8px;
+            padding:0;
+        }
+        &--top {
+            position:absolute;
+            margin:10px;
+            padding:0;
+        }
+    }
+    &__imgcontainer {
+        overflow:hidden;
+    }
+    p {
+        margin:0 13px;
+    }
+}
+
+.datatable {
+    width:100%;
+    border-spacing: 0 3px;
+    padding: 0px;
+    border-collapse: separate;
+    margin-bottom: 5px;
+    th {
+        padding-right:10px;
+        font-weight: 400;
+    }
+    td {
+        padding-right:10px;
+        white-space: nowrap;
+    }
+    &__col {
+        &--number {
+            text-align: right;
+        }
+        &--number-left,
+        &--text-narrow {
+            text-align: left;
+        }
+        &--text-wide {
+            width:100%;
+            text-align: left;
+        }
+    }
+}
+
+.main-nav {
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+    }
 }
