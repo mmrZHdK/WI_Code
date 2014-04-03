@@ -190,30 +190,68 @@ nav a:visited {
 	
 }
 
-.box {
-	border-bottom: 1px solid #5e5e5e;
+#topcontent .box img {
+	
+	
 
 }
 
 #topcontent .box {
 	float:left;
 	width: 33.3%;
-	height: 400px;
+	height: 500px;
 	border: 1px solid blue;	
 }
+
+#topcontent .box h2 {
+		bottom: 0;
+		text-align: left;
+		position: absolute;
+		z-index: 1;
+
+}
+
+
 
 #bottomcontent {
 	margin-top: 50px;
 }
 
+#bottomcontent .box p {
+	font-size: 12px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	
+}
+
+#bottomcontent .box h5 {
+	font-size: 13px;
+	margin-top: 0px;	
+	margin-bottom: 3px;
+}
+
+#bottomcontent .box h7 {
+	font-size: 11px;
+	font-weight: 300;
+	margin-top: 1px;
+	margin-bottom: 1px; 
+	font-weight: bold;
+	color:#606060;	
+}
+
 #bottomcontent .box {
 	float:left;
 	width: 49%;
-	height: 100px;
-	margin: 0.5%;
-	padding: 2px;
+	height: 150px;
+	margin: 0.2%;
+	padding: 0;
 
 	
+}
+
+.bottomunterbox {
+	float:right;
+	width: 40%;
 }
 
 /* Sidebar ------------------------------- */
@@ -241,14 +279,6 @@ td {
 	background-color: #c0c0c0;
 }
 
-.tag {
-}
-
-.sender {
-}
-
-.folgentitel {
-}
 
 
 
