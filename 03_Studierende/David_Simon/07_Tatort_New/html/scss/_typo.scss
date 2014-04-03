@@ -1,0 +1,98 @@
+/* _typo.scss */
+@charset "UTF-8";
+
+body {
+    color:$text-color-primary;
+    font: 300 100%/1.5 'Open Sans', sans-serif;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dl,blockquote,p,address,table,fieldset,figure,pre {
+    @include x-rem(margin-bottom, 1.5);
+}
+
+ul,ol,dd {
+    @include x-rem(margin-left, 3);
+}
+
+a {
+    color: $text-color-primary;
+    text-decoration: none;
+}
+
+p {
+    position: relative;
+    @include x-rem(font-size, 1.4);
+    line-height: 1.75;
+    @include media($mobile-wide) {
+        @include x-rem(font-size, 1.2);
+    }
+    margin-bottom:30px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a,b,strong,dt {
+    font-weight: 500;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+    color: $text-color-primary;
+    font-family: 'Miso', 'Open Sans', sans-serif;
+}
+
+h1 {
+    @include x-rem(font-size, 3);
+    line-height: 1.33333;
+}
+
+h2 {
+    @include x-rem(font-size, 2.25);
+    line-height: 1.6;
+}
+
+h3 {
+    @include x-rem(font-size, 1.875);
+    line-height: 1;
+}
+
+h4 {
+    @include x-rem(font-size, 1.5);
+    line-height: 1.2;
+}
+
+h5 {
+    @include x-rem(font-size, 1);
+    line-height: 1.5;
+}
+
+h6 {
+    @include x-rem(font-size, .875);
+    line-height: 1.71429;
+}
+
+small {
+    @include x-rem(font-size, .75);
+    line-height: 2;
+    display: inline-block;
+    color: #999;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::selection {
+    background-color: $text-color-primary;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: $text-color-primary;
+    color: #fff;
+}

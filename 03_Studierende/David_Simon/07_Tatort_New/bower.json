@@ -1,0 +1,14 @@
+{
+  "name": "tatort-prototype",
+  "version": "0.0.0",
+  "description": "",
+  "main": "html/index.html",
+  "author": "David Simon <me@davidsimon.ch>",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.7.2",
+    "jquery": "1.11.0",
+    "respond": "~1.4.2",
+    "fastclick": "~1.0.0"
+  }
+}
