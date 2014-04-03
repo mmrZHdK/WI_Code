@@ -1,54 +1,43 @@
 @charset "UTF-8";
+
+// user_resoluting_03_11-04_01.json
+// 0-480: 6.64%
+// 480-640: 8.00%
+// 640-1024: 12.83%
+// 1024-1280: 21.53%
+// ---------––------
+// 1280-1400: 14.74%
+// 1400-1680: 22.01%
+// 1680-1920: 12.38%
+// 1920-10000: 1.86%
+
+// Breakpoints
+$w-mobile-s: 479px;
+$w-mobile-m: 639px;
+$w-mobile-l: 767px;
+$w-tablet: 959px;
+$w-desktop: 1139px; // über 50% darüber
+$w-full: 1440px;
+
+// Neat Grid Settings
+$max-width: $w-full;
+$visual-grid-color: #c44;
+$visual-grid: false;
+
+// Colors
+$text-color-inverted: white;
 $text-color-primary: #111;
 $grey-lighter: #f8f8f8;
 $grey-light: #eee;
+$grey: #aaa;
+$grey-dark: #666;
+$grey-darker: #333;
+
+$blue: #253e7a;
+
+
 
 @mixin dev {
     border: 1px solid #000;
     background: rgba(255,120,0,0.05);
-}
-
-@mixin x-rgba ($property, $r, $g, $b, $a) {
-    #{$property}: rgb($r, $g, $b);
-    #{$property}: rgba($r, $g, $b, $a);
-}
-
-@mixin x-rgba-l ($property, $list) {
-    $r: nth($list, 1);
-    $g: nth($list, 2);
-    $b: nth($list, 3);
-    $a: nth($list, 4);
-    #{$property}: rgb($r, $g, $b);
-    #{$property}: rgba($r, $g, $b, $a);
-}
-
-@function strip-unit ($num) {
-    @return $num / ($num * 0 + 1);
-}
-
-@mixin x-rem ($property, $values...) {
-    $max: length($values);
-    $pxValues: '';
-    $remValues: '';
-
-    @for $i from 1 through $max {
-        $value: strip-unit(nth($values, $i));
-        $pxValues: #{$pxValues + $value*16}px;
-
-        @if $i < $max {
-            $pxValues: #{$pxValues + " "};
-        }
-    }
-
-    @for $i from 1 through $max {
-        $value: strip-unit(nth($values, $i));
-        $remValues: #{$remValues + $value}rem;
-
-        @if $i < $max {
-            $remValues: #{$remValues + " "};
-        }
-    }
-
-    #{$property}: $pxValues;
-    #{$property}: $remValues;
 }

@@ -2,8 +2,9 @@
 @import "_reset";
 
 @import "bourbon";
-@import "_grid-settings";
 @import "_vars";
+@import "_mixins";
+@import "_grid-settings";
 @import "_typo";
 
 /* main.scss */
@@ -31,13 +32,18 @@ img {
     }
 }
 
+a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $grey;
+}
+
 .layout {
     &__header {
         @include media($full) {
             padding: 0 10px;
         }
-        height: 150px;
-        background: $grey-lighter;
+        height: 60px;
+        background: $blue; //$grey-lighter;
         background-size: cover;
         background-position: center center;
         margin-bottom: 15px;
@@ -77,10 +83,11 @@ img {
 .blockbox {
     overflow:hidden;
     &__title {
-        margin: 0;
+        margin: 0 0 3px 0;
         padding: 0;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: bold;
+        color: $grey-darker;
     }
     &__content {
         background: $grey-lighter;
@@ -91,26 +98,45 @@ img {
     }
 }
 
-.newsarticle {
+$newsarticle: '.newsarticle';
+#{$newsarticle} {
     position: relative;
     padding-bottom:10px;
+    &__header {
+        position:relative;
+    }
     &__title {
         &--main {
             line-height:1.2;
-            margin:8px 10px 8px;
-            padding:0;
-        }
-        &--top {
-            position:absolute;
             margin:10px;
             padding:0;
+            a {
+                color: $blue;
+            }
+        }
+        &--top {
+            display:block;
+            position:absolute;
+            top:0;
+            margin:0;
+            padding:10px;
+            background:$blue;
+            color: $text-color-inverted;
         }
     }
     &__imgcontainer {
+        position: relative;
         overflow:hidden;
     }
     p {
         margin:0 13px;
+    }
+
+    // Small version
+    
+    @include media($tablet),
+    &__small {
+        #{$newsarticle}
     }
 }
 
@@ -126,7 +152,7 @@ img {
     &--button {
         text-align: center;
         font-weight: bold;
-        color: #666;
+        color: $grey-dark;
         line-height: 4;
         background: $grey-lighter;
         border-radius: 2px;
