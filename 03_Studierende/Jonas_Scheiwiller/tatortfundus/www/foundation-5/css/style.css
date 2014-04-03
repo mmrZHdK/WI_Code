@@ -24,9 +24,6 @@
     text-decoration: none;
     color: white; }
 
-.neuigkeiten .newsbox {
-  padding: 10px;
-  background-color: #f3f4f4; }
 .neuigkeiten li {
   padding: 10px;
   padding-left: 10px; }
@@ -50,6 +47,11 @@
   height: 1px;
   width: 5em;
   border-top: solid 1px #5b6269; }
+.neuigkeiten .text {
+  line-height: 1.3em;
+  font-size: 0.9em; }
+  .neuigkeiten .text a {
+    font-weight: 800; }
 
 .navigation .top-bar-section ul li > a {
   font-family: "Proxima Nova", Helvetica, Verdana, sans-serif;
