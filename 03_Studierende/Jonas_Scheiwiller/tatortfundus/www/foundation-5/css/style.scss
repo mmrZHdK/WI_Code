@@ -1,5 +1,11 @@
 $maincolor: #165d86;
 
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 .head {
 	height: 30px;
 	background-color: $maincolor;
@@ -8,4 +14,32 @@ $maincolor: #165d86;
 .sidebararticle {
 	background-color: #e3e3e3;
 	padding: 10px;
+}
+
+.footer {
+	height: 120px;
+	background-color: $maincolor;
+	
+	ul {list-style: none; }
+	
+	a {text-decoration: none; color: white;}
+}
+
+
+
+
+/*
+-----
+overwrite foundation css:
+*/
+
+.contain-to-grid {
+	max-width: 75em;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.fixed {
+	left: auto;
 }
