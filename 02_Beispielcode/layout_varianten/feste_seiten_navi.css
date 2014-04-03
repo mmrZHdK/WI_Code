@@ -16,6 +16,7 @@ body {
 nav {
   position: fixed;
   top: 5em;
+  left: 0em;
   width: 10em;
   padding: 0.5em;
   background-color: #ddf;
@@ -28,6 +29,9 @@ nav ul {
 nav li {
   margin: 0.2em 0em;
   background-color: white;
+}
+nav li a {
+  display: block;
 }
 
 article {
