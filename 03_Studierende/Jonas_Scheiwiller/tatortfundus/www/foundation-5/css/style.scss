@@ -14,6 +14,8 @@ $secondcolor: #5b6269;
 	background-color: $maincolor;
 }
 
+
+
 .sidebararticle {
 	background-color: #e3e3e3;
 	padding: 10px;
@@ -51,6 +53,22 @@ $secondcolor: #5b6269;
 	.top-bar-section ul li > a {
 		font-family: "Proxima Nova", Helvetica, Verdana, sans-serif;
 		font-weight: 400;
+	}
+	li.name {
+		background: url("../img/logo.png") no-repeat left center;
+		margin-left: 10px;
+		padding-left: 10px;
+		width: 160px;
+		display: block;
+		h1.seitentitel a {
+			text-indent: -9999px;
+		}
+
+	}
+	.menu-icon a {
+		text-transform: none;
+		font-family: "Proxima Nova", Helvetica, Verdana, sans-serif; font-weight: normal;
+		
 	}
 }
 
