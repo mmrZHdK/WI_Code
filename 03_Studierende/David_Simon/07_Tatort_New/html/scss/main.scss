@@ -20,8 +20,22 @@ img {
     width:100%;
 }
 
+@mixin constr-container {
+    @include outer-container;
+    padding: 0 15px;
+    @include media($full-only) {
+        width:$w-desktop;
+    }
+    @include media($desktop-only) {
+        width:$w-tablet;
+    }
+}
+
 .layout {
     &__header {
+        @include media($full) {
+            padding: 0 10px;
+        }
         height: 150px;
         background: $grey-lighter;
         background-size: cover;
@@ -29,15 +43,14 @@ img {
         margin-bottom: 15px;
     }
     &__wrapper{
-        @include outer-container;
-        padding: 0 15px;
+        @include constr-container;
     }
     &__main {
         @include span-columns(8);
-        @include media($mobile) {
+        @include media($mobile-m) {
             @include span-columns(12);
         }
-        @include media($mobile-wide-only) {
+        @include media($mobile-l-only) {
             @include span-columns(6);
         }
         @include media($tablet-only) {
@@ -46,10 +59,10 @@ img {
     }
     &__sidebar {
         @include span-columns(4);
-        @include media($mobile) {
+        @include media($mobile-m) {
             @include span-columns(12);
         }
-        @include media($mobile-wide-only) {
+        @include media($mobile-l-only) {
             @include span-columns(6);
         }
         @include media($tablet-only) {
@@ -57,8 +70,7 @@ img {
         }
     }
     &__footer {
-        @include outer-container;
-        padding: 0 15px;
+        @include constr-container;
     }
 }
 
@@ -102,6 +114,25 @@ img {
     }
 }
 
+.switcher {
+    @include outer-container;
+    padding: 0 15px;
+    margin-bottom: 10px;
+
+    display:none;
+    @include media($mobile-l) {
+        display: block;
+    }
+    &--button {
+        text-align: center;
+        font-weight: bold;
+        color: #666;
+        line-height: 4;
+        background: $grey-lighter;
+        border-radius: 2px;
+    }
+}
+
 .datatable {
     width:100%;
     border-spacing: 0 3px;
@@ -129,6 +160,15 @@ img {
             text-align: left;
         }
     }
+}
+
+.hide {
+    &--mobile-s { @include media($mobile-s) { display:none; } }
+    &--mobile-m { @include media($mobile-m) { display:none; } }
+    &--mobile-l { @include media($mobile-l) { display:none; } }
+    &--tablet { @include media($tablet) { display:none; } }
+    &--desktop { @include media($desktop) { display:none; } }
+    &--full { @include media($full) { display:none; } }
 }
 
 .main-nav {

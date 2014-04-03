@@ -13,35 +13,39 @@
 
 
 // Breakpoints
-$w-mobile: 479px;
+$w-mobile-s: 479px;
+$w-mobile-m: 639px;
 $w-mobile-l: 767px;
 $w-tablet: 959px;
 $w-desktop: 1139px; // über 50% darüber
-$w-max: 1440px;
+$w-full: 1440px;
 
-$max-width: $w-max;
+$max-width: $w-full;
 $visual-grid-color: #c44;
 $visual-grid: false;
 
 @import "neat-helpers";
 
-
-$mobile: new-breakpoint(max-width $w-mobile 12);
-$mobile-wide-only: new-breakpoint(min-width $w-mobile+1px max-width $w-mobile-l 12);
+$mobile-s: new-breakpoint(max-width $w-mobile-s 12);
+$mobile-m-only: new-breakpoint(min-width $w-mobile-s+1px max-width $w-mobile-m 12);
+$mobile-l-only: new-breakpoint(min-width $w-mobile-m+1px max-width $w-mobile-l 12);
 $tablet-only: new-breakpoint(min-width $w-mobile-l+1px max-width $w-tablet 12);
 $desktop-only: new-breakpoint(min-width $w-tablet+1px max-width $w-desktop 12);
-$max-only: new-breakpoint(min-width $w-desktop+1px max-width $w-max 12);
+$full-only: new-breakpoint(min-width $w-desktop+1px max-width $w-full 12);
 
 @import "neat";
 
-
-$mobile-wide: new-breakpoint(max-width $w-mobile-l 12);
+$mobile-m: new-breakpoint(max-width $w-mobile-l 12);
+$mobile-l: new-breakpoint(max-width $w-mobile-l 12);
 $tablet: new-breakpoint(max-width $w-tablet 12);
 $desktop: new-breakpoint(max-width $w-desktop 12);
-$tablet-and-up: new-breakpoint(min-width $w-mobile-l+1px 12);
-$desktop-and-up: new-breakpoint(min-width $w-tablet+1px 12);
-$max-plus: new-breakpoint(min-width $w-max 12);
+$full: new-breakpoint(max-width $w-full 12);
 
+
+$mobile-m-l-only: new-breakpoint(min-width $w-mobile-m+1px max-width $w-mobile-l 12);
 $tablet-desktop-only: new-breakpoint(min-width $w-mobile-l+1px max-width $w-desktop 12);
 
-$full: new-breakpoint(min-width $w-max 12);
+$tablet-and-up: new-breakpoint(min-width $w-mobile-l+1px 12);
+$desktop-and-up: new-breakpoint(min-width $w-tablet+1px 12);
+
+$full-plus: new-breakpoint(min-width $w-full+1px 12);
