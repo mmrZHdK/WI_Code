@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        border: 0px solid red;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .teaser_zeile {
+        width: 600px;
+        margin: 1em auto;
+      }
+      .bild_teaser {
+        position: relative;
+        float: left;
+        width: 30%;
+        
+      }
+      .bild_teaser img {
+        width: 100%;
+      }
+      .bild_teaser h1 {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        padding: 0.2em 0.5em;
+        z-index: 1;
+        background-color: rgba( 255, 255, 255, 0.7 );
+      }
+    </style>
+  </head>
+  
+  <body>
+    <section class="teaser_zeile">
+      <div class="bild_teaser">
+        <img src="../pix/baum.png">
+        <h1>Titel</h1>
+      </div>
+      <div class="bild_teaser">
+        <img src="../pix/baum.png">
+        <h1>Anderer Titel</h1>
+      </div>
+      <div class="bild_teaser">
+        <img src="../pix/baum.png">
+        <h1>Noch ein Titel</h1>
+      </div>
+      <div style="clear: both;"></div>
+    </section>
+    
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </body>
+</html>
