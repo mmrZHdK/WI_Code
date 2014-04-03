@@ -100,6 +100,7 @@ a:hover {
 
 $newsarticle: '.newsarticle';
 #{$newsarticle} {
+    $n: $newsarticle;
     position: relative;
     padding-bottom:10px;
     &__header {
@@ -114,29 +115,39 @@ $newsarticle: '.newsarticle';
                 color: $blue;
             }
         }
-        &--top {
-            display:block;
-            position:absolute;
-            top:0;
-            margin:0;
-            padding:10px;
-            background:$blue;
-            color: $text-color-inverted;
-        }
     }
     &__imgcontainer {
         position: relative;
-        overflow:hidden;
+        overflow: hidden;
     }
     p {
         margin:0 13px;
     }
+}
 
-    // Small version
-    
-    @include media($tablet),
-    &__small {
-        #{$newsarticle}
+$title-resp: '.title-resp';
+#{$title-resp} {
+    $t: $title-resp;
+
+    @include x-rem(font-size, 1.5);
+    line-height:1.4;
+
+    &--boxed {
+        display:block;
+        margin:0;
+        width:100%;
+        padding:10px;
+        background:$blue;
+        color: $text-color-inverted;
+    }
+
+    &[max-width^="400px"] {
+        @include x-rem(font-size, 1);
+        padding: 3px 10px 4px;
+    }
+    &[max-width^="800px"] {
+        @include x-rem(font-size, 1.25);
+        padding: 6px 10px 8px;
     }
 }
 

@@ -20,8 +20,8 @@
     <script src="components/modernizr/modernizr.js"></script>
     <script src="components/modernizr/feature-detects/css-vhunit.js"></script>
     <script src="components/modernizr/feature-detects/css-vwunit.js"></script>
-
-    <script src="components/respond/dest/respond.src.js"></script>
+    <script src="components_manual/css-element-queries/src/ResizeSensor.js"></script>
+    <script src="components_manual/css-element-queries/src/ElementQueries.js"></script>
 </head>
 
 <body>
@@ -49,9 +49,9 @@
                             <header class="newsarticle__header">
                                 <div class="newsarticle__imgcontainer">
                                     <img src="media/article_borowski_und_das_meer.jpg" alt="Borowski und das Meer">
+                                    <h3 class="title-resp title-resp--boxed">Tatort: Kiel</h3>
                                 </div>
                                 <h2 class="newsarticle__title--main"><a href="#">Borowski und das Meer</a></h2>
-                                <h3 class="newsarticle__title--top">Tatort: Kiel</h3>
                             </header>
                             <section>
                             <p>Auf einem nächtlichen Bootsausflug der Firma Marex wird der Jurist Jens Adam spektakulär erschossen. Seine Leiche verschwindet im Meer. Marex ist weltweit führend im Abbau von Rohstoffen in der Tiefsee, ihr Spezialgebiet sind Seltene Erden. Kommissar Borowski ahnt, dass die Lösung des Falls auf dem Grund der Ostsee zu finden ist.</p>
@@ -68,12 +68,11 @@
                         <article class="newsarticle newsarticle--small">
                             <header>
                                 <div class="newsarticle__imgcontainer">
-                                    <!--<h3 class="newsarticle__title--top">Tatort: Kiel</h3>-->
                                     <img src="media/aticle_wuestensohn.jpg" alt="Der Wüstensohn">
+                                    <h3 class="title-resp title-resp--boxed">Dreharbeiten zum BR-Tatort</h3>
                                 </div>
                             </header>
                             <h2 class="newsarticle__title--main"><a href="#">Der Wüstensohn</a></h2>
-                            <h3 class="newsarticle__title--top">Dreharbeiten zum BR-Tatort</h3>
                             <section>
                             <p>Tausend und eine Nacht mitten in München - In der letzten Woche haben unter der Regie von Rainer Kaufmann die Dreharbeiten zum TATORT "Der Wüstensohn" begonnen. Udo Wachtveitl und Miroslav Nemec geraten als Batic und Leitmayr mit dem Sohn des Emir von Kumar in Konflikt.</p>
                         </article>
@@ -81,7 +80,9 @@
                 </section>
                 <section class="blockbox">
                     <h2 class="blockbox__title">Folgen Rangliste</h2>
-                    <div class="blockbox__content blockbox__content--indented">
+                    <div class="blockbox__content">
+                    <h3 class="title-resp title-resp--boxed">Rangliste</h3>
+                    <div class="blockbox__content--indented">
                     <table class="datatable">
                         <thead>
                         <tr>
@@ -126,6 +127,7 @@
                     </table>
                     <a href="#">Zur aktuellen Rangliste &rarr;</a>
                     </div>
+                    </div>
                 </section>
             </aside>
         </div>
@@ -133,6 +135,7 @@
             <p>Copyright</p>
         </footer>
     </div>
+    <script src="components/respond/dest/respond.src.js"></script>
     <script src="components/fastclick/lib/fastclick.js"></script>
     <script src="components/jquery/dist/jquery.js"></script>
     <script src="js/main.js"></script>
