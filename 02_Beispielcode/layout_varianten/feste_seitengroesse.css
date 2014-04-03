@@ -27,12 +27,14 @@ nav {
   right: 0;
   bottom: 3em;
   width: 25%;
+  min-width: 5em;
   padding: 0.5em;
   background-color: #ddf;
 }
 section#inhalt {
   position: absolute;
   top: 5em;
+  left: 0;
   bottom: 3em;
   width: 75%;
   padding: 2em;
