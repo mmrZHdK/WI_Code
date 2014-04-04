@@ -233,6 +233,7 @@ nav a:visited {
 	height: 50%;
 	position: relative;
 	overflow: auto;
+	box-shadow: 0px -3px 10px rgba(0,0,0,0.34);
 }
 
 #topcontent .box img {
@@ -406,7 +407,9 @@ nav a:visited {
 	float: left;
 	width: 18%;
 	background-color: black;
-	border: 1px solid #141414;
+	border: 1px solid rgba(35,35,35,0.94);
+	padding-bottom: 3%;
+	padding-top: 5px;
 
 }
 
@@ -470,8 +473,94 @@ table {
 	float: left;
 	width: 18%;
 	background-color: black;
-	border: 1px solid #141414;
+	border: 1px solid #141414;	
 }
+
+#sidebar .zeugenbox img {
+	width: 90%;
+	margin:5%;	
+	margin-top: 0;
+	margin-bottom: 40px; 
+}
+
+#sidebar .zeugenbox #zeugen {
+	width: 95%;
+	padding: 5px;
+	background-color: #2d2d2d;
+	font-size: 19px;
+	font-weight: 400;
+	margin: 2%;
+
+
+}
+
+#sidebar .zeugenbox #interview {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 2%;
+	padding: 5px;
+
+}
+
+#sidebar .zeugenbox p {
+	font-size: 12px;
+	margin: 2%;
+	padding: 5px;
+	
+}
+
+#sidebar .zufallsbox {
+	width: 10%;
+	float: left;
+	width: 18%;
+	background-color: black;
+	border: 1px solid #141414;	
+}
+
+#sidebar .zufallsbox img {
+	width: 90%;
+	margin:5%;	
+	margin-top: 0; 
+}
+
+#sidebar .zeugenbox #zufall {
+	width: 95%;
+	padding: 5px;
+	background-color: #2d2d2d;
+	font-size: 19px;
+	font-weight: 400;
+	margin: 2%;
+
+
+}
+
+#sidebar .zufallsbox #zufall {
+	width: 95%;
+	padding: 5px;
+	background-color: #2d2d2d;
+	font-size: 19px;
+	font-weight: 400;
+	margin: 2%;
+
+
+}
+
+#sidebar .zufallsbox #interview {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 2%;
+	padding: 5px;
+
+}
+
+#sidebar .zufallsbox p {
+	font-size: 12px;
+	margin: 2%;
+	padding: 5px;
+	
+}
+
+
 /* Footer --------------------------------- */
 
 
