@@ -589,7 +589,6 @@ a:hover {
   .title-resp--boxed {
     display: block;
     margin: 0;
-    width: 100%;
     padding: 10px;
     background: #223b75;
     color: white; }
