@@ -23,14 +23,6 @@ $navbg: #fff;
 
 }
 
-.footer {
-	height: 120px;
-	background-color: $maincolor;
-	
-	ul {list-style: none; }
-	
-	a {text-decoration: none; color: white;}
-}
 
 .neuigkeiten {
 	
@@ -98,6 +90,15 @@ $navbg: #fff;
 	}
 
 	
+}
+
+.footer {
+	height: 120px;
+	background-color: $textgrey;
+	
+	ul {list-style: none; }
+	
+	a {text-decoration: none; color: white;}
 }
 
 
