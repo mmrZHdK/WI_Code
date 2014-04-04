@@ -14,7 +14,7 @@
 
     <title>Tatort-Fundus.de</title>
 
-    <!-- <link rel="stylesheet" type="text/css" data-remove="exclude" href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700'> -->
+    <link rel="stylesheet" type="text/css" data-remove="exclude" href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,300,700'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="components/modernizr/modernizr.js"></script>
@@ -26,40 +26,95 @@
 
 <body>
     <div id="wrapper">
-        <header class="layout__header">
-           <!--  <nav class="main-nav">
-                <ul>
-                    <li>Folgen</li>
-                    <li>Rangliste</li>
-                    <li>Lexikon</li>
-                    <li>Medien</li>
-                    <li>Forum</li>
-                </ul>
-            </nav> -->
-        </header>
+        <div class="layout__header-container">
+            <header class="layout__header">
+                <div class="logo--header">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li>Folgen</li>
+                        <li>Rangliste</li>
+                        <li>Lexikon</li>
+                        <li>Medien</li>
+                        <li>Forum</li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
         <div class="switcher">
             <div class="switcher--button">Zur Desktop Version wechseln</div>
         </div>
         <div class="layout__wrapper">
             <main class="layout__main">
-                <section class="blockbox">
-                    <h2 class="blockbox__title">Akutelle Folge</h2>
-                    <div class="blockbox__content">
-                        <article class="newsarticle">
-                            <header class="newsarticle__header">
-                                <div class="newsarticle__imgcontainer">
-                                    <img src="media/article_borowski_und_das_meer.jpg" alt="Borowski und das Meer">
+                <div class="layout__col-half">
+                    <section class="blockbox">
+                        <h2 class="blockbox__title">News</h2>
+                        <div class="blockbox__content">
+                            <article class="newsarticle newsarticle--small">
+                                <header>
+                                    <div class="newsarticle__imgcontainer">
+                                        <img src="media/article_kopfgeld.jpg" alt="Kopfgeld">
+                                    </div>
+                                </header>
+                                <h3 class="title-resp title-resp--boxed">Tatort: Mediathek</h3>
+                                <h2 class="newsarticle__title--main"><a href="#">Mediathek-Rekord: 1,7 Mio Zugriffe für „Kopfgeld“</a></h2>
+                                <section>
+                                <p>Die zweite Tatort-Folge mit Til Schweiger als Kommissar Nik Tschiller ist die im Jahr 2014 bisher am häufigsten abgerufene Tatort-Folge in der ARD-Mediathek.</p>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="blockbox">
+                        <div class="blockbox__content">
+                            <article class="newsarticle newsarticle--small">
+                                <header>
+                                    <div class="newsarticle__imgcontainer">
+                                        <img src="media/article_neuer_frankfurter_tatort.jpg" alt="Margarita Broich und Wolfram Koch">
+                                    </div>
+                                </header>
+                                <h3 class="title-resp title-resp--boxed">Dreharbeiten</h3>
+                                <h2 class="newsarticle__title--main"><a href="#">Der neue Frankfurter Tatort</a></h2>
+                                <section>
+                                <p>Unter dem Arbeitstitel "Liebe ist kälter als der Tod" dreht der Hessische Rundfunk den ersten Tatort mit Margarita Broich als Selma Jacobi und Wolfram Koch als Paul Brix. In ihrem ersten Fall wurde beinahe eine ganze Familie ausgelöscht.</p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+                <div class="layout__col-half">
+                    <section class="blockbox">
+                        <h2 class="blockbox__title">Aktuelle Folge</h2>
+                        <div class="blockbox__content">
+                            <article class="newsarticle">
+                                <header class="newsarticle__header">
+                                    <div class="newsarticle__imgcontainer">
+                                        <img src="media/article_borowski_und_das_meer.jpg" alt="Borowski und das Meer">
+                                    </div>
                                     <h3 class="title-resp title-resp--boxed">Tatort: Kiel</h3>
-                                </div>
-                                <h2 class="newsarticle__title--main"><a href="#">Borowski und das Meer</a></h2>
-                            </header>
-                            <section>
-                            <p>Auf einem nächtlichen Bootsausflug der Firma Marex wird der Jurist Jens Adam spektakulär erschossen. Seine Leiche verschwindet im Meer. Marex ist weltweit führend im Abbau von Rohstoffen in der Tiefsee, ihr Spezialgebiet sind Seltene Erden. Kommissar Borowski ahnt, dass die Lösung des Falls auf dem Grund der Ostsee zu finden ist.</p>
-                            <p><b>Erstsendung am Sonntag, 30. März 2014</b></p>
-                            </p>
-                        </article>
-                    </div>
-                </section>
+                                    <h2 class="newsarticle__title--main"><a href="#">Borowski und das Meer</a></h2>
+                                </header>
+                                <section>
+                                <p>Auf einem nächtlichen Bootsausflug der Firma Marex wird der Jurist Jens Adam spektakulär erschossen. Seine Leiche verschwindet im Meer. Marex ist weltweit führend im Abbau von Rohstoffen in der Tiefsee, ihr Spezialgebiet sind Seltene Erden. Kommissar Borowski ahnt, dass die Lösung des Falls auf dem Grund der Ostsee zu finden ist.</p>
+                                <p><b>Erstsendung am Sonntag, 30. März 2014</b></p>
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="blockbox">
+                        <h2 class="blockbox__title">Schon gelesen?</h2>
+                        <div class="blockbox__content">
+                            <article class="newsarticle newsarticle--small">
+                                <header>
+                                    <div class="newsarticle__imgcontainer">
+                                        <img src="media/article_hendrik_buehl.jpg" alt="Hendrik Buehl">
+                                    </div>
+                                </header>
+                                <h3 class="title-resp title-resp--boxed">Tatort-Literature</h3>
+                                <h2 class="newsarticle__title--main"><a href="#">Gesellschaftspolitische Themen in der Krimireihe</a></h2>
+                                <section>
+                                <p>Die erfolgreichste Krimireihe im deutschen Fernsehen unterhält nicht nur mit spannenden Geschichten, sondern informiert auch über gesellschaftspolitische Probleme und Konfliktlagen. Bei der Mörderjagd sehen sich die Kommissarinnen und Kommissare mit schlechten Arbeitsbedingungen in Discountern, Obdachlosigkeit oder Voyeurismus im Internet konfrontiert. Hendrik Buhl untersucht in seinem Buch das Phänomen gesellschaftspolitischer Themenim TATORT.</p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
             </main>
             <aside class="layout__sidebar">
                 <section class="blockbox">
@@ -68,10 +123,10 @@
                         <article class="newsarticle newsarticle--small">
                             <header>
                                 <div class="newsarticle__imgcontainer">
-                                    <img src="media/aticle_wuestensohn.jpg" alt="Der Wüstensohn">
-                                    <h3 class="title-resp title-resp--boxed">Dreharbeiten zum BR-Tatort</h3>
+                                    <img src="media/article_wuestensohn.jpg" alt="Der Wüstensohn">
                                 </div>
                             </header>
+                            <h3 class="title-resp title-resp--boxed">Dreharbeiten zum BR-Tatort</h3>
                             <h2 class="newsarticle__title--main"><a href="#">Der Wüstensohn</a></h2>
                             <section>
                             <p>Tausend und eine Nacht mitten in München - In der letzten Woche haben unter der Regie von Rainer Kaufmann die Dreharbeiten zum TATORT "Der Wüstensohn" begonnen. Udo Wachtveitl und Miroslav Nemec geraten als Batic und Leitmayr mit dem Sohn des Emir von Kumar in Konflikt.</p>
@@ -87,41 +142,42 @@
                         <thead>
                         <tr>
                             <th class="datatable__col--number-left">Nr.</th>
-                            <th class="datatable__col--number-left hide--tablet">Folgen</th>
+                            <th class="datatable__col--number-left datatable__hide--second">Folgen</th>
                             <th class="datatable__col--text-wide">Titel</th>
+                            <th class="datatable__col--text-narrow datatable__hide--first">Ermittler</th>
                             <th class="datatable__col--number">Schnitt</th>
                         </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="datatable__col--number-left">1</td><td class="datatable__col--number-left hide--tablet">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--number">8.59</td>
+                                <td class="datatable__col--number-left">1</td><td class="datatable__col--number-left datatable__hide--second">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.59</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">2</td><td class="datatable__col--number-left hide--tablet">784</td><td class="datatable__col--text-wide">Nie wieder Frei</td><td class="datatable__col--number">8.58</td>
+                                <td class="datatable__col--number-left">2</td><td class="datatable__col--number-left datatable__hide--second">784</td><td class="datatable__col--text-wide">Nie wieder Frei</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.58</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">3</td><td class="datatable__col--number-left hide--tablet">751</td><td class="datatable__col--text-wide">Weil sie böse sind</td><td class="datatable__col--number">8.56</td>
+                                <td class="datatable__col--number-left">3</td><td class="datatable__col--number-left datatable__hide--second">751</td><td class="datatable__col--text-wide">Weil sie böse sind</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.56</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">4</td><td class="datatable__col--number-left hide--tablet">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--number">8.59</td>
+                                <td class="datatable__col--number-left">4</td><td class="datatable__col--number-left datatable__hide--second">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.59</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">5</td><td class="datatable__col--number-left hide--tablet">784</td><td class="datatable__col--text-wide">Nie wieder Frei</td><td class="datatable__col--number">8.58</td>
+                                <td class="datatable__col--number-left">5</td><td class="datatable__col--number-left datatable__hide--second">784</td><td class="datatable__col--text-wide">Nie wieder Frei</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.58</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">6</td><td class="datatable__col--number-left hide--tablet">751</td><td class="datatable__col--text-wide">Weil sie böse sind</td><td class="datatable__col--number">8.56</td>
+                                <td class="datatable__col--number-left">6</td><td class="datatable__col--number-left datatable__hide--second">751</td><td class="datatable__col--text-wide">Weil sie böse sind</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.56</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">7</td><td class="datatable__col--number-left hide--tablet">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--number">8.59</td>
+                                <td class="datatable__col--number-left">7</td><td class="datatable__col--number-left datatable__hide--second">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.59</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">8</td><td class="datatable__col--number-left hide--tablet">784</td><td class="datatable__col--text-wide">Nie wieder Frei</td><td class="datatable__col--number">8.58</td>
+                                <td class="datatable__col--number-left">8</td><td class="datatable__col--number-left datatable__hide--second">784</td><td class="datatable__col--text-wide">Nie wieder Frei</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.58</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">9</td><td class="datatable__col--number-left hide--tablet">751</td><td class="datatable__col--text-wide">Weil sie böse sind</td><td class="datatable__col--number">8.56</td>
+                                <td class="datatable__col--number-left">9</td><td class="datatable__col--number-left datatable__hide--second">751</td><td class="datatable__col--text-wide">Weil sie böse sind</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.56</td>
                             </tr>
                             <tr>
-                                <td class="datatable__col--number-left">10</td><td class="datatable__col--number-left hide--tablet">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--number">8.59</td>
+                                <td class="datatable__col--number-left">10</td><td class="datatable__col--number-left datatable__hide--second">880</td><td class="datatable__col--text-wide">Gegen den Kopf</td><td class="datatable__col--text-narrow datatable__hide--first">Ermittler</td><td class="datatable__col--number">8.59</td>
                             </tr>
                         </tbody>
                     </table>
