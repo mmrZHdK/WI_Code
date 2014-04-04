@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title>Tatort-Fundus - Die private Website zum Krimi-Klassiker</title>
+		<meta charset="utf-8">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />		
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />		
+		<script type="text/javascript" src="javascript/jquery.min.js"></script>
+		<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=0">
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#button_nav').on('click', function(){
+					$('body').toggleClass('menu');
+				});
+				
+				var number = 1 + Math.floor(Math.random() * 10);
+				$('header.desktop').css('background-image', 'url(image/header-'+number+'.jpg)');
+				
+				var navpos = $('nav.main').offset();
+				console.log(navpos.top);
+				if (navpos.top > 10) {
+					
+					$(window).bind('scroll', function() {
+						if ($(window).scrollTop() > navpos.top) {
+							$('body').addClass('nav_fixed');
+						} else {
+							$('body').removeClass('nav_fixed');
+						}
+					});
+				}
+			});
+			
+		</script>
+				
+	</head>
+	<body>
+	
+		<header class="desktop" >
+			<div class="wrapper">
+			    <div class="logo">
+			    	<a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+			    </div>
+			    
+			    <nav class="tool">
+			    	<ul>
+			    		<li><a href="#">Fundus</a></li>
+			    		<li><a href="#">Produkte</a></li>
+			    		<li><a href="#">FAQ</a></li>
+			    		<li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <nav class="main">
+			    	<ul>
+			    		<li><a href="folgen.html">Folgen</a></li>
+			    		<li><a href="#">Ermittler</a></li>
+			    		<li><a href="#">Rangliste</a></li>
+			    		<li><a href="#">Berichte</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <section class="search">
+					<input type="text" placeholder="Suche" />
+				</section>
+			</div>
+		</header>
+		
+		<nav class="mobile">
+			<section class="search">
+				<input type="text" placeholder="Suche" />
+			</section>
+		    <ul>
+		    	<li><a href="index.html">Startseite</a></li>
+		    	<li><a href="folgen.html">Folgen</a></li>
+		    	<li><a href="#">Ermittler</a></li>
+		    	<li><a href="#">Rangliste</a></li>
+		    	<li><a href="#">Berichte</a></li>
+		    	<li><a href="#">Statistiken</a></li>
+		    	<li><a href="#">Fundus</a></li>
+		    	<li><a href="#">FAQ</a></li>
+		    	<li><a href="#">Produkte</a></li>
+		    </ul>
+		</nav>
+		
+		
+		<section class="responsive_wrapper">
+			<header class="mobile">
+				<div class="nav_link">
+					<button type="button" id="button_nav">
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					</button>
+				</div>
+				
+				<div class="logo">
+				    <a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+				</div>
+				
+			</header>
+			
+			<section id="content" class="home">
+				
+				<div class="box">
+					
+					<article class="table">
+						<h2>Wiederholungen</h2>
+						<table>
+							<tr class="past">
+								<td>02.04. 20:15</td>
+								<td><a href="folge-detail.html">Feuertaufe</a></td>
+								<td>MDR</td>
+							</tr>
+							<tr class="past">
+								<td>02.04. 20:15</td>
+								<td><a href="folge-detail.html">Hundeleben</a></td>
+								<td>ARD</td>
+							</tr>
+							<tr class="past">
+								<td>04.04. 20:15</td>
+								<td><a href="folge-detail.html">Höllenfahrt</a></td>
+								<td>1FEST</td>
+							</tr>
+							<tr class="first_future future">
+								<td>06.04. 22:15</td>
+								<td><a href="folge-detail.html">Höllenfahrt</a></td>
+								<td>ARD</td>
+							</tr>
+							<tr class="future">
+								<td>06.04. 23:35</td>
+								<td><a href="folge-detail.html">Hundeleben</a></td>
+								<td>ARD</td>
+							</tr>
+						</table>
+						
+						<p class="right"><a href="#">Alle Wiederholungen ❯</a></p>
+					</article>
+					
+					<article class="table">
+						<h2>Erstsendungen</h2>
+						<table>
+							<tr class="future">
+								<td>13.04.2014</td>
+								<td><a href="folge-detail.html">Der Hammer</a></td>
+								<td>WDR</td>
+							</tr>
+							<tr class="future">
+								<td>21.04.2014</td>
+								<td><a href="folge-detail.html">Zwischen zwei Welten</a></td>
+								<td>SRF</td>
+							</tr>
+							<tr class="future">
+								<td>27.04.2014</td>
+								<td><a href="folge-detail.html">Kaltstart</a></td>
+								<td>NDR</td>
+							</tr>
+							<tr class="future">
+								<td>04.05.2014</td>
+								<td><a href="folge-detail.html">Am Ende des Flurs</a></td>
+								<td>BR</td>
+							</tr>
+						</table>
+						
+						<p class="right"><a href="#">Alle Erstsendungen ❯</a></p>
+					</article>
+					
+					<article class="werbung">
+						<div class="content">
+							<h3>Werbung</h3>
+							<img src="image/werbung-1.jpg" alt="werbung-1">
+							<img src="image/werbung-2.jpg" alt="werbung-2">
+						</div>
+					</article>
+					
+					<article class="table">
+						<h2>Zufallsstatistik</h2>
+						<p>Kürzester Abstand zwischen Erstsendung und Wiederholung</p>
+						<table>
+							<tr>
+								<th>Folge</th>
+								<th>Tage</th>
+							</tr>
+							<tr>
+								<td><a href="folge-detail.html">Auf ewig Dein</a></td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td><a href="folge-detail.html">Großer schwarzer Vogel</a></td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td><a href="folge-detail.html">Kopfgeld</a></td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td><a href="folge-detail.html">Adams Alptraum</a></td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td><a href="folge-detail.html">Bienzle und das Doppelspiel</a></td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td><a href="folge-detail.html">Franziska</a></td>
+								<td>5</td>
+							</tr>
+							
+							
+						</table>
+						
+						<p class="right"><a href="#">Alle Statistiken ❯</a></p>
+					</article>
+					
+					<article>
+						<h2>Unterstützen Sie uns!</h2>
+						<p>Die Macher des privaten Hobbyprojekts tatort-fundus.de freuen sich über jede Unterstützung und Anerkennung.</p>
+						<p><a href="#"><img src="image/paypal-donate.png" alt="paypal-donate"></a></p>
+					</article>
+					
+				</div>
+				
+				<div class="box">
+					
+					<h1>Schon gelesen?</h1>
+					<h3>Interessante Artikel aus unserem grossen Fundus</h3>
+					
+					<article>
+						<h3>Phänomen und Kult</h3>
+						<h2><a href="#">Mischung aus Vertrautem und Neuem macht Krimis zum Kult</a></h2>
+						<img src="image/kult.jpg" alt="kult" />
+						<p >Sonntag, 20.15 Uhr, erstes Fernsehprogramm: Tatort-Zeit. Regelmäßig verfolgen mehr als 20 Prozent der deutschen Zuschauer um diese Zeit die Ermittlungsarbeit der Kommissare der erfolgreichsten Krimireihe des Landes. Der Tatort ist längst Kult, es gibt sogar Fan-Clubs.</p>
+						
+						<p><a href="#">Mehr ❯</a></p>
+						<p class="date">Erstellt: 01.05.07<br />Aktualisiert: 02.12.13</p>
+					</article>
+					
+					<article class="werbung">
+						<div class="content">
+							<h3>Werbung</h3>
+							<img src="image/werbung-1.jpg" alt="werbung-1">
+							<img src="image/werbung-2.jpg" alt="werbung-2">
+						</div>
+					</article>
+					
+					<article>
+						
+						<h3>Essay von Jürgen Heimlich</h3>
+						<h2><a href="#">Der TATORT aus Sicht eines Wieners</a></h2>
+						<img src="image/tatort-wien.jpg" alt="tatort-wien" />
+						<p>Als Wiener wuchs ich mitten in einer Welt skurriler Fernseh-Figuren auf. Schon in sehr jungen Jahren waren mir Kottan, "Mundl" und auch Marek ein Begriff.</p>
+						<p><a href="#">Mehr ❯</a></p>
+						<p class="date">Erstellt: 22.05.09</p>
+					</article>
+					
+					<article>
+						<h3>Dorothee Schön über den TATORT</h3>
+						<h2><a href="#">Das Geheimnis der alten Dame</a></h2>
+						<img src="image/dorothee.png" alt="Dorothee Schön" />
+						<p>Sie gehört zu den versierten und vielfältigsten TATORT-Autoren: Seit ihrem Debüt mit «Heilig Blut» (1996) hat Dorothee Schön mehr als ein Dutzend Drehbücher für diese Institution des deutschen Fernsehens geschrieben. Wir haben Dorothee Schön gebeten, sich Gedanken über das erfolgreichsten Format des deutschen Fernsehens zu machen.</p>
+						<p><a href="#">Mehr ❯</a></p>
+						<p class="date">Erstellt: 02.08.12</p>
+					</article>
+					
+				</div>
+				
+				
+				<div class="box">
+					<h1>Aktuell</h1>
+					<h3>News, Berichte und immer die aktuelle Folge</h3>
+					
+					<article class="episode">
+						<h3>Aktuelle Folge</h3>
+						<h2><a href="folge-detail.html">Borowski und das Meer</a></h2>
+						
+						<img src="image/tatort-kiel.jpg" alt="tatort-kiel" />
+						<p class="teaser">906. Folge vom letzten Sonntag.</p>
+						<p><a href="folge-detail.html">Mehr ❯</a></p>
+					</article>
+					
+					<article>
+						<h3>Dreharbeiten zum BR-TATORT</h3>
+						<h2><a href="#">Der Wüstensohn</a></h2>
+						
+						<img src="image/muenchner-kommissare.jpg" alt="muenchner-kommissare" />
+						<p>Tausend und eine Nacht mitten in München - In der letzten Woche haben unter der Regie von Rainer Kaufmann die Dreharbeiten zum TATORT "Der Wüstensohn" begonnen. Udo Wachtveitl und Miroslav Nemec geraten als Batic und Leitmayr mit dem Sohn des Emir von Kumar in Konflikt.</p>
+						
+						<p><a href="#">Mehr ❯</a></p>
+						<p class="date">Erstellt: 02.04.14</p>
+						
+					</article>
+					
+					<article>
+						<h3>Hamburg-TATORT</h3>
+						<h2><a href="#">Mediathek-Rekord: 1,7 Mio Zugriffe für „Kopfgeld“</a></h2>
+						<img src="image/hamburg.jpg" alt="tatort-hamburg" />
+						<p>Die zweite TATORT-Folge mit Til Schweiger als Kommissar Nik Tschiller ist die im Jahr 2014 bisher am häufigsten abgerufene TATORT-Folge in der ARD-Mediathek.</p>
+						<p><a href="#">Mehr ❯</a></p>
+						<p class="date">Erstellt: 25.03.14</p>
+					</article>
+					
+					<article>
+						<h3>DREHARBEITEN</h3>
+						<h2><a href="#">Der neue Frankfurter TATORT</a></h2>
+						<img src="image/tatort-frankfurt.jpg" alt="tatort-frankfurt" />
+						<p>Unter dem Arbeitstitel "Liebe ist kälter als der Tod" dreht der Hessische Rundfunk den ersten TATORT mit Margarita Broich als Selma Jacobi und Wolfram Koch als Paul Brix. In ihrem ersten Fall wurde beinahe eine ganze Familie ausgelöscht.</p>
+						<p><a href="#">Mehr ❯</a></p>
+						<p class="date">Erstellt: 22.03.14</p>
+					</article>
+				</div>
+				
+				
+			
+			</section>
+				
+				
+				
+							
+			
+			
+			
+			<footer>
+			    <div class="wrapper">
+			    	<div class="box">
+			    		<h2>Copyright</h2>
+					    <p>© tatort-fundus 1997 - 2014.</p>
+						<p>Alle Rechte vorbehalten.</p>
+						<p>Vervielfältigung der Texte, BIlder und Daten nur mit Genehmigung des tatort-fundus.</p>
+			    	</div>
+			    	<div class="box">
+			    		<h2>Weitere Seiten</h2>
+					    <ul>
+					        <li><a href="#">Sitemap</a></li>
+					        <li><a href="#">Impressum</a></li>
+					        <li><a href="#">Disclaimer</a></li>
+					        <li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+					        <li><a href="#">Fundus</a></li>
+					        <li><a href="#">FAQ</a></li>
+					        <li><a href="#">Produkte</a></li>
+					    </ul>
+				    	
+			    	</div>
+			    	<div class="box">
+			    		<h2>Kontakt</h2>
+					    <p>Alle inhaltlichen Fragen richten Sie bitte an <a href="mailto:frage@tatort-media.de">frage@tatort-media.de</a>.</p><p>Bei technischen Problemen bitte Nachricht an <a href="mailto:webmaster@tatort-media.de">webmaster@tatort-media.de</a>.</p><p>Diese Website nutzt das Content-Management-System TYPO3.</p>
+			    	</div>
+			    </div>
+			</footer>
+			
+			<div class="clear"></div>
+			
+		</section>
+			
+	</body>
+</html>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title>Tatort-Fundus - Folge 905</title>
+		<meta charset="utf-8">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />		
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />		
+		<script type="text/javascript" src="javascript/jquery.min.js"></script>
+		<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=0">
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#button_nav').on('click', function(){
+					$('body').toggleClass('menu');
+				});
+				
+				var number = 1 + Math.floor(Math.random() * 10);
+				$('header.desktop').css('background-image', 'url(image/header-'+number+'.jpg)');
+				
+				var navpos = $('nav.main').offset();
+				console.log(navpos.top);
+				if (navpos.top > 10) {
+					
+					$(window).bind('scroll', function() {
+						if ($(window).scrollTop() > navpos.top) {
+							$('body').addClass('nav_fixed');
+						} else {
+							$('body').removeClass('nav_fixed');
+						}
+					});
+				}
+			});
+			
+		</script>
+				
+	</head>
+	<body>
+	
+		<header class="desktop" >
+			<div class="wrapper">
+			    <div class="logo">
+			    	<a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+			    </div>
+			    
+			    <nav class="tool">
+			    	<ul>
+			    		<li><a href="#">Fundus</a></li>
+			    		<li><a href="#">Produkte</a></li>
+			    		<li><a href="#">FAQ</a></li>
+			    		<li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <nav class="main">
+			    	<ul>
+			    		<li class="current"><a href="folgen.html">Folgen</a></li>
+			    		<li><a href="#">Ermittler</a></li>
+			    		<li><a href="#">Rangliste</a></li>
+			    		<li><a href="#">Berichte</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <section class="search">
+					<input type="text" placeholder="Suche" />
+				</section>
+			</div>
+		</header>
+		
+		<nav class="mobile">
+			<section class="search">
+				<input type="text" placeholder="Suche" />
+			</section>
+		    <ul>
+		    	<li><a href="index.html">Startseite</a></li>
+		    	<li class="current">
+		    		<a href="folgen.html">Folgen</a>
+					<ul>
+						<li><a href="alle-folgen.html">Alle Folgen</a></li>
+						<li><a href="index.html">Wiederholungen</a></li>
+						<li><a href="index.html">Erstsendungen</a></li>
+						<li><a href="index.html">Drehspiegel</a></li>
+					</ul>
+		    	</li>
+		    	<li><a href="#">Ermittler</a></li>
+		    	<li><a href="#">Rangliste</a></li>
+		    	<li><a href="#">Berichte</a></li>
+		    	<li><a href="#">Statistiken</a></li>
+		    	<li><a href="#">Fundus</a></li>
+		    	<li><a href="#">FAQ</a></li>
+		    	<li><a href="#">Produkte</a></li>
+		    </ul>
+		</nav>
+		
+		
+		<section class="responsive_wrapper">
+			<header class="mobile">
+				<div class="nav_link">
+					<button type="button" id="button_nav">
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					</button>
+				</div>
+				
+				<div class="logo">
+				    <a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+				</div>
+				
+			</header>
+			
+				
+			<section id="content" class="content_page">
+				
+				<nav class="sub">
+					<ul>
+						<li><a href="alle-folgen.html">Alle Folgen</a></li>
+						<li><a href="folgen.html">Wiederholungen</a></li>
+						<li><a href="folgen.html">Erstsendungen</a></li>
+						<li><a href="folgen.html">Drehspiegel</a></li>
+					</ul>
+				</nav>
+				
+				<div class="content_right">
+				
+					<div class="folge box box2">
+						<h1>Der Fall Reinhardt</h1>
+						<h3>905. Folge</h3>
+						<img class="folge" src="image/tatort-koeln.jpg" />
+						<h2>Inhalt</h2>
+						<p>Schon wieder Feueralarm in Köln: Eine Serie von Brandanschlägen hält die Stadt in Atem, jetzt gibt es die ersten Todesopfer. In einem vollkommen ausgebrannten Bungalow kamen drei Kinder ums Leben. Max Ballauf und Freddy Schenk brauchen einen schnellen Fahndungserfolg, denn die Abstände zwischen den Brandanschlägen werden immer kürzer. Am Tatort treffen die Kommissare die unter Schock stehende Karen Reinhardt. Sie hat eine leichte Rauchvergiftung, sonst keine Verletzungen. Dass ihre Kinder den Brand nicht überlebt haben, will sie nicht wahrhaben. Und von ihrem Mann Gerald Reinhardt fehlt jede Spur. Nachbarn sagen, er sei bei der Firma Cologne Airtech als Luftfahrtingenieur beschäftigt. Doch die Ermittlungen ergeben: Hier wurde ihm bereits vor zwei Jahren gekündigt ...</p>
+						<h2>Besetzung</h2>
+						<p>Hauptkommissar Max Ballauf - Klaus J. Behrendt<br/>Hauptkommissar Freddy Schenk - Dietmar Bär<br/>Dr. Joseph Roth [Gerichtsmediziner] - Joe Bausch<br/>Tobias Reisser [Aushilfsassistent] - Patrick Abozen<br/>Vater - Ben Becker<br/>Mutter - Susanne Wolff<br/>N.N - Peter Benedict<br/>Uwe Schatz - Roland Silbernagl<br/>N.N - Katja Heinrich<br/>N.N - Karyn von Ostholt-Haas<br/>Ralph Meins - Christian Furrer</p>
+						
+						<h2>Stab</h2>
+						<p>2nd Unit Kamera - Ergun Cankaya<br/>Außenrequisite - Fred Gutberg<br/>Beleuchter/Beleuchtungstechnik - Dirk Henkel<br/>Beleuchter/Beleuchtungstechnik - Henning Battenfeld<br/>Continuity - Anne Lensing<br/>Garderobe - Gesa Koepe<br/>Innenrequisite - Jan Feil<br/>Kamera - Holly Fink<br/>Kameraassistenz - Teja Hendrik Schwede<br/>Kameraassistenz - David Schaufert<br/>Kamerabühne - Arne Schriever<br/>Kostüme/Kostümbild - Lore Tesch<br/>Maske/Maskenbildner - Ursel Frank<br/>Motivaufnahmeleitung - Lilian Scharnhorst<br/>Oberbeleuchter - Jürgen Tomadini<br/>Produktionsleitung - Sabine Schild<br/>Produzent - Sonja Goslicki<br/>Regieassistenz - Torsten Junker<br/>Stunts - Jürgen Klein<br/>Szenenbild - Frank Polosek<br/>Szenenbildassistenz - Susann Hinz<br/>Ton/Filmtonassistenz - Sebastian Leukert</p>
+						
+						
+						
+					</div>
+					
+					<div class="box box2">
+						
+						<article>
+							<h1>23. Rang</h1>
+							<h3>Ø 5.89894 Punkte</h3>
+							<p><a href="folge_detail.html">Jetzt Berwerten!</a></p>
+						</article>
+						
+						<article class="table">
+							<h2>Daten zur Folge</h2>
+							<table class="data">
+								<tr>
+									<td>Sendelänge</td>
+									<td>88:30</td>
+								</tr>
+								<tr>
+									<td>Drehbuch</td>
+									<td>Dagmar Gabler</td>
+								</tr>
+								<tr>
+									<td>Erstsendung</td>
+									<td>23.3.2014</td>
+								</tr>
+								<tr>
+									<td>Sender</td>
+									<td>WDR</td>
+								</tr>
+								<tr>
+									<td>Regie</td>
+									<td>Torsten C. Fischer</td>
+								</tr>
+								<tr>
+									<td>Bildformat</td>
+									<td>16:9</td>
+								</tr>
+								<tr>
+									<td>Redaktion</td>
+									<td>Frank Tönsmann</td>
+								</tr>
+								<tr>
+									<td>Drehort</td>
+									<td>Köln und Umgebung</td>
+								</tr>
+							</table>
+						</article>
+						
+						<article class="table">
+							<h2>Wiederholungen</h2>
+							<table>
+								<tr class="past">
+									<td>23.05.14 20:15</td>
+									<td>MDR</td>
+								</tr>
+								<tr class="past">
+									<td>02.04.14 20:15</td>
+									<td>ARD</td>
+								</tr>
+								<tr class="past">
+									<td>04.04.14 20:15</td>
+									<td>1FEST</td>
+								</tr>
+							</table>
+							
+						</article>
+						
+						
+						
+										
+					</div>
+				</div>
+			</section>
+				
+				
+				
+							
+			
+			
+			
+			<footer>
+			    <div class="wrapper">
+			    	<div class="box">
+			    		<h2>Copyright</h2>
+					    <p>© tatort-fundus 1997 - 2014.</p>
+						<p>Alle Rechte vorbehalten.</p>
+						<p>Vervielfältigung der Texte, BIlder und Daten nur mit Genehmigung des tatort-fundus.</p>
+			    	</div>
+			    	<div class="box">
+			    		<h2>Weitere Seiten</h2>
+					    <ul>
+					        <li><a href="#">Sitemap</a></li>
+					        <li><a href="#">Impressum</a></li>
+					        <li><a href="#">Disclaimer</a></li>
+					        <li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+					        <li><a href="#">Fundus</a></li>
+					        <li><a href="#">FAQ</a></li>
+					        <li><a href="#">Produkte</a></li>					    </ul>
+				    	
+			    	</div>
+			    	<div class="box">
+			    		<h2>Kontakt</h2>
+					    <p>Alle inhaltlichen Fragen richten Sie bitte an <a href="mailto:frage@tatort-media.de">frage@tatort-media.de</a>.</p><p>Bei technischen Problemen bitte Nachricht an <a href="mailto:webmaster@tatort-media.de">webmaster@tatort-media.de</a>.</p><p>Diese Website nutzt das Content-Management-System TYPO3.</p>
+			    	</div>
+			    </div>
+			</footer>
+			
+			<div class="clear"></div>
+			
+		</section>
+			
+	</body>
+</html>

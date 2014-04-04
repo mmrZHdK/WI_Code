@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title>Tatort-Fundus - Alle Folgen</title>
+		<meta charset="utf-8">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />		
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />		
+		<script type="text/javascript" src="javascript/jquery.min.js"></script>
+		<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=0">
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#button_nav').on('click', function(){
+					$('body').toggleClass('menu');
+				});
+				
+				var number = 1 + Math.floor(Math.random() * 10);
+				$('header.desktop').css('background-image', 'url(image/header-'+number+'.jpg)');
+				
+				var navpos = $('nav.main').offset();
+				console.log(navpos.top);
+				if (navpos.top > 10) {
+					
+					$(window).bind('scroll', function() {
+						if ($(window).scrollTop() > navpos.top) {
+							$('body').addClass('nav_fixed');
+						} else {
+							$('body').removeClass('nav_fixed');
+						}
+					});
+				}
+			});
+			
+		</script>
+				
+	</head>
+	<body>
+	
+		<header class="desktop" >
+			<div class="wrapper">
+			    <div class="logo">
+			    	<a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+			    </div>
+			    
+			    <nav class="tool">
+			    	<ul>
+			    		<li><a href="#">Fundus</a></li>
+			    		<li><a href="#">Produkte</a></li>
+			    		<li><a href="#">FAQ</a></li>
+			    		<li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <nav class="main">
+			    	<ul>
+			    		<li class="current"><a href="folgen.html">Folgen</a></li>
+			    		<li><a href="#">Ermittler</a></li>
+			    		<li><a href="#">Rangliste</a></li>
+			    		<li><a href="#">Berichte</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <section class="search">
+					<input type="text" placeholder="Suche" />
+				</section>
+			</div>
+		</header>
+		
+		<nav class="mobile">
+			<section class="search">
+				<input type="text" placeholder="Suche" />
+			</section>
+		    <ul>
+		    	<li><a href="index.html">Startseite</a></li>
+		    	<li class="active">
+		    		<a href="folgen.html">Folgen</a>
+					<ul>
+						<li class="current"><a href="alle-folgen.html">Alle Folgen</a></li>
+						<li><a href="index.html">Wiederholungen</a></li>
+						<li><a href="index.html">Erstsendungen</a></li>
+						<li><a href="index.html">Drehspiegel</a></li>
+					</ul>
+		    	</li>
+		    	<li><a href="#">Ermittler</a></li>
+		    	<li><a href="#">Rangliste</a></li>
+		    	<li><a href="#">Berichte</a></li>
+		    	<li><a href="#">Statistiken</a></li>
+		    	<li><a href="#">Fundus</a></li>
+		    	<li><a href="#">FAQ</a></li>
+		    	<li><a href="#">Produkte</a></li>
+		    </ul>
+		</nav>
+		
+		
+		<section class="responsive_wrapper">
+			<header class="mobile">
+				<div class="nav_link">
+					<button type="button" id="button_nav">
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					</button>
+				</div>
+				
+				<div class="logo">
+				    <a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+				</div>
+				
+			</header>
+			
+				
+			<section id="content" class="content_page">
+				
+				<nav class="sub">
+					<ul>
+						<li class="current"><a href="alle-folgen.html">Alle Folgen</a></li>
+						<li><a href="folgen.html">Wiederholungen</a></li>
+						<li><a href="folgen.html">Erstsendungen</a></li>
+						<li><a href="folgen.html">Drehspiegel</a></li>
+					</ul>
+				</nav>
+				
+				<div class="box-single">
+					<h1>Alle Folgen</h1>
+					<h3>Durchstöbern Sie alle 906 Folgen</h3>
+					
+					<section class="filter">
+						<select>
+							<option>Jahr</option>
+							<option>ab 2010</option>
+							<option>2000 bis 2009</option>
+							<option>1990 bis 1999</option>
+							<option>1980 bis 1989</option>
+							<option>1970 bis 1979</option>
+						</select>
+						
+						<select>
+							<option>Standort</option>
+							<option>Berlin</option>
+							<option>Bremen</option>
+							<option>Dortmund</option>
+							<option>Erfurt</option>
+							<option>Frankfurt</option>
+							<option>Hamburg</option>
+							<option>Hannover</option>
+							<option>Kiel</option>
+							<option>Köln</option>
+							<option>Konstanz</option>
+							<option>Leipzig</option>
+							<option>Ludwigshafen</option>
+							<option>Luzern</option>
+							<option>München</option>
+							<option>Münster</option>
+							<option>Nürnberg</option>
+							<option>Saarbrücken</option>
+							<option>Stuttgart</option>
+							<option>Weimar</option>
+							<option>Wien</option>
+							<option>Wiesbaden</option>
+						</select>
+						
+						<select>
+							<option>Bewertung</option>
+							<option>0-2</option>
+							<option>2-4</option>
+							<option>4-6</option>
+							<option>6-8</option>
+							<option>8-10</option>
+						</select>
+					</section>
+					
+					<table class="folgen">
+						<tr>
+							<th>Nr. <img src="image/pfeile.png" /></th>
+							<th>Name <img src="image/pfeile.png" /></th>
+							<th>Ermittler <img src="image/pfeile.png" /></th>
+							<th>ES-Datum <img src="image/pfeile.png" /></th>
+							<th>Bewertung <img src="image/pfeile.png" /></th>
+						</tr>
+						<tr>
+							<td>906</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>905</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Saalfeld</a></td>
+							<td>16.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>904</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>903</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>902</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>901</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>900</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>899</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>898</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>897</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>901</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>900</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>899</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>898</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>897</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>901</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>900</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>899</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>898</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>897</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>901</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>900</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>899</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>898</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>897</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>901</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>900</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>899</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>898</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>897</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>901</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>900</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>899</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>898</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>897</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>901</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="folge-detail.html">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>900</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="folge-detail.html">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>899</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>898</td>
+							<td><a href="folge-detail.html">Frühstück für immer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						<tr>
+							<td>897</td>
+							<td><a href="folge-detail.html">Borowski und das Meer</a></td>
+							<td><a href="#">Borowski</a></td>
+							<td>30.03.2014</td>
+							<td>5.87697</td>
+						</tr>
+						
+					</table>
+					
+					
+				</div>
+			
+			</section>
+				
+				
+				
+							
+			
+			
+			
+			<footer>
+			    <div class="wrapper">
+			    	<div class="box">
+			    		<h2>Copyright</h2>
+					    <p>© tatort-fundus 1997 - 2014.</p>
+						<p>Alle Rechte vorbehalten.</p>
+						<p>Vervielfältigung der Texte, BIlder und Daten nur mit Genehmigung des tatort-fundus.</p>
+			    	</div>
+			    	<div class="box">
+			    		<h2>Weitere Seiten</h2>
+					    <ul>
+					        <li><a href="#">Sitemap</a></li>
+					        <li><a href="#">Impressum</a></li>
+					        <li><a href="#">Disclaimer</a></li>
+					        <li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+					        <li><a href="#">Fundus</a></li>
+					        <li><a href="#">FAQ</a></li>
+					        <li><a href="#">Produkte</a></li>					    </ul>
+				    	
+			    	</div>
+			    	<div class="box">
+			    		<h2>Kontakt</h2>
+					    <p>Alle inhaltlichen Fragen richten Sie bitte an <a href="mailto:frage@tatort-media.de">frage@tatort-media.de</a>.</p><p>Bei technischen Problemen bitte Nachricht an <a href="mailto:webmaster@tatort-media.de">webmaster@tatort-media.de</a>.</p><p>Diese Website nutzt das Content-Management-System TYPO3.</p>
+			    	</div>
+			    </div>
+			</footer>
+			
+			<div class="clear"></div>
+			
+		</section>
+			
+	</body>
+</html>

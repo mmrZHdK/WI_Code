@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title>Tatort-Fundus - Folgen</title>
+		<meta charset="utf-8">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />		
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />		
+		<script type="text/javascript" src="javascript/jquery.min.js"></script>
+		<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=0">
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#button_nav').on('click', function(){
+					$('body').toggleClass('menu');
+				});
+				
+				var number = 1 + Math.floor(Math.random() * 10);
+				$('header.desktop').css('background-image', 'url(image/header-'+number+'.jpg)');
+				
+				var navpos = $('nav.main').offset();
+				console.log(navpos.top);
+				if (navpos.top > 10) {
+					
+					$(window).bind('scroll', function() {
+						if ($(window).scrollTop() > navpos.top) {
+							$('body').addClass('nav_fixed');
+						} else {
+							$('body').removeClass('nav_fixed');
+						}
+					});
+				}
+			});
+			
+		</script>
+				
+	</head>
+	<body>
+	
+		<header class="desktop" >
+			<div class="wrapper">
+			    <div class="logo">
+			    	<a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+			    </div>
+			    
+			    <nav class="tool">
+			    	<ul>
+			    		<li><a href="#">Fundus</a></li>
+			    		<li><a href="#">Produkte</a></li>
+			    		<li><a href="#">FAQ</a></li>
+			    		<li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <nav class="main">
+			    	<ul>
+			    		<li class="current"><a href="folgen.html">Folgen</a></li>
+			    		<li><a href="#">Ermittler</a></li>
+			    		<li><a href="#">Rangliste</a></li>
+			    		<li><a href="#">Berichte</a></li>
+			    	</ul>
+			    </nav>
+			    
+			    <section class="search">
+					<input type="text" placeholder="Suche" />
+				</section>
+			</div>
+		</header>
+		
+		<nav class="mobile">
+			<section class="search">
+				<input type="text" placeholder="Suche" />
+			</section>
+		    <ul>
+		    	<li><a href="index.html">Startseite</a></li>
+		    	<li class="current">
+		    		<a href="folgen.html">Folgen</a>
+					<ul>
+						<li><a href="alle-folgen.html">Alle Folgen</a></li>
+						<li><a href="index.html">Wiederholungen</a></li>
+						<li><a href="index.html">Erstsendungen</a></li>
+						<li><a href="index.html">Drehspiegel</a></li>
+					</ul>
+		    	</li>
+		    	<li><a href="#">Ermittler</a></li>
+		    	<li><a href="#">Rangliste</a></li>
+		    	<li><a href="#">Berichte</a></li>
+		    	<li><a href="#">Statistiken</a></li>
+		    	<li><a href="#">Fundus</a></li>
+		    	<li><a href="#">FAQ</a></li>
+		    	<li><a href="#">Produkte</a></li>
+		    </ul>
+		</nav>
+		
+		
+		<section class="responsive_wrapper">
+			<header class="mobile">
+				<div class="nav_link">
+					<button type="button" id="button_nav">
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					    <div class="icon_row"></div>
+					</button>
+				</div>
+				
+				<div class="logo">
+				    <a href="index.html"><img src="image/tatort-fundus-logo.png" alt="" /></a>
+				</div>
+				
+			</header>
+			
+				
+			<section id="content" class="content_page">
+				
+				<nav class="sub">
+					<ul>
+						<li><a href="alle-folgen.html">Alle Folgen</a></li>
+						<li><a href="#">Wiederholungen</a></li>
+						<li><a href="#">Erstsendungen</a></li>
+						<li><a href="#">Drehspiegel</a></li>
+					</ul>
+				</nav>
+				
+				<div class="content_right">
+					<div class="box">
+						<h1>Rückschau</h1>
+						<h3>Die letzten Folgen</h3>
+						
+						<article>
+							<h3>TATORT: KÖLN • Vom 23.03.14</h3>
+							<h2><a href="folge-detail.html">Der Fall Reinhardt</a></h2>
+							<img src="image/reinhardt.jpg" alt="muenchner-kommissare" />
+							<p class="teaser">Schon wieder Feueralarm in Köln: Eine Serie von Brandanschlägen hält die Stadt in Atem, jetzt gibt es die ersten Todesopfer. In einem vollkommen ausgebrannten Bungalow kamen drei Kinder ums Leben. Max Ballauf und Freddy Schenk brauchen einen schnellen Fahndungserfolg, denn die Abstände zwischen den Brandanschlägen werden immer kürzer.</p>
+							<p><a href="folge-detail.html">Mehr ❯</a></p>
+						</article>
+						
+						<article>
+							<h3>TATORT: LEIPZIG • Vom 16.03.14</h3>
+							<h2><a href="folge-detail.html">Frühstück für immer</a></h2>
+							<img src="image/Fruehstueck_fuer_immer_small.jpg" alt="muenchner-kommissare" />
+							<p class="teaser">Schon wieder Feueralarm in Köln: Eine Serie von Brandanschlägen hält die Stadt in Atem, jetzt gibt es die ersten Todesopfer. In einem vollkommen ausgebrannten Bungalow kamen drei Kinder ums Leben. Max Ballauf und Freddy Schenk brauchen einen schnellen Fahndungserfolg, denn die Abstände zwischen den Brandanschlägen werden immer kürzer.</p>
+							<p><a href="folge-detail.html">Mehr ❯</a></p>
+						</article>
+						
+						<article>
+							<h3>TATORT: HAMBURG • Vom 09.03.14</h3>
+							<h2><a href="folge-detail.html">Kopfgeld</a></h2>
+							<img src="image/hamburg.jpg" alt="" />
+							<p class="teaser">Hauptkommissar Nick Tschiller und sein Kollege Yalcin Gümer setzen den kurdischen Astan-Clan unter Druck, der in einem blutigen Kampf gegen den Bürsum-Clan die Macht in der Hamburger Unterwelt zu übernehmen droht. Obwohl Firat Astan, gegen den das ungleiche Paar schon im ersten Fall ermittelte, im Gefängnis sitzt, setzt er ein Kopfgeld auf den Tod von Nick aus. </p>
+							<p><a href="folge-detail.html">Mehr ❯</a></p>
+						</article>
+						
+					</div>
+					
+					<div class="box">
+						<h1>Vorschau</h1>
+						<h3>Die nächsten Folgen</h3>
+						
+						<article>
+							<h3>TATORT: Münster • Am 13.04.14</h3>
+							<h2><a href="folge-detail.html">Der Hammer</a></h2>
+							<img src="image/hammer.jpg" alt="der hammer" />
+							<p class="teaser">Der Bauunternehmer Wolfgang Öhrie wird tot auf einer Straße gefunden. Er stürzte aus einem Fenster und landete direkt vor einem Bus.</p>
+							<p><a href="folge-detail.html">Mehr ❯</a></p>
+						</article>
+						
+						<article class="werbung">
+						    <div class="content">
+						    	<h3>Werbung</h3>
+						    	<img src="image/werbung-1.jpg" alt="werbung-1">
+						    	<img src="image/werbung-2.jpg" alt="werbung-2">
+						    </div>
+						</article>
+						
+						<article>
+							<h3>TATORT: Luzern • Am 21.04.13</h3>
+							<h2><a href="folge-detail.html">Zwischen zwei Welten</a></h2>
+							<img src="image/zwischen_zwei_welten.jpg" alt="" />
+							<p>Die dreifache Mutter Donna Müller wird von einer Brücke gestossen und ist sofort tot. Die beiden Luzerner Ermittler Reto Flückiger und Lit Ritschard nehmen die Ermittlungen auf.</p>
+							<p><a href="folge-detail.html">Mehr ❯</a></p>
+						</article>
+						
+					</div>
+				</div>
+			</section>
+				
+				
+				
+							
+			
+			
+			
+			<footer>
+			    <div class="wrapper">
+			    	<div class="box">
+			    		<h2>Copyright</h2>
+					    <p>© tatort-fundus 1997 - 2014.</p>
+						<p>Alle Rechte vorbehalten.</p>
+						<p>Vervielfältigung der Texte, BIlder und Daten nur mit Genehmigung des tatort-fundus.</p>
+			    	</div>
+			    	<div class="box">
+			    		<h2>Weitere Seiten</h2>
+					    <ul>
+					        <li><a href="#">Sitemap</a></li>
+					        <li><a href="#">Impressum</a></li>
+					        <li><a href="#">Disclaimer</a></li>
+					        <li><a href="http://www.tatort-forum.de" target="_blank">Forum</a></li>
+					        <li><a href="#">Fundus</a></li>
+					        <li><a href="#">FAQ</a></li>
+					        <li><a href="#">Produkte</a></li>					    </ul>
+				    	
+			    	</div>
+			    	<div class="box">
+			    		<h2>Kontakt</h2>
+					    <p>Alle inhaltlichen Fragen richten Sie bitte an <a href="mailto:frage@tatort-media.de">frage@tatort-media.de</a>.</p><p>Bei technischen Problemen bitte Nachricht an <a href="mailto:webmaster@tatort-media.de">webmaster@tatort-media.de</a>.</p><p>Diese Website nutzt das Content-Management-System TYPO3.</p>
+			    	</div>
+			    </div>
+			</footer>
+			
+			<div class="clear"></div>
+			
+		</section>
+			
+	</body>
+</html>
