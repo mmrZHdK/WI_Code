@@ -53,7 +53,8 @@ a:hover {
     }
 }
 
-.layout {
+$layout: '.layout';
+#{$layout} {
     &__header {
         @include constr-container;
 
@@ -65,9 +66,6 @@ a:hover {
             background-position: center center;
             margin-bottom: 15px;
         }
-    }
-    &__wrapper{
-        @include constr-container;
     }
     &__main {
         @include span-columns(8);
@@ -99,6 +97,42 @@ a:hover {
             @include span-columns(4);
         }
     }
+    &__wrapper{
+        @include constr-container;
+    }
+    &__wrapper--detail{
+        @include constr-container;
+        &  #{$layout}__main {
+            @include span-columns(9);
+            @include media($mobile-s) {
+                @include span-columns(12);
+            }
+            @include media($mobile-m-only) {
+                @include span-columns(12);
+            }
+            @include media($mobile-l-only) {
+                @include span-columns(8);
+            }
+            @include media($tablet-desktop-only) {
+                @include span-columns(8);
+            }
+        }
+        #{$layout}__sidebar {
+            @include span-columns(3);
+            @include media($mobile-s) {
+                @include span-columns(12);
+            }
+            @include media($mobile-m-only) {
+                @include span-columns(12);
+            }
+            @include media($mobile-l-only) {
+                @include span-columns(4);
+            }
+            @include media($tablet-desktop-only) {
+                @include span-columns(4);
+            }
+        }
+    }
     &__footer {
         @include constr-container;
     }
@@ -109,22 +143,23 @@ a:hover {
     &__title {
         margin: 0 0 3px 0;
         padding: 0;
-        @include x-rem(font-size, 1.15);
+        @include x-rem(font-size, 1.125);
         font-weight: bold;
         color: $grey-darker;
     }
     &__content {
         background: $grey-lighter;
         &--indented {
-            padding:5px 10px;
+            margin:5px 10px;
+            overflow:hidden;
         }
         margin-bottom:20px;
     }
 }
 
-$newsarticle: '.newsarticle';
-#{$newsarticle} {
-    $n: $newsarticle;
+$newsarticle-box: '.newsarticle-box';
+#{$newsarticle-box} {
+    $n: $newsarticle-box;
     position: relative;
     padding-bottom:10px;
     &__header {
@@ -135,7 +170,7 @@ $newsarticle: '.newsarticle';
             @include x-rem(font-size, 1.5);
             line-height:1.3;
             font-weight: bold;
-            margin:10px 10px 6px;
+            margin:8px 10px 6px;
             padding:0;
             a {
                 color: $blue;
@@ -150,6 +185,16 @@ $newsarticle: '.newsarticle';
     }
     p {
         margin:0 10px;
+    }
+    &[max-width^="240px"] {
+        @include x-rem(font-size, 0.875);
+        #{$n}{
+            &__title {
+                &--main {
+                    @include x-rem(font-size, 1.125);
+                }
+            }
+        }
     }
     &[max-width^="300px"] {
         #{$n}{
@@ -176,14 +221,73 @@ $newsarticle: '.newsarticle';
         }
     }
 }
+$newsarticle: '.newsarticle';
+#{$newsarticle} {
+    $n: $newsarticle;
+    position: relative;
+    padding-bottom:10px;
+    &__header {
+        position:relative;
+    }
+    &__title {
+        &--main {
+            @include x-rem(font-size, 1.5);
+            line-height:1.3;
+            font-weight: bold;
+            margin:6px 0 8px;
+            padding:0;
+            &, a {
+                color: $blue;
+                font-weight: bold;
+            }
+        }
+        &--top {
+            @include x-rem(font-size, 1.2);
+            line-height:1;
+            padding:10px 0 0 0;
+            margin:0;
+        }
+    }
+    p {
+        margin:10px 0 15px;
+    }
+    &[max-width^="240px"] {
+        @include x-rem(font-size, 0.875);
+        #{$n}{
+            &__title {
+                &--main {
+                    @include x-rem(font-size, 1.125);
+                }
+            }
+        }
+    }
+    &[max-width^="300px"] {
+        #{$n}{
+            &__title {
+                &--main {
+                    @include x-rem(font-size, 1.2);
+                }
+            }
+        }
+    }
+    &[max-width^="440px"] {
+        #{$n} {
+            &__title {
+                &--main {
+                    @include x-rem(font-size, 1.3);
+                }
+            }
+        }
+    }
+}
 
 $title-resp: '.title-resp';
 #{$title-resp} {
     $t: $title-resp;
 
-    @include x-rem(font-size, 1.3);
+    @include x-rem(font-size, 1.2);
     line-height:1;
-    padding:10px;
+    padding:10px 0;
 
     &--boxed {
         display:block;
@@ -194,13 +298,21 @@ $title-resp: '.title-resp';
         color: $text-color-inverted;
     }
 
-    &[max-width^="400px"] {
-        @include x-rem(font-size, 1.125);
-        padding: 4px 10px 6px;
+    &[max-width^="300px"] {
+        #{$t} {
+            &--boxed {
+                @include x-rem(font-size, 1.025);
+                padding: 4px 10px 6px;
+            }
+        }
     }
-    &[max-width^="800px"] {
-        @include x-rem(font-size, 1.2);
-        padding: 6px 10px 8px;
+    &[max-width^="500px"] {
+        #{$t} {
+            &--boxed {
+                @include x-rem(font-size, 1.1125);
+                padding: 6px 10px 8px;
+            }
+        }
     }
 }
 
@@ -208,11 +320,15 @@ $datatable: '.datatable';
 #{$datatable} {
     $d: $datatable;
     width:100%;
+    max-width:100%;
     border-spacing: 0 3px;
     line-height:1.3;
     padding: 0px;
     border-collapse: separate;
     margin-bottom: 5px;
+    a {
+        color: $blue;
+    }
     th {
         padding-right:10px;
         font-weight: 400;
@@ -230,12 +346,12 @@ $datatable: '.datatable';
             text-align: left;
         }
         &--text-wide {
-            width:100%;
             text-align: left;
         }
     }
 
-    &[max-width^="300px"] {
+    &[max-width^="400px"] {
+        @include x-rem(font-size, 0.875);
         #{$d}__hide {
             &--first {
                 display:none;
@@ -245,12 +361,26 @@ $datatable: '.datatable';
             }
         }
     }
-    &[max-width^="400px"] {
+    &[max-width^="450px"] {
         #{$d}__hide {
             &--first {
                 display:none;
             }
         }
+    }
+}
+
+$breadcrumbs: '.breadcrumbs';
+#{$breadcrumbs} {
+    line-height: 1.6875; // 16 * 1.6875 = 27 <-> 16 * 1.125 * 1.6 = 27 -- alignment with detail sidebar
+    margin-bottom: 3px;
+    a:first-child {
+        font-weight: bold;
+        color:$blue;
+    }
+    a:nth-child(2) {
+        font-weight: bold;
+        color:$grey-darker;
     }
 }
 

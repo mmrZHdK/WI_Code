@@ -32,8 +32,8 @@ module.exports = function(grunt) {
                 options: {
                     livereload: true
                 },
-                files: ['html/index.html', 'html/scss/**', 'html/media/**', 'html/js/**'],
-                tasks: ['jshint', 'sass:dev']
+                files: ['html/tpl/**', 'html/scss/**', 'html/media/**', 'html/js/**'],
+                tasks: ['jshint', 'htmlbuild', 'sass:dev']
             }
         },
         jshint: {
@@ -56,13 +56,36 @@ module.exports = function(grunt) {
                     ext: '.css'
                 }]
             }
+        },
+        htmlbuild: {
+            options: {
+                beautify: true,
+                relative: true,
+                sections: {
+                    layout: {
+                        header: 'html/tpl/header.tpl.html',
+                        footer: 'html/tpl/footer.tpl.html',
+                        sidebar: 'html/tpl/sidebar.tpl.html',
+                        'main-content': 'html/tpl/main-content.tpl.html',
+                        'detail-content': 'html/tpl/detail-content.tpl.html'
+                    }
+                }
+            },
+            index: {
+                src: 'html/tpl/index.tpl.html',
+                dest: 'html/index.html'
+            },
+            detail: {
+                src: 'html/tpl/detail.tpl.html',
+                dest: 'html/detail.html'
+            }
         }
     });
 
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('server', ['server:local']);
-    grunt.registerTask('server:local', ['jshint', 'sass:dev', 'connect:server', 'watch:main']);
+    grunt.registerTask('server:local', ['jshint', 'sass:dev', 'htmlbuild', 'connect:server', 'watch:main']);
 
     grunt.registerTask('default', ['server']);
 

@@ -3,10 +3,9 @@
 
 body {
     color:$text-color-primary;
-    font: 300 100%/1.4 'Open Sans', sans-serif;
+    font: 300 100%/1.5 'Open Sans', sans-serif;
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
     -webkit-font-smoothing: antialiased;
-    word-wrap: break-word;
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
         -ms-hyphens: auto;
@@ -27,6 +26,9 @@ ul,ol,dd {
 a {
     color: $text-color-primary;
     text-decoration: none;
+}
+a.highlight {
+    color: $blue;
 }
 
 p {
@@ -55,7 +57,7 @@ h1 {
 
 h2 {
     @include x-rem(font-size, 1.5);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 h3 {
