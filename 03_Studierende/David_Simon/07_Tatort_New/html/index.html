@@ -15,6 +15,7 @@
     <title>Tatort-Fundus.de</title>
 
     <link rel="stylesheet" type="text/css" data-remove="exclude" href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,300,700'>
+    <link rel="stylesheet" type="text/css" href='components/font-awesome/css/font-awesome.css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="components/modernizr/modernizr.js"></script>
@@ -31,12 +32,17 @@
                 <div class="logo--header">
                 </div>
                 <nav class="main-nav">
-                    <ul>
+                    <span class="main-nav__toggle">
+                        <label for="main-nav__toggle-checkbox" class="fa fa-bars"></label>
+                    </span>
+                    <input type="checkbox" id="main-nav__toggle-checkbox" />
+                    <ul class="main-nav__menu">
                         <li>Folgen</li>
                         <li>Rangliste</li>
                         <li>Lexikon</li>
                         <li>Medien</li>
                         <li>Forum</li>
+                        <li>Suche</li>
                     </ul>
                 </nav>
             </header>
@@ -81,24 +87,6 @@
                 </div>
                 <div class="layout__col-half">
                     <section class="blockbox">
-                        <h2 class="blockbox__title">Aktuelle Folge</h2>
-                        <div class="blockbox__content">
-                            <article class="newsarticle">
-                                <header class="newsarticle__header">
-                                    <div class="newsarticle__imgcontainer">
-                                        <img src="media/article_borowski_und_das_meer.jpg" alt="Borowski und das Meer">
-                                    </div>
-                                    <h3 class="title-resp title-resp--boxed">Tatort: Kiel</h3>
-                                    <h2 class="newsarticle__title--main"><a href="#">Borowski und das Meer</a></h2>
-                                </header>
-                                <section>
-                                <p>Auf einem nächtlichen Bootsausflug der Firma Marex wird der Jurist Jens Adam spektakulär erschossen. Seine Leiche verschwindet im Meer. Marex ist weltweit führend im Abbau von Rohstoffen in der Tiefsee, ihr Spezialgebiet sind Seltene Erden. Kommissar Borowski ahnt, dass die Lösung des Falls auf dem Grund der Ostsee zu finden ist.</p>
-                                <p><b>Erstsendung am Sonntag, 30. März 2014</b></p>
-                                </p>
-                            </article>
-                        </div>
-                    </section>
-                    <section class="blockbox">
                         <h2 class="blockbox__title">Schon gelesen?</h2>
                         <div class="blockbox__content">
                             <article class="newsarticle newsarticle--small">
@@ -107,7 +95,7 @@
                                         <img src="media/article_hendrik_buehl.jpg" alt="Hendrik Buehl">
                                     </div>
                                 </header>
-                                <h3 class="title-resp title-resp--boxed">Tatort-Literature</h3>
+                                <h3 class="title-resp title-resp--boxed">Tatort-Literatur</h3>
                                 <h2 class="newsarticle__title--main"><a href="#">Gesellschaftspolitische Themen in der Krimireihe</a></h2>
                                 <section>
                                 <p>Die erfolgreichste Krimireihe im deutschen Fernsehen unterhält nicht nur mit spannenden Geschichten, sondern informiert auch über gesellschaftspolitische Probleme und Konfliktlagen. Bei der Mörderjagd sehen sich die Kommissarinnen und Kommissare mit schlechten Arbeitsbedingungen in Discountern, Obdachlosigkeit oder Voyeurismus im Internet konfrontiert. Hendrik Buhl untersucht in seinem Buch das Phänomen gesellschaftspolitischer Themenim TATORT.</p>
@@ -130,6 +118,24 @@
                             <h2 class="newsarticle__title--main"><a href="#">Der Wüstensohn</a></h2>
                             <section>
                             <p>Tausend und eine Nacht mitten in München - In der letzten Woche haben unter der Regie von Rainer Kaufmann die Dreharbeiten zum TATORT "Der Wüstensohn" begonnen. Udo Wachtveitl und Miroslav Nemec geraten als Batic und Leitmayr mit dem Sohn des Emir von Kumar in Konflikt.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="blockbox">
+                    <h2 class="blockbox__title">Aktuelle Folge</h2>
+                    <div class="blockbox__content">
+                        <article class="newsarticle">
+                            <header class="newsarticle__header">
+                                <div class="newsarticle__imgcontainer">
+                                    <img src="media/article_borowski_und_das_meer.jpg" alt="Borowski und das Meer">
+                                </div>
+                                <h3 class="title-resp title-resp--boxed">Tatort: Kiel</h3>
+                                <h2 class="newsarticle__title--main"><a href="#">Borowski und das Meer</a></h2>
+                            </header>
+                            <section>
+                            <p>Auf einem nächtlichen Bootsausflug der Firma Marex wird der Jurist Jens Adam spektakulär erschossen. Seine Leiche verschwindet im Meer. Marex ist weltweit führend im Abbau von Rohstoffen in der Tiefsee, ihr Spezialgebiet sind Seltene Erden. Kommissar Borowski ahnt, dass die Lösung des Falls auf dem Grund der Ostsee zu finden ist.</p>
+                            <p><b>Erstsendung am Sonntag, 30. März 2014</b></p>
+                            </p>
                         </article>
                     </div>
                 </section>

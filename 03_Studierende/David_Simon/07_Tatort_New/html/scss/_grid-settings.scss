@@ -18,7 +18,7 @@ $desktop: new-breakpoint(max-width $w-desktop 12);
 $full: new-breakpoint(max-width $w-full 12);
 
 
-$mobile-m-l-only: new-breakpoint(min-width $w-mobile-m+1px max-width $w-mobile-l 12);
+$mobile-m-l-only: new-breakpoint(min-width $w-mobile-s+1px max-width $w-mobile-l 12);
 $tablet-desktop-only: new-breakpoint(min-width $w-mobile-l+1px max-width $w-desktop 12);
 
 $tablet-and-up: new-breakpoint(min-width $w-mobile-l+1px 12);
