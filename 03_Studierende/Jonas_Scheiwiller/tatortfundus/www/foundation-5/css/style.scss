@@ -3,6 +3,13 @@ $subtlecolor: #f3f4f4;
 $secondcolor: #5b6269;
 $textgrey: #282828;
 $navbg: #fff;
+$sidegreydark: #f0f0f0;
+$sidegreylight: #f7f7f7;
+$sidetext: #363632;
+$grey: #cbcbcb;
+$footerclr: #323558;
+$footer2nd: #53556d;
+$highlightclr: #ff6412;
 
 * {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -14,14 +21,74 @@ $navbg: #fff;
 
 
 .head {
-
+	padding-right: 0;
 }
 
 
 
-.sidebararticle {
-	background-color: #e3e3e3;
-	padding: 10px;
+.sidebar {
+	background-color: $sidegreylight;
+	padding: 0;
+	font-family: "Proxima Nova", Helvetica, Verdana, sans-serif; 
+	font-weight: 100;
+	font-size: 0.95em;
+	.h3bg {
+		background-color: $sidegreydark;
+		display: block;
+		h3 {
+			margin: 0;
+			padding: 8px 12px 5px 30px;
+			font-size: 1.1em; font-weight: 200; 
+			font-family: "Proxima Nova", Helvetica, Verdana, sans-serif;
+			color: $maincolor;
+		}
+	}
+	ul { 
+		padding: 12px 30px 12px 30px; margin: 0; 
+		li.vorbei p a, li.vorbei p {
+			color: $grey;
+		}
+	}
+	ul li {
+		list-style: none;
+		border-bottom: solid 1px $grey;
+		padding: 8px 0 3px 0;
+		
+		p, p a {
+			font-weight: 800;
+			margin: 0;
+			line-height: 1em;
+			color: $textgrey;
+		}
+		p a:hover { color: $maincolor; }
+		.sendedatum, .sender {
+			font-weight: normal;
+			display: inline;
+			font-size: 0.8em;
+		}
+		.sendedatum { width: 45px; display: inline-block; }
+	}
+	.wiederholungen {
+		.allesend { padding: 8px 30px 8px 30px; margin-bottom: 0;}
+	}
+	
+	.rating {
+	  unicode-bidi: bidi-override;
+	  direction: rtl;
+	  .filled { color: $grey; }
+	}
+	.rating > span {
+	  display: inline-block;
+	  position: relative;
+	  width: 1.1em;
+	  color: $textgrey;
+	}
+	.rating > span:hover:before,
+	.rating > span:hover ~ span:before {
+	   content: "\2605";
+	   position: absolute;
+	   color: $textgrey;
+	}
 }
 
 
@@ -94,12 +161,47 @@ $navbg: #fff;
 }
 
 .footer {
-	height: 120px;
-	background-color: $textgrey;
+	.footerbg {
+		background-color: $footerclr;
+		padding: 50px;	
+	}
+
+	p {
+		color: white;
+		line-height: 1.6em;
+	}
+	h6 { 
+		color: white; 
+		font-family: "Proxima Nova", Helvetica, Verdana, sans-serif; 
+		font-weight: 800; font-size: 1.3em;
+		text-transform: uppercase;
+	}
+	ul {list-style: none; margin: 0; }
+	a {text-decoration: none; color: white; }
+	a[href^="mailto:"] { color: $highlightclr; }
+	a:hover { color: $highlightclr; }
 	
-	ul {list-style: none; }
-	
-	a {text-decoration: none; color: white;}
+	.service, .links {
+		border-right: solid 1px $footer2nd;
+		@media only screen and (max-width: 64em) { 
+			border-right: none;
+			border-bottom: solid 1px $footer2nd;
+			padding: 20px 0 20px 0;
+			height: auto;
+		}
+		padding-left: 30px;
+		height: 260px;
+		
+	}
+	.spenden {
+		border-right: none;
+		
+		@media only screen and (max-width: 64em) { 
+			padding: 20px 0 20px 0;
+			height: auto;
+		}
+	}
+
 }
 
 
