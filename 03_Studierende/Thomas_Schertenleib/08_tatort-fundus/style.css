@@ -285,6 +285,8 @@ nav a:visited {
 
 
 
+
+
 #bottomcontent .box p {
 	font-size: 12px;
 	margin-top: 1px;
@@ -394,32 +396,82 @@ nav a:visited {
 
 /* Sidebar ------------------------------- */
 
-#sidebar .box {
-	width: 300px;
-	height: 200px;
-	float: right;
-	width: 25%;
-	border: 1px solid #7f7f7f;
+#sidebar {
+	padding-top: 30px;
+	color:white;
+	}
 
+#sidebar .box {
+	width: 10%;
+	float: left;
+	width: 18%;
+	background-color: black;
+	border: 1px solid #141414;
 
 }
 
-td {
-	font-size: 16px;
+#sidebar #erstebox {
+	width: 10%;
+	float: left;
+	width: 18%;
+	background-color: black;
+	border: 1px solid #141414;
+	border-top-right-radius: 15px;
+
+}
+
+table {
+	border-collapse: collapse;
+	margin:2%;
+	width: 95%;
+}
+
+
+
+
+
+#sendungen h2 {
+	margin:2%;	
+	font-size: 15px;
+	font-weight:400;
 }
 
 
 .hell {
-	background-color: #f1f1f1;	
+	background-color: #3c3c3c;
+	font-size: 10px;
+	margin-left: 10px;
 }
+
 
 .dunkel {
-	background-color: #c0c0c0;
+	background-color: #262626;
+	font-size: 10px;
+	margin-left: 10px;
+
 }
 
+.titel1 {
+	background-color: #262626;
+	font-size: 10px;
+	margin-left: 10px;
+	width: 50%;
+}
 
+.titel2 {
+	background-color: #3c3c3c;
+	font-size: 10px;
+	margin-left: 10px;
+	width: 50%;
+}
 
-
+#sidebar .zeugenbox {
+	width: 10%;
+	float: left;
+	width: 18%;
+	background-color: black;
+	border: 1px solid #141414;
+}
 /* Footer --------------------------------- */
 
 
