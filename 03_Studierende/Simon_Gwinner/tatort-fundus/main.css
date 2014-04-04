@@ -1,0 +1,368 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px dashed green;
+}
+
+overline{
+	color:aqua;
+	
+}
+
+
+body{
+	margin:0;
+	width:100%;
+	height:auto;
+	font-family:helvetica,arial;
+	font-size:15px;
+
+}
+
+header{
+	width: 100%;
+	height:100px;
+	padding-top: 5px;
+	padding-left: 5px;
+	background-color:#101010;	
+}
+
+div.logo{
+	width:200px;
+	height:80px;
+	
+}
+
+div.menu{
+		float:right;
+		text-align: right;
+		color:#ffffff;
+		padding-top:50px;
+		padding-right:250px;
+		word-spacing:4em;
+		font-weight:800;
+
+}
+
+li{
+	list-style-type:none;
+	display:block;
+    float:right;
+	margin-left:8em;
+
+    }
+    
+li.forum{	
+}
+
+li.lexikon{
+	
+}
+
+p.neuste{
+	clear:left;
+	margin-bottom:0px;
+	margin-left:20px;
+	width:50%;
+	float:left;
+	
+	font-weight:800;
+	
+}
+
+p.rangliste{
+	clear:left;
+	margin-bottom:0px;
+	margin-right:20px;
+	float:right;
+	width:35%;
+	
+	font-weight:800;
+}
+
+p.news{
+	clear:left;
+	margin-bottom:0px;
+	margin-left:20px;
+	width:50%;
+	
+	font-weight:800;
+}
+
+p.tvguide{
+	clear:both;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-right:20px;
+	float:right;
+	width:35%;
+	
+	font-weight:800;
+}
+
+p.lexikon{
+	clear:left;
+	margin-bottom:25px;
+	margin-left:0px;
+	margin-top:0;
+	width:50%;
+	
+	font-weight:800;
+}
+
+div.featuredarticle{
+	float:left;
+	margin-left:20px;
+	margin-top:25px;
+	width:59%;
+	height:680px;
+	margin-bottom:20px;
+}
+
+article.img{
+	float:left;
+}
+
+div.img-text{
+	float:left;
+	position:relative;
+	top:-110px;
+	margin-bottom:0px;
+	width:750px;
+	height:110px;
+	background-color:rgba(180,170,170,0.45)
+}
+
+div.two{
+	float:left;
+	width:300px;
+	height:300px;
+	background-color:#8d7171;
+}
+
+div.three{
+	float:left;
+	margin-top:25px;
+	margin-left:0 px;
+	width:300px;
+	height:140px;
+	background-color:#8d7171;
+}
+
+div.four{
+	float:left;
+	margin-top:157px;
+	width:300px;
+	height:140px;
+	background-color:#8d7171;
+}
+
+
+div.featurednews{
+	clear:left;
+	width:97%;
+	height: 510px;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+div.small1{
+	margin-left:325px;
+	width:210px;
+	height:105px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small2{
+	margin-left:235px;
+	width:210px;
+	height:105px;
+	float:left;
+	background-color:#06ff87;
+	}
+
+div.small3{
+	margin-top:90px;
+	width:210px;
+	height:105px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small4{
+	margin-left:235px;
+	width:210px;
+	height:105px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small5{
+	clear:left;
+	margin-top:95px;
+	width:210px;
+	height:110px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small6{
+	margin-left:235px;
+	width:210px;
+	height:110px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small7{
+	margin-left:235px;
+	width:210px;
+	height:105px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small8{
+	margin-left:235px;
+	width:210px;
+	height:105px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small9{
+	margin-left:235px;
+	width:210px;
+	height:110px;
+	float:left;
+	background-color:#06ff87;
+	}
+	
+div.small10{
+	margin-left:235px;
+	float:left;
+	width:210px;
+	height:110px;
+	background-color:#06ff87;
+	}
+	
+div.square{
+	clear:left;
+	width:300px;
+	height:300px;
+	float:left;
+	background-color:#06ff87;
+}
+
+div.long{
+	clear:left;
+	margin-top:25px;
+	width:300px;
+	height:180px;
+	float:left;
+	background-color:#06ff87;
+}
+
+
+div.featuredlexikon{	
+	clear:left;
+	width:98%;
+	height: 500px;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+div.square{
+	clear:left;
+	width:295px;
+	height:300px;
+	float:left;
+	background-color:#f8c40d;
+}
+
+div.small1{
+	width:295px;
+	margin-left:20px;
+	height:140px;
+	float:left;
+	background-color:#f8c40d;
+}
+
+div.small2{
+	clear:left;
+	width:295px;
+	margin-top:157px;
+	height:140px;
+	float:left;
+	background-color:#f8c40d;
+}
+
+div.textonly1{
+	width:295px;
+	margin-left:20px;
+	height:140px;
+	float:left;
+	background-color:#f8c40d;
+}
+
+div.textonly2{
+	width:295px;
+	margin-top:157px;
+	height:140px;
+	float:left;
+	background-color:#f8c40d;	
+}
+
+div.textonly3{
+	width:295px;
+	margin-left:20px;
+	height:140px;
+	float:left;
+	background-color:#f8c40d;	
+}
+
+div.textonly4{
+	width:295px;
+	margin-top:157px;
+	height:140px;
+	float:left;
+	background-color:#f8c40d;	
+}
+
+-rechts----------------
+
+  #featuredrangliste {
+  		clear:both;
+ 		width:100%;
+		padding:1.2em;
+	    background-color:#f9929;
+}
+
+  #two {
+	  clear:both;
+	    width:445px;
+	    margin-right:20px;
+	    margin-top:20px;
+		float:right;
+		height:680px;
+	    background-color:#f92929;
+      }
+	
+
+  #tv {
+  		clear:both;
+	    width:445px;
+	    margin-right:20px;
+	    margin-top:20px;
+		height:170px;
+		float:right;
+	    background-color:#2559dc;
+      }
+
+
+-forum-----------------
+
+div.featuredforum{
+	
+}

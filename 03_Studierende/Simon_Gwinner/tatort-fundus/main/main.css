@@ -1,0 +1,316 @@
+
+
+h1{}
+h2{	font-family:Helvetica,Arial;
+	font-size:30px;
+	margin-top:0px;
+	margin-bottom:5px;
+	font-weight:800;
+}
+h3{font-family:Helvetica,Arial;
+	font-size:25px;
+	margin-top:0px;
+	margin-bottom:5px;
+	font-weight:800;}
+h4{}
+h5{
+	font-family:Helvetica,Arial;
+	font-size:12px;
+	font-weight:300;
+	margin-top:5px; 
+	margin-bottom:5px;
+}
+h6{	font-family:Helvetica,Arial;
+	font-size:12px;
+	margin-top:0px;
+	margin-bottom:5px;
+	font-weight:400;}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px dashed green;
+}
+
+p{
+font-family:helvetica,arial;
+font-size:16px;
+font-weight:600;
+}
+
+
+
+li{
+	list-style-type:none;
+	display:block;
+    float:right;
+	margin-left:8em;
+
+    }
+
+
+body{
+	width:100%;
+	height:auto;
+	margin-left:0px;
+	margin-top:0px;
+	margin-right:0px;
+}
+
+header{
+	width: 100%;
+	height:100px;
+	padding-top: 5px;
+	padding-left: 5px;
+	background-color:#101010;	
+}
+
+div.menu{
+		float:right;
+		text-align: right;
+		font-family: helvetica,arial;
+		font-size:16px;
+		color:#ffffff;
+		padding-top:50px;
+		padding-right:250px;
+		word-spacing:4em;
+		font-weight:800;
+
+}
+
+div.logo{
+	float:left;
+	width:200px;
+	height:80px;	
+}
+
+
+div.folgen{
+	float:left;
+	width:59%;
+	padding-left:20px;
+	margin-top:25px;
+	margin-bottom:20px;
+}
+
+div.news{
+	clear:left;
+	width:100%;
+	padding-left:20px;
+	margin-top:25px;
+}
+
+div.lexikon{
+	clear:left;
+	width:100%;
+	height: 300px;
+	padding-left:20px;
+	margin-top:25px;
+}
+
+div.tvguide{
+	float:right;
+	width:39%;
+	height:200px;
+	padding-right:20px;
+	margin-top:25px;
+}
+
+div.rangliste{
+	clear:right;
+	float:right;
+	width:39%;
+	height:735px;
+	padding-right:20px;
+	margin-top:25px;
+}
+
+--FOLGEN-----------------
+
+p.folgen{
+	font-size:15px;
+	font-weight:600;
+	margin-top:0px;
+}
+
+div.featuredfolge{
+	float:left;
+	width:100%;
+	height:50%;
+}
+
+div.folgeimg{
+	float:left;
+	width:100%;
+	height:100%;
+}
+
+div.folgeimgkasten{
+	float:left;
+	width:100%;
+	height:40%;
+	margin-top:26%;
+	background-color:rgba(0,0,0,0.5);
+	padding-left:20px;	
+	padding-top:10px;
+}
+
+
+
+div.folgesmall{
+	float:left;
+	width:100%;
+	height:20%;
+	margin-top:25px;
+	
+}
+
+div.folgesmallimg{
+	float:left;
+	width:40%;
+	height:100%;
+}
+
+div.folgesmalltext{
+	float:right;
+	width:60%;
+	height:100%;
+	padding-left:20px;
+	padding-top:5px;
+}
+
+--TVGUIDE-----------------
+
+p.tv-guide{
+	font-size:15px;
+	font-weight:600;
+	margin-top:0px;
+	padding-top:0px;
+}
+
+div.guide{
+	float:right;
+	width:100%;
+	height:75%;
+}
+
+div.neu{
+	float:left;
+	width:20%;
+	height:50%;
+}
+
+div.wiederholung{
+	clear:left;
+	float:left;
+	width:20%;
+	height:50%;
+}
+
+div.guidetext{
+	float:right;
+	width:80%;
+	height:100%;
+}
+
+--RANGLISTE-----------------
+
+p.rangliste{
+	font-size:15px;
+	font-weight:600;
+	margin-top:0px;
+	padding-top:0px;
+}
+
+div.ranglisteblock{
+	float:right;
+	width:100%;
+	height:80%;
+}
+
+div.ranglistemoar{
+	clear:right;
+	float:right;
+	width:100%;
+	height:13%;
+}
+
+--NEWS---------------------
+
+p.news{
+	font-size:15px;
+	font-weight:600;
+	margin-top:0px;
+	padding-top:0px;
+}
+
+div.featurednews{
+	width:58%;
+	height:42%;
+}
+
+div.featuredimg{
+	float:left;
+	width:40%;
+	height:100%;
+}
+
+div.featuredtext{
+	float:right;
+	width:60%;
+	height:100%;
+}
+
+div.newsmoar{
+	float:left;
+	width:100%;
+	height:40%;
+	padding-right:20px;
+	padding-top:25px;
+}
+
+div.newssmall{
+	float:left;
+	width:23.4%;
+	height:50%;	
+}
+
+div.newstext{
+	float:left;
+	width:23.4%;
+	height:50%;		
+}
+
+--LEXIKON-----------------
+
+p.lexikon{
+	font-size:15px;
+	font-weight:600;
+	margin-top:0px;
+	padding-top:0px;
+}
+
+div.lexikoncontent{
+	width:100%;
+	height:85%;
+}
+
+div.featuredlexikon{
+	float:left;
+	width:23%;
+	height:100%
+}
+
+div.lexikonimg{
+	float:left;
+	width:23%;
+	height:45%;
+	overflow:hidden;
+}
+
+div.lexikononlytext{
+	float:left;
+	width:23%;
+	height:45%;
+	
+}
