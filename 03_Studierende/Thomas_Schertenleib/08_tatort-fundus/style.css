@@ -70,7 +70,7 @@ header {
 }
 
 #logo {
-	width: 275px;
+	width: 298px;
 	padding-left: 0%;
 	padding-top: 0;
 	float: left;
@@ -85,7 +85,7 @@ header {
 	margin-right: auto;
 	width: 1200px;
 	height: 140px;
-	padding: 20px;
+	padding-top: 10px;
 	
 	}
 
@@ -98,13 +98,14 @@ header {
 
 #navigation	{
 	float:left;
-	margin-left: 160px;
+	margin-left: 7.4%;
 	padding-bottom: 0px;
-	padding-top: 70px;
-	padding-right: 100px;
+	padding-top: 6.8%;
+
 	display:block;
 	padding-left: auto;
 	padding-right: auto;
+	
 
 }
 
@@ -121,6 +122,7 @@ header {
 
 nav ul	{
 	padding: 0;
+	
 
 
 }
@@ -134,25 +136,52 @@ li {
 }
 
 nav>ul>li	{
-	display: inline-block;
-	
+	display: inline-block;	
 	float:left;
 	position: relative;
+
+
 	
 }
 
+#start	{
+	border-top: 1px solid rgba(52,152,219,0.90);
+}
+
+#folgen {
+	border-top: 1px solid rgba(46,204,113,0.90);
+
+}
+
+
+#ermittler {
+	border-top: 1px solid rgba(231,76,60,0.90);
+
+}
+
+#rangliste {
+	border-top: 1px solid rgba(241,196,15,0.90);
+
+}
+
+#experten-fundus {
+	border-top: 1px solid rgba(241,123,13,0.90);
+
+}
+
+#community {
+	border-top: 1px solid rgba(231,61,182,0.90);
+
+}
 
 
 nav li:hover .unterliste	{
 	display: block;
 	color: grey;
 	position: absolute;
-	left: 0px;
-	
-	background: black;
-	
+	left: 0px;	
+	background: rgba(0,0,0,0.86);	
 	min-width: 150px;
-
 	z-index: 1;
 }
 
@@ -160,17 +189,19 @@ nav li:hover .unterliste	{
 
 
 nav li:hover	{
-	color: #4173bd;
+	color: #787878;
 }
 
 nav a,
 nav a:visited {
 	font: 13px Arial, Helvetica, sans-serif;
 	text-decoration:none;
-	padding: 8px;
-	padding-left: 10px;
+	padding: 9px;
+	padding-left: 15px;
+	padding-right: 15px;
 	display: inline-block;
 	color: #ffffff;
+
 }
 
 
@@ -199,28 +230,56 @@ nav a:visited {
 #topcontent .box {
 	float:left;
 	width: 33.333%;
-	height: 459px;
+	height: 50%;
 	position: relative;
+	overflow: auto;
 }
 
 #topcontent .box img {
 	width: 100%;
 }
 
-#topcontent .box .topkasten {
+
+
+#topcontent .box #topkasten1 {
 	bottom: 0;
 	width: 100%;
-	height: 90px;
+	height: 21%;
 	text-align: left;
 	position: absolute;
-	background-color: rgba(0,0,0,0.75)
+	background-color: rgba(0,0,0,0.85);
+	border-top: 2px solid rgba(46,204,113,0.90);
+
 }
 
+#topcontent .box #topkasten2 {
+	bottom: 0;
+	width: 100%;
+	height: 21%;
+	text-align: left;
+	position: absolute;
+	background-color: rgba(0,0,0,0.85);
+	border-top: 2px solid rgba(241,123,13,0.90);
 
-#topcontent .box .topkasten h2 {
+}
+
+#topcontent .box #topkasten3 {
+	bottom: 0;
+	width: 100%;
+	height: 21%;
+	text-align: left;
+	position: absolute;
+	background-color: rgba(0,0,0,0.85);
+	border-top: 2px solid rgba(52,152,219,0.90);
+
+}
+
+#topcontent .box h2 {
+	font-weight:200;
 	color: rgba(255,255,255,0.94);
 	padding-left: 10px;
 	padding-bottom:0px;
+	overflow: auto;
 	
 }
 
@@ -273,7 +332,7 @@ nav a:visited {
 #bottomcontent .box .news {
 	width:50px;
 	height: 20px;
-	background-color: rgba(0,198,31,0.86);
+	background-color: rgba(52,152,219,0.90);
 	position:absolute;
 	border-bottom-right-radius:10px;
 	box-shadow: 1px 1px 3px black
@@ -288,7 +347,7 @@ nav a:visited {
 #bottomcontent .box .medien {
 	width:65px;
 	height: 20px;
-	background-color: rgba(0,78,255,0.86);
+	background-color: rgba(241,123,13,0.90);
 	position:absolute;
 	border-bottom-right-radius:10px;
 	box-shadow: 1px 1px 3px black
@@ -304,7 +363,7 @@ nav a:visited {
 #bottomcontent .box .folgen {
 	width:65px;
 	height: 20px;
-	background-color: rgba(201,9,9,0.86);
+	background-color: rgba(46,204,113,0.90);
 	position:absolute;
 	border-bottom-right-radius:10px;
 	box-shadow: 1px 1px 3px black
@@ -320,7 +379,7 @@ nav a:visited {
 #bottomcontent .box .ermittler {
 	width:90px;
 	height: 20px;
-	background-color: rgba(255,0,234,0.86);
+	background-color: rgba(231,76,60,0.95);
 	position:absolute;
 	border-bottom-right-radius:10px;
 	box-shadow: 1px 1px 3px black
