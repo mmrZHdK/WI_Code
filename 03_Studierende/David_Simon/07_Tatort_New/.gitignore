@@ -1,5 +1,3 @@
 .sass-cache
 node_modules/**
-html/css/**
-html/components/**
 dist/**
