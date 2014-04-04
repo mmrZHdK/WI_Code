@@ -8,8 +8,11 @@
   font-family: "Proxima Nova", Helvetica, sans-serif; }
 
 .head {
-  height: 30px;
+  height: 20vh;
+  overflow: hidden;
   background-color: #165d86; }
+  .head img {
+    margin: -10vh 0 -10vh 0; }
 
 .sidebararticle {
   background-color: #e3e3e3;
@@ -24,9 +27,6 @@
     text-decoration: none;
     color: white; }
 
-.neuigkeiten li {
-  padding: 10px;
-  padding-left: 10px; }
 .neuigkeiten .copyright {
   font-weight: 100;
   font-size: 0.75em; }
