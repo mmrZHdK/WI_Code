@@ -1,0 +1,16 @@
+* {box-sizing: border-box; border: 1px solid red}
+
+div {margin: 10;
+	
+}
+
+#title{margin-right:10px; width: 120px; font-size: xx-large; float:left;}
+
+p{margin:10px}
+}
+
+#addon{width: 100%; clear:both;}
+
+#three{width:50%; float:left}
+
+

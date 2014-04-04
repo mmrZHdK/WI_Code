@@ -1,0 +1,16 @@
+#s {
+
+	color: #ff0000; text-align: center; border: 1px solid white; font-family: sans-serif
+}
+
+#time {text-align: center;border-right: 1px solid white; font-family: monospace;font-size: medium; color: white; }
+
+.content{text-align: center;color: white; }
+
+#spot{border-right: 1px dotted white; font-style: oblique; font-family: sans-serif; font-size: x-small; color: white}
+
+#lastCol {font-style: oblique; font-family: sans-serif;font-size: x-small; color: white}
+
+#head {border: 1px solid white}
+
+#body {border:1px solid white}

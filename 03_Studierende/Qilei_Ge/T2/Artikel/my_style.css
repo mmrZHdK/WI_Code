@@ -1,0 +1,50 @@
+div{
+		display:block;
+		
+		position: relative;
+	}
+	
+	img {	
+	
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+	}
+	
+	h3 {
+		position: relative
+		z-index:100;
+	}
+	
+	body { background-color: aqua}
+	   
+	h1, h2 {
+    	text-align: center;
+    }
+    
+    h1 {
+        font-family: monospace;
+        font-size: 50px;
+        padding-top: 20px;
+      }    
+
+    
+      h2 {
+        color: red;
+        font-family: monospace;
+        font-size: 20px;
+        padding-top: 20px;
+      }    
+
+	  .caption {
+	  
+		text-align: center;
+        font-family: monospace;
+        color: red;
+		bottom:5;
+		position: absolute;
+		width: 100%;
+		
+      }    
+
+	  p {font-family: monospace}
