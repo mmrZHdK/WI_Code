@@ -12,9 +12,15 @@ $footer2nd: #53556d;
 $highlightclr: #ff6412;
 $thclr: #b9c9d4;
 
+#rankingTable {
+	width: 100%;
+	border: none;
+}
+
 table#rankingTable th {
 	padding-right: 18px;
 	background: url(../img/arrows.gif) no-repeat right center;
+	background-color: $sidegreydark;
 }
 
 

@@ -1,6 +1,11 @@
+#rankingTable {
+  width: 100%;
+  border: none; }
+
 table#rankingTable th {
   padding-right: 18px;
-  background: url(../img/arrows.gif) no-repeat right center; }
+  background: url(../img/arrows.gif) no-repeat right center;
+  background-color: #f0f0f0; }
 
 table#rankingTable th.headerSortUp {
   background: url(../img/arrow-up.gif) no-repeat right center;
