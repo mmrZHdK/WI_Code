@@ -8,15 +8,13 @@
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/ranking.css" />
 <script src="js/vendor/modernizr.js"></script>
-<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-<script type="text/javascript" src="js/tablesorter/jquery-latest.js"></script>
-<script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="js/tablesorter/jquery.tablesorter.min.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function() 
 	    { 
-	        $("#myTable").tablesorter(); 
+	        $("#rankingTable").tablesorter(); 
 	    } 
 	); 	
 	</script>
@@ -29,7 +27,7 @@
 
 
 
-<table id="tablesorter-demo">
+<table id="rankingTable">
   <thead>
     <tr>
       <th>Nr.</th>
@@ -150,7 +148,7 @@
 
 
 
-    <script src="js/vendor/jquery.js"></script>
+<!--     <script src="js/vendor/jquery.js"></script> -->
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
