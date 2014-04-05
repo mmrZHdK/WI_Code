@@ -145,8 +145,15 @@ $highlightclr2: #fdde8a;
 
 }
 
+.navi {
+	padding-right: 0;
+}
 .navigation {
 	.top-bar { background-color: $navbg; }
+	
+	.has-form input {
+		height: 27px;
+	}
 
 	.top-bar-section ul {
 		background-color: $navbg;
@@ -273,6 +280,11 @@ overwrite foundation css:
 
 .contain-to-grid .top-bar {
     margin: 0 0;
+    max-width: 3000px;
+}
+
+.top-bar-section .has-form {
+	background: none;
 }
 
 .fixed {
@@ -295,3 +307,9 @@ overwrite foundation css:
 
 }
 
+.top-bar-section .has-form { padding-right: 0;}
+
+.button.alert {
+	background-color: $highlightclr;
+	border-color: $highlightclr;
+}

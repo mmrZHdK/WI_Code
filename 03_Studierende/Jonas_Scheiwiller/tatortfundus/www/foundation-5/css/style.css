@@ -122,8 +122,13 @@
     padding-top: 8px;
     display: block; }
 
+.navi {
+  padding-right: 0; }
+
 .navigation .top-bar {
   background-color: white; }
+.navigation .has-form input {
+  height: 27px; }
 .navigation .top-bar-section ul {
   background-color: white; }
   .navigation .top-bar-section ul li > a {
@@ -224,7 +229,11 @@ overwrite foundation css:
   background-color: white; }
 
 .contain-to-grid .top-bar {
-  margin: 0 0; }
+  margin: 0 0;
+  max-width: 3000px; }
+
+.top-bar-section .has-form {
+  background: none; }
 
 .fixed {
   left: auto; }
@@ -240,3 +249,10 @@ overwrite foundation css:
   background-color: white; }
   .breadcrumbs li a:hover {
     /*     	text-decoration: none; */ }
+
+.top-bar-section .has-form {
+  padding-right: 0; }
+
+.button.alert {
+  background-color: #ff6412;
+  border-color: #ff6412; }
