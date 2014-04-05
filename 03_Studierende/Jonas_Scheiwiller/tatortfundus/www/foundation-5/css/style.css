@@ -68,6 +68,26 @@
     position: absolute;
     color: #282828; }
 
+.neuigkeiten .etikett {
+  width: intrinsic;
+  color: white;
+  font-size: 0.7em;
+  position: relative;
+  display: block;
+  top: -180px;
+  left: -10px;
+  height: 0;
+  background-color: none; }
+  .neuigkeiten .etikett .naechstertatort {
+    background-color: #ff6412;
+    padding: 3px 6px 3px 6px; }
+  .neuigkeiten .etikett .brandneu {
+    background-color: #165d86;
+    padding: 3px 6px 3px 6px; }
+  .neuigkeiten .etikett .wiederholung {
+    background-color: #fdde8a;
+    padding: 3px 6px 3px 6px;
+    color: #282828; }
 .neuigkeiten .copyright {
   font-weight: 100;
   font-size: 0.75em;

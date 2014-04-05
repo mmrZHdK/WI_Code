@@ -10,6 +10,7 @@ $grey: #cbcbcb;
 $footerclr: #323558;
 $footer2nd: #53556d;
 $highlightclr: #ff6412;
+$highlightclr2: #fdde8a;
 
 * {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -93,7 +94,33 @@ $highlightclr: #ff6412;
 
 
 .neuigkeiten {
-	
+	.etikett {
+		width: intrinsic;
+		color: white;
+		font-size: 0.7em;
+		position: relative;
+		display: block;
+		top: -180px;
+		left: -10px;
+		height: 0;
+		background-color: none;
+		
+		.naechstertatort {
+			background-color: $highlightclr;
+			padding: 3px 6px 3px 6px;
+		}
+		
+		.brandneu {
+			background-color: $maincolor;
+			padding: 3px 6px 3px 6px;
+		}
+		.wiederholung {
+			background-color: $highlightclr2;
+			padding: 3px 6px 3px 6px;
+			color: $textgrey;
+		}
+		
+	}
 	.copyright { 
 		font-weight: 100; font-size: 0.75em; margin-bottom: 5px;
 		
