@@ -62,9 +62,11 @@ $layout: '.layout';
             @include media($full) {
                 padding: 0 10px;
             }
-            background: $blue; //$grey-lighter;
-            background-position: center center;
+            background: $blue url('../media/header_schimanski_ultra.jpg') no-repeat center center; //$grey-lighter;
             margin-bottom: 15px;
+        }
+        &-container.background-2 {
+            background-image: url('../media/header_kurtulus_ultra.jpg');
         }
     }
     &__main {
@@ -186,17 +188,19 @@ $newsarticle-box: '.newsarticle-box';
     p {
         margin:0 10px;
     }
-    &[max-width^="240px"] {
-        @include x-rem(font-size, 0.875);
-        #{$n}{
+    &[max-width~="440px"] {
+        #{$n} {
             &__title {
                 &--main {
-                    @include x-rem(font-size, 1.125);
+                    @include x-rem(font-size, 1.3);
                 }
+            }
+            &__imgcontainer {
+                max-height:180px;
             }
         }
     }
-    &[max-width^="300px"] {
+    &[max-width~="300px"] {
         #{$n}{
             &__title {
                 &--main {
@@ -208,15 +212,13 @@ $newsarticle-box: '.newsarticle-box';
             }
         }
     }
-    &[max-width^="440px"] {
-        #{$n} {
+    &[max-width~="240px"] {
+        @include x-rem(font-size, 0.875);
+        #{$n}{
             &__title {
                 &--main {
-                    @include x-rem(font-size, 1.3);
+                    @include x-rem(font-size, 1.125);
                 }
-            }
-            &__imgcontainer {
-                max-height:180px;
             }
         }
     }
@@ -248,20 +250,45 @@ $newsarticle: '.newsarticle';
             margin:0;
         }
     }
+
+    &__content[min-width~="550px"] {
+        font-size: 1.125rem;
+        width:100%;
+        max-width:650px;
+        margin:0 auto;
+    }
+    h4 {
+        margin: 30px 0 20px;
+        padding:0px;
+        @include x-rem(font-size, 1.1);
+        color:$blue;
+        font-weight: bold;
+    }
     p {
         margin:10px 0 15px;
     }
-    &[max-width^="240px"] {
-        @include x-rem(font-size, 0.875);
-        #{$n}{
+    address.author {
+        display:block;
+        padding: 15px 15px 0 0;
+        text-align: right;
+        font-style: italic;
+        font-weight: bold;
+    }
+    &__leading-p {
+        color:$grey-dark;
+        font-weight: bold;
+        font-style: italic;
+    }
+    &[max-width~="440px"] {
+        #{$n} {
             &__title {
                 &--main {
-                    @include x-rem(font-size, 1.125);
+                    @include x-rem(font-size, 1.3);
                 }
             }
         }
     }
-    &[max-width^="300px"] {
+    &[max-width~="300px"] {
         #{$n}{
             &__title {
                 &--main {
@@ -270,11 +297,12 @@ $newsarticle: '.newsarticle';
             }
         }
     }
-    &[max-width^="440px"] {
-        #{$n} {
+    &[max-width~="240px"] {
+        @include x-rem(font-size, 0.875);
+        #{$n}{
             &__title {
                 &--main {
-                    @include x-rem(font-size, 1.3);
+                    @include x-rem(font-size, 1.125);
                 }
             }
         }
@@ -292,25 +320,17 @@ $title-resp: '.title-resp';
     &--boxed {
         display:block;
         margin:0;
+        width:100%;
         padding:10px;
         background:$blue;
         color: $text-color-inverted;
-    }
-
-    &[max-width^="300px"] {
-        #{$t} {
-            &--boxed {
-                @include x-rem(font-size, 1.025);
-                padding: 4px 10px 6px;
-            }
+        &[max-width~="500px"] {
+            @include x-rem(font-size, 1.125);
+            padding: 6px 10px 8px;
         }
-    }
-    &[max-width^="500px"] {
-        #{$t} {
-            &--boxed {
-                @include x-rem(font-size, 1.1125);
-                padding: 6px 10px 8px;
-            }
+        &[max-width~="300px"] {
+            @include x-rem(font-size, 1.025);
+            padding: 4px 10px 6px;
         }
     }
 }
@@ -318,8 +338,10 @@ $title-resp: '.title-resp';
 $datatable: '.datatable';
 #{$datatable} {
     $d: $datatable;
+    display:block;
     width:100%;
     max-width:100%;
+    overflow:hidden;
     border-spacing: 0 3px;
     line-height:1.3;
     padding: 0px;
@@ -328,13 +350,12 @@ $datatable: '.datatable';
     a {
         color: $blue;
     }
-    th {
-        padding-right:10px;
-        font-weight: 400;
-    }
-    td {
+    th, td {
         padding-right:10px;
         white-space: nowrap;
+    }
+    th {
+        font-weight: 400;
     }
     &__col {
         &--number {
@@ -345,24 +366,27 @@ $datatable: '.datatable';
             text-align: left;
         }
         &--text-wide {
+            width:100%;
             text-align: left;
         }
     }
 
-    &[max-width^="400px"] {
-        @include x-rem(font-size, 0.875);
+    &[max-width~="400px"] {
+        #{$d}__hide {
+            &--first {
+                display:none;
+            }
+        }
+    }
+    &[max-width~="300px"] {
+        td {
+            @include x-rem(font-size, 0.875);
+        }
         #{$d}__hide {
             &--first {
                 display:none;
             }
             &--second {
-                display:none;
-            }
-        }
-    }
-    &[max-width^="450px"] {
-        #{$d}__hide {
-            &--first {
                 display:none;
             }
         }

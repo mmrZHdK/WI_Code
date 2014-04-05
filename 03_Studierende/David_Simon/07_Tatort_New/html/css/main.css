@@ -47,13 +47,13 @@ body {
   -webkit-text-size-adjust: 100%;
   /* Prevent font scaling in landscape while allowing user zoom */
   -webkit-font-smoothing: antialiased;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto; }
-  @media screen and (max-width: 767px) {
-    body {
-      font: 300 87.5%/1.4 'Open Sans', sans-serif; } }
 
 h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre {
   margin-bottom: 24px;
@@ -71,6 +71,7 @@ a.highlight {
   color: #223b75; }
 
 p {
+  line-height: 1.5;
   position: relative;
   margin-bottom: 30px; }
 
@@ -182,6 +183,8 @@ img {
     float: left;
     margin: 0;
     line-height: 180px; }
+    .main-nav li a {
+      color: white; }
     @media screen and (max-width: 767px) {
       .main-nav li {
         line-height: 45px; } }
@@ -193,7 +196,7 @@ img {
         .main-nav li:after {
           padding: 0 5px; } }
     .main-nav li:last-child:after {
-      content: ''; }
+      content: none; }
   @media screen and (max-width: 767px) {
     .main-nav {
       float: left;
@@ -284,12 +287,13 @@ a:hover {
     .layout__header {
       width: 959px; } }
   .layout__header-container {
-    background: #223b75;
-    background-position: center center;
+    background: #223b75 url("../media/header_schimanski_ultra.jpg") no-repeat center center;
     margin-bottom: 15px; }
     @media screen and (max-width: 1440px) {
       .layout__header-container {
         padding: 0 10px; } }
+  .layout__header-container.background-2 {
+    background-image: url("../media/header_kurtulus_ultra.jpg"); }
 .layout__main {
   float: left;
   display: block;
@@ -528,22 +532,22 @@ a:hover {
     max-height: 210px; }
   .newsarticle-box p {
     margin: 0 10px; }
-  .newsarticle-box[max-width^="240px"] {
-    font-size: 14px;
-    font-size: 0.875rem; }
-    .newsarticle-box[max-width^="240px"] .newsarticle-box__title--main {
-      font-size: 18px;
-      font-size: 1.125rem; }
-  .newsarticle-box[max-width^="300px"] .newsarticle-box__title--main {
-    font-size: 19.2px;
-    font-size: 1.2rem; }
-  .newsarticle-box[max-width^="300px"] .newsarticle-box__imgcontainer {
-    max-height: 140px; }
-  .newsarticle-box[max-width^="440px"] .newsarticle-box__title--main {
+  .newsarticle-box[max-width~="440px"] .newsarticle-box__title--main {
     font-size: 20.8px;
     font-size: 1.3rem; }
-  .newsarticle-box[max-width^="440px"] .newsarticle-box__imgcontainer {
+  .newsarticle-box[max-width~="440px"] .newsarticle-box__imgcontainer {
     max-height: 180px; }
+  .newsarticle-box[max-width~="300px"] .newsarticle-box__title--main {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+  .newsarticle-box[max-width~="300px"] .newsarticle-box__imgcontainer {
+    max-height: 140px; }
+  .newsarticle-box[max-width~="240px"] {
+    font-size: 14px;
+    font-size: 0.875rem; }
+    .newsarticle-box[max-width~="240px"] .newsarticle-box__title--main {
+      font-size: 18px;
+      font-size: 1.125rem; }
 
 .newsarticle {
   position: relative;
@@ -566,20 +570,42 @@ a:hover {
     line-height: 1;
     padding: 10px 0 0 0;
     margin: 0; }
+  .newsarticle__content[min-width~="550px"] {
+    font-size: 1.125rem;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto; }
+  .newsarticle h4 {
+    margin: 30px 0 20px;
+    padding: 0px;
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    color: #223b75;
+    font-weight: bold; }
   .newsarticle p {
     margin: 10px 0 15px; }
-  .newsarticle[max-width^="240px"] {
-    font-size: 14px;
-    font-size: 0.875rem; }
-    .newsarticle[max-width^="240px"] .newsarticle__title--main {
-      font-size: 18px;
-      font-size: 1.125rem; }
-  .newsarticle[max-width^="300px"] .newsarticle__title--main {
-    font-size: 19.2px;
-    font-size: 1.2rem; }
-  .newsarticle[max-width^="440px"] .newsarticle__title--main {
+  .newsarticle address.author {
+    display: block;
+    padding: 15px 15px 0 0;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold; }
+  .newsarticle__leading-p {
+    color: #666666;
+    font-weight: bold;
+    font-style: italic; }
+  .newsarticle[max-width~="440px"] .newsarticle__title--main {
     font-size: 20.8px;
     font-size: 1.3rem; }
+  .newsarticle[max-width~="300px"] .newsarticle__title--main {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+  .newsarticle[max-width~="240px"] {
+    font-size: 14px;
+    font-size: 0.875rem; }
+    .newsarticle[max-width~="240px"] .newsarticle__title--main {
+      font-size: 18px;
+      font-size: 1.125rem; }
 
 .title-resp {
   font-size: 19.2px;
@@ -589,21 +615,24 @@ a:hover {
   .title-resp--boxed {
     display: block;
     margin: 0;
+    width: 100%;
     padding: 10px;
     background: #223b75;
     color: white; }
-  .title-resp[max-width^="300px"] .title-resp--boxed {
-    font-size: 16.4px;
-    font-size: 1.025rem;
-    padding: 4px 10px 6px; }
-  .title-resp[max-width^="500px"] .title-resp--boxed {
-    font-size: 17.8px;
-    font-size: 1.1125rem;
-    padding: 6px 10px 8px; }
+    .title-resp--boxed[max-width~="500px"] {
+      font-size: 18px;
+      font-size: 1.125rem;
+      padding: 6px 10px 8px; }
+    .title-resp--boxed[max-width~="300px"] {
+      font-size: 16.4px;
+      font-size: 1.025rem;
+      padding: 4px 10px 6px; }
 
 .datatable {
+  display: block;
   width: 100%;
   max-width: 100%;
+  overflow: hidden;
   border-spacing: 0 3px;
   line-height: 1.3;
   padding: 0px;
@@ -611,26 +640,26 @@ a:hover {
   margin-bottom: 5px; }
   .datatable a {
     color: #223b75; }
-  .datatable th {
-    padding-right: 10px;
-    font-weight: 400; }
-  .datatable td {
+  .datatable th, .datatable td {
     padding-right: 10px;
     white-space: nowrap; }
+  .datatable th {
+    font-weight: 400; }
   .datatable__col--number {
     text-align: right; }
   .datatable__col--number-left, .datatable__col--text-narrow {
     text-align: left; }
   .datatable__col--text-wide {
+    width: 100%;
     text-align: left; }
-  .datatable[max-width^="400px"] {
+  .datatable[max-width~="400px"] .datatable__hide--first {
+    display: none; }
+  .datatable[max-width~="300px"] td {
     font-size: 14px;
     font-size: 0.875rem; }
-    .datatable[max-width^="400px"] .datatable__hide--first {
-      display: none; }
-    .datatable[max-width^="400px"] .datatable__hide--second {
-      display: none; }
-  .datatable[max-width^="450px"] .datatable__hide--first {
+  .datatable[max-width~="300px"] .datatable__hide--first {
+    display: none; }
+  .datatable[max-width~="300px"] .datatable__hide--second {
     display: none; }
 
 .breadcrumbs {

@@ -48,6 +48,9 @@ $main-nav: '.main-nav';
         }
     }
     li {
+        a {
+            color: $text-color-inverted;
+        }
         float: left;
         margin:0;
         line-height:$main-nav-height;
@@ -63,7 +66,7 @@ $main-nav: '.main-nav';
             }
         }
         &:last-child:after {
-            content: '';
+            content: none;
         }
     }
     //     &[max-width="400px"] {

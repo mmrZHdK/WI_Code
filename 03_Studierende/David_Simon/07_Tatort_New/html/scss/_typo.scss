@@ -6,13 +6,13 @@ body {
     font: 300 100%/1.5 'Open Sans', sans-serif;
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
     -webkit-font-smoothing: antialiased;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word; // Non standard for webkit
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
         -ms-hyphens: auto;
             hyphens: auto;
-    @include media($mobile-l) {
-        font: 300 87.5%/1.4 'Open Sans', sans-serif;
-    }
 }
 
 h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dl,blockquote,p,address,table,fieldset,figure,pre {
@@ -32,6 +32,7 @@ a.highlight {
 }
 
 p {
+    line-height: 1.5;
     position: relative;
     margin-bottom:30px;
 }
