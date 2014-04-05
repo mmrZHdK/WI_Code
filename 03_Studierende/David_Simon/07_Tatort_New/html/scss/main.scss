@@ -62,11 +62,18 @@ $layout: '.layout';
             @include media($full) {
                 padding: 0 10px;
             }
+            @include transition (background 2.0s ease-in-out);
             background: $blue url('../media/header_schimanski_ultra.jpg') no-repeat center center; //$grey-lighter;
             margin-bottom: 15px;
         }
-        &-container.background-2 {
+        &-container.background-kurtulus {
             background-image: url('../media/header_kurtulus_ultra.jpg');
+            @include media($desktop) {
+                background-position: 70% center;
+            }
+        }
+        &-container.background-bienzle {
+            background-image: url('../media/header_bienzle_ultra.jpg');
         }
     }
     &__main {

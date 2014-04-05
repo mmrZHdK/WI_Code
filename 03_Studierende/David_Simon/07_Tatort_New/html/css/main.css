@@ -287,13 +287,21 @@ a:hover {
     .layout__header {
       width: 959px; } }
   .layout__header-container {
+    -webkit-transition: background 2s ease-in-out;
+    -moz-transition: background 2s ease-in-out;
+    transition: background 2s ease-in-out;
     background: #223b75 url("../media/header_schimanski_ultra.jpg") no-repeat center center;
     margin-bottom: 15px; }
     @media screen and (max-width: 1440px) {
       .layout__header-container {
         padding: 0 10px; } }
-  .layout__header-container.background-2 {
+  .layout__header-container.background-kurtulus {
     background-image: url("../media/header_kurtulus_ultra.jpg"); }
+    @media screen and (max-width: 1139px) {
+      .layout__header-container.background-kurtulus {
+        background-position: 70% center; } }
+  .layout__header-container.background-bienzle {
+    background-image: url("../media/header_bienzle_ultra.jpg"); }
 .layout__main {
   float: left;
   display: block;
