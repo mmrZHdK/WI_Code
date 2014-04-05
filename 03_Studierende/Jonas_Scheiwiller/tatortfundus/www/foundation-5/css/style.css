@@ -129,6 +129,9 @@
   background-color: white; }
 .navigation .has-form input {
   height: 27px; }
+  @media only screen and (max-width: 64em) {
+    .navigation .has-form input {
+      width: 27px; } }
 .navigation .top-bar-section ul {
   background-color: white; }
   .navigation .top-bar-section ul li > a {
@@ -256,3 +259,18 @@ overwrite foundation css:
 .button.alert {
   background-color: #ff6412;
   border-color: #ff6412; }
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background: white;
+  color: #282828; }
+
+ul.dropdown {
+  padding-left: 15px;
+  position: relative !important;
+  left: -15px !important; }
+
+/*
+.has-form .small-3 {
+	width: auto;
+}
+*/

@@ -153,6 +153,9 @@ $highlightclr2: #fdde8a;
 	
 	.has-form input {
 		height: 27px;
+		@media only screen and (max-width: 64em){
+			width: 27px;
+		}
 	}
 
 	.top-bar-section ul {
@@ -313,3 +316,20 @@ overwrite foundation css:
 	background-color: $highlightclr;
 	border-color: $highlightclr;
 }
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+	background: white;
+	color: $textgrey;
+}
+
+ul.dropdown {
+	padding-left: 15px;
+	position: relative !important;
+	left: -15px !important;
+}
+
+/*
+.has-form .small-3 {
+	width: auto;
+}
+*/
