@@ -1028,4 +1028,23 @@
             }
         }
     });
+    
+    //Sorted Column Highlight Widget by Bill Beckelman http://beckelman.net
+    //Requires sortedeven and sortedodd classes in your css
+    ts.addWidget({
+        id: "columnHighlight",
+        format: function(table) {
+            $("td", table.tBodies[0]).removeClass("sortedeven").removeClass("sortedodd");
+            var ascSort = "th." + table.config.cssAsc;
+            var descSort = "th." + table.config.cssDesc;
+
+            $(table.tHead[0]).find(ascSort).add($(table.tHead[0]).find(descSort)).each(function() {
+                $("tr:visible", table.tBodies[0]).find("td:nth-child(" + ($("thead th", table).index(this) + 1) + ")")
+                    .filter(':even').addClass("sortedeven").end()
+                    .filter(':odd').addClass("sortedodd");
+            });
+        }
+    }); 	
+    
+    
 })(jQuery);
