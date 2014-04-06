@@ -1,0 +1,65 @@
+div {
+      	
+      	margin: center;
+        padding: 5px;
+        border: 1px solid black;
+        width:45%;
+        
+        
+}
+
+.hight{
+	height: 30%;
+}
+
+
+
+#eins{
+font-size: x-large;
+border:0px;
+z-index: 100;
+position: fixed;
+width: 400px;
+height: 300px;
+margin-top: 5%; 
+margin-left: 50%;
+}
+      
+
+#zwei{
+font-family:  Arial, sans-serif;
+font-size: 14px;	
+}
+      
+#drei{
+
+font-size: 12px;	
+
+        /*width:40%;
+        float: left;
+        background-color: #fdd;*/
+        }
+      
+#vier{
+font-size: 10px;	
+
+	/*background-color: #ddd;*/
+}
+
+
+#fuenf{
+font-size: 8px;	
+
+
+	/*clear: right;*/
+	}
+	
+	
+#end{
+font-size: 6px;	
+
+
+	
+	
+	
+}
