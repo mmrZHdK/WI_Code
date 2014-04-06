@@ -1,0 +1,7 @@
+TATORT-FUNDUS LIGHT
+
+Die Tatort-Fundus Webseite konnte nicht verbergen, dass sich die Inhalte über Jahre hinweg kontinuierlich angehäuft haben. Die Navigation durch die vielen, kaum besuchten Zusatzseiten, wurde schwierig und der Fokus auf die wichtigen Inhalte ging verloren.
+Ich sah meine Aufgabe darin, die Benutzerführung stark zu verbessern und gleichzeitig das Design aufzufrischen. Um dies zu erreichen, fasste ich Unterseiten entweder zusammen (Folgen alphabetisch geordnet / Folgen nach Nr geordnet) oder ich Strich sie aus der Hauptnavigation. Gleichzeitig gewährleistete ich der Seite etwas mehr weisse Flächen.
+
+Da die Mobile-Zugriffe überall bereits hoch sind und noch steigen, war für mich klar, dass die Seite responsive sein muss.
+Grundsätzlich wurde der Aufbau und die Inhalte jedoch beibehalten, einfach anders gegliedert. Die Werbung soll weiterhin am rechten Rand ausserhalb der Seite angezeigt werden.
