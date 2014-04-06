@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatort-Fundus.de</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ranking.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function() 
+		    { 
+		        jQuery("#rankingTable").tablesorter({ debug: false, sortList: [[0, 0]], widgets: ['zebra', 'columnHighlight'] }); 
+		    } 
+		); 	
+	</script>
+  </head>
+  <body>
+    
+    
+    <div class="row">
+      <div class="large-12 columns head">
+      	<div class="show-for-medium-up">
+      		<img src="img/header.jpg" alt="header">
+      	</div>
+      </div>	
+	</div> <!-- row1 -->
+	
+	<div class="row"> <!-- row2 -->
+		<div class="large-12 columns navi">
+			<div class="navigation">
+					
+				<div class="contain-to-grid sticky" data-options="sticky_on: large">
+					<nav class="top-bar" data-topbar>
+					  
+						<ul class="title-area">
+					    <li class="name show-for-small-only">
+					      <h1 class="seitentitel "><a href="#">TATORT FUNDUS</a></h1>
+					    </li>
+					    
+					    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+					  </ul>
+
+					
+					  <section class="top-bar-section">
+					    <!-- Right Nav Section -->
+					    <ul class="right">
+						    <li class="has-form">
+							  <div class="row collapse">
+							    <div class="large-8 small-9 columns">
+							      <input type="text" placeholder="Find Stuff">
+							    </div>
+							    <div class="large-4 small-3 columns">
+							      <a href="#" class="alert button expand">Search</a>
+							    </div>
+							  </div>
+							</li>
+					    </ul>
+					
+					    <!-- Left Nav Section -->
+					    <ul class="left unlist">
+					      <li><a href="#">Home</a></li>
+					      <li class="has-dropdown">
+					      	<a href="#">Rangliste</a>
+					      	<ul class="dropdown">
+					      		<li><a href="ranking.html">Aktuelle Rangliste</a></li>
+					      		<li><a href="#">Beliebtester Ermittler</a></li>
+					      		<li><a href="#">Weitere Statistiken</a></li>
+					      	</ul>
+					      </li>
+					      <li class="has-dropdown">
+						      	<a href="#">Folgen</a>
+						      	<ul class="dropdown">
+						      		<li><a href="#">Alle Folgen</a></li>
+						      		<li><a href="#">Nächste Erstsendungen</a></li>
+						      		<li><a href="#">Wiederholungen</a></li>
+						      		<li><a href="#">Drehspiegel</a></li>
+						      		<li><a href="#">Giftschrank</a></li>
+						      	</ul>
+					      	</li>
+							 <li class="has-dropdown">
+						      	<a href="#">Ermittler</a>
+						      	<ul class="dropdown">
+						      		<li><a href="#">Alle Ermittler</a></li>
+						      		<li><a href="#">Vornamen</a></li>
+						      	</ul>
+					      	</li>					      
+					      	<li><a href="#">Forum</a></li>
+					        <li><a href="#">Login</a></li>
+					    </ul>
+					  </section>
+					</nav>
+				</div> <!-- sticky -->
+				
+			</div>
+			
+			<ul class="breadcrumbs show-for-large-up">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Features</a></li>
+			  <li class="unavailable"><a href="#">Gene Splicing</a></li>
+			  <li class="current"><a href="#">Cloning</a></li>
+			</ul>
+		</div>
+	</div> <!-- row2 -->
+
+    <div class="row"> <!-- row3 -->
+	    <div class="large-10 columns">  
+      	
+			
+			<table id="rankingTable">
+			  <thead>
+			    <tr>
+			      <th>Nr.</th>
+			      <th>Titel</th>
+			      <th>Ermittler</th>
+			      <th>Bewertung</th>
+			      <th class="show-for-medium-up">Anzahl Bewertungen</th>
+			      <th class="show-for-medium-up">Quote</th>
+			      <th class="show-for-medium-up">Kommentare</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>1</td>
+			      <td>Gegen den Kopf</td>
+			      <td class="kommissar"><img class="stark" src="img/kommissare/stark.jpg">Stark</td>
+			      <td>8.874</td>
+			      <td class="show-for-medium-up">728</td>
+			      <td class="show-for-medium-up">29.30</td>
+			      <td class="show-for-medium-up">337</td>
+			    </tr>
+			    <tr>
+			      <td>2</td>
+			      <td>Nie wieder frei sein</td>
+			      <td class="kommissar"><img class="tschiller" src="img/kommissare/tschiller.jpg">Tschiller</td>
+			      <td>8.623</td>
+			      <td class="show-for-medium-up">202</td>
+			      <td class="show-for-medium-up">21.89</td>
+			      <td class="show-for-medium-up">133</td>
+			    </tr>
+			    <tr>
+			      <td>3</td>
+			      <td>Kurzschluss</td>
+			      <td class="kommissar"><img class="finke" src="img/kommissare/finke.jpg">Finke</td>
+			      <td>4.623</td>
+			      <td class="show-for-medium-up">560</td>
+			      <td class="show-for-medium-up">13.89</td>
+			      <td class="show-for-medium-up">520</td>
+			    </tr>
+			    <tr>
+			      <td>40</td>
+			      <td>Borowski und die Frau am Fenster</td>
+			      <td class="kommissar"><img class="borowski" src="img/kommissare/borowski.jpg">Borowski</td>
+			      <td>9.623</td>
+			      <td class="show-for-medium-up">450</td>
+			      <td class="show-for-medium-up">20.01</td>
+			      <td class="show-for-medium-up">325</td>
+			    </tr>
+			    <tr>
+			      <td>829</td>
+			      <td>Schwarzer Advent</td>
+			      <td class="kommissar"><img class="batic" src="img/kommissare/batic.jpg">Batic</td>
+			      <td>8.005</td>
+			      <td class="show-for-medium-up">405</td>
+			      <td class="show-for-medium-up">12.78</td>
+			      <td class="show-for-medium-up">111</td>
+			    </tr>
+			    <tr>
+			      <td>919</td>
+			      <td>Hitchcock und Frau Wernicke</td>
+			      <td class="kommissar"><img class="stark" src="img/kommissare/stark.jpg">Stark</td>
+			      <td>7.887</td>
+			      <td class="show-for-medium-up">579</td>
+			      <td class="show-for-medium-up">15.68</td>
+			      <td class="show-for-medium-up">56</td>
+			    </tr>
+			    <tr>
+			      <td>647</td>
+			      <td>Norbert</td>
+			      <td class="kommissar"><img class="batic" src="img/kommissare/batic.jpg">Batic</td>
+			      <td>7.426</td>
+			      <td class="show-for-medium-up">570</td>
+			      <td class="show-for-medium-up">18.79</td>
+			      <td class="show-for-medium-up">147</td>
+			    </tr>
+			    <tr>
+			      <td>67</td>
+			      <td>Macht der Angst</td>
+			      <td class="kommissar"><img class="borowski" src="img/kommissare/borowski.jpg">Borowski</td>
+			      <td>7.623</td>
+			      <td class="show-for-medium-up">360</td>
+			      <td class="show-for-medium-up">56.89</td>
+			      <td class="show-for-medium-up">130</td>
+			    </tr>
+			    <tr>
+			      <td>122</td>
+			      <td>Kressin stoppt den Nordexpress</td>
+			      <td class="kommissar"><img class="kressin" src="img/kommissare/kressin.jpg">Kressin</td>
+			      <td>7.443</td>
+			      <td class="show-for-medium-up">248</td>
+			      <td class="show-for-medium-up">19.57</td>
+			      <td class="show-for-medium-up">456</td>
+			    </tr>
+			    <tr>
+			      <td>563</td>
+			      <td>Undercover-Camping</td>
+			      <td class="kommissar"><img class="tschiller" src="img/kommissare/tschiller.jpg">Tschiller</td>
+			      <td>8.623</td>
+			      <td class="show-for-medium-up">787</td>
+			      <td class="show-for-medium-up">9.89</td>
+			      <td class="show-for-medium-up">741</td>
+			    </tr>
+			    <tr>
+			      <td>499</td>
+			      <td>Filmriss</td>
+			      <td class="kommissar"><img class="stark" src="img/kommissare/stark.jpg">Stark</td>
+			      <td>2.623</td>
+			      <td class="show-for-medium-up">50</td>
+			      <td class="show-for-medium-up">25.89</td>
+			      <td class="show-for-medium-up">20</td>
+			    </tr>
+			  </tbody>
+			</table>
+			
+	    </div>
+	    
+	    <div class="large-2 columns show-for-large-up sidebar">
+    		<div class="wiederholungen">
+    			<div class="h3bg">
+		    		<h3>Wiederholungen</h3>
+    			</div>
+	    		<ul>
+	    			<li class="vorbei">
+	    				<p><a href="#">Höllenfahrt</a></p>
+	    				<p class="sendedatum">01.04</p>
+	    				<p class="sender">ARD</p>
+	    			</li>
+	    			<li class="vorbei">
+	    				<p><a href="#">Weil sie böse sind</a></p>
+	    				<p class="sendedatum">02.04</p>
+	    				<p class="sender">ARD</p>
+	    			</li>
+	    			<li class="kommend">
+	    				<p><a href="#">Borowski und eine Frage von reinem Geschmack</a></p>
+	    				<p class="sendedatum">04.05</p>
+	    				<p class="sender">ARD</p>
+	    			</li>
+	    			<li class="kommend">
+	    				<p><a href="#">Der Wüstensohn</a></p>
+	    				<p class="sendedatum">12.05</p>
+	    				<p class="sender">ARD</p>
+	    			</li>
+	    			<li class="kommend">
+	    				<p><a href="#">Dinge die noch zu tun sind</a></p>
+	    				<p class="sendedatum">20.05</p>
+	    				<p class="sender">ARD</p>
+	    			</li>
+	    		</ul>
+	    		<p class="allesend"><a href="#">Alle Sendungen</a></p>
+    			<div class="h3bg">
+		    		<h3>Die Besten</h3>
+    			</div>
+	    		<ul>
+	    			<li>
+	    				<p><a href="#">Weil sie böse sind</a></p>
+	    				<div class="rating">
+							<span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span>★</span>
+						</div>
+	    			</li>
+	    			<li>
+	    				<p><a href="#">Der Wüstensohn</a></p>
+	    				<div class="rating">
+							<span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span>★</span><span>★</span>
+						</div>
+	    			</li>
+	    			<li>
+	    				<p><a href="#">Die Wasserpistole</a></p>
+	    				<div class="rating">
+							<span class="filled">★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+						</div>
+	    			</li>
+	    		</ul>
+    		</div> <!-- wiederholungen -->
+	    </div>
+	    
+    </div> <!-- row3 --> 
+    
+        
+    <div class="row">
+	    <div class="large-12 columns footer">
+	    	<div class="footerbg">
+		    	<div class="row">
+		    		<div class="large-4 columns links">
+		    			<h6>Tatort Fundus</h6>
+			    		<ul>
+			    			<li><a href="#">Impressum</a>
+			    			<li><a href="#">Disclaimer</a>
+			    			<li><a href="#">Sitemap</a>
+			    			<li><a href="#">Weitere Links</a>
+			    			<li><a href="#">Kontakt</a>
+			    		</ul>
+			    	</div>
+			    	<div class="large-4 columns service">
+				    	<h6>Service</h6>
+				    	<div class="fragen">
+					    	<p>Schreiben Sie unserer Redaktion, wenn Sie eine Frage zum TATORT haben: <br><a href="mailto:frage@tatort-media.de" title="frage">frage@tatort-media.de</a></p>
+				    	</div>
+			    	</div>
+			    	<div class="large-4 columns spenden">
+				    	<h6>Spenden</h6>
+				    	<div class="spend">
+					    	<p>Die Macher des privaten Hobbyprojekts tatort-fundus.de freuen sich über jede Unterstützung und Anerkennung. Mit dem Geld werden primär die laufenden Kosten des Server-Betriebs beglichen. Danke für Ihre Unterstützung!</p>
+					    	<a href="#" class="button radius">Spenden</a>
+				    	</div>
+			    	</div>
+			    </div>
+		    </div> <!-- footerbg -->
+	    </div> <!-- footer -->
+   </div> 
+    
+    
+<!--     <script src="js/vendor/jquery.js"></script> -->
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
