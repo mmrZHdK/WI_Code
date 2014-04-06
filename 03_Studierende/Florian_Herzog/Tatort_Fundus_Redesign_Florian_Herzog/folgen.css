@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+
+html {
+  font-size: 13px;
+  font-family: helvetica;
+  background-color: #F2F2F2;
+}
+
+#logo {
+	width: 70px;
+	padding-left: 7px;
+	
+}
+
+
+
+p.title {
+	font-weight: bold;
+}
+
+div.newsboxtext { 
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	width: 890px;
+	height: 100%;
+	background-color: rgba(255,255,255,0.9);
+	padding-left:10px;
+	padding-top: 0px;
+	font-size: 1.1em;
+}
+
+
+header {
+	width: 900px;
+	margin: 30px auto 0;
+ 	box-shadow: 3px 4px 6px 2px #ccc;
+}
+
+
+nav {
+  background-color: white;
+  
+}
+
+nav div.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em;
+  background-color: white;
+}
+
+nav div.dropdown ul.submenu {
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  display: none;
+  padding: 0.5em;
+  background-color: white;
+  list-style: none;
+  z-index:100;
+}
+nav div.dropdown:hover ul.submenu {
+  display: block;
+}
+
+nav div.dropdown a {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+nav div.dropdown ul.submenu a {
+	color: black;
+}
+
+
+nav div.dropdown ul.submenu a:hover {
+	color:grey;
+}
+
+.depressed{
+	background-image:url(http://csscheckbox.com/checkboxes/depressed.png);
+	margin-left: 60px;
+	margin-top: 20px;
+
+
+}
+
+.depressedlabel{
+padding-right: 130px;
+padding-right: 70px;
+
+}
+
+
+.newsbox {
+	position: relative;
+	max-width: 900px;
+	height: 140px;
+	margin-top: 0px;
+	margin:auto;
+}
+
+.newsboximage {
+	max-width: 900px;
+	height: 140px;
+	
+}
+
+.content {
+	max-width: 900px;
+	margin:auto;
+	margin-top: 30px;
+}
+
+.leftcontent {
+	float: left;
+	width: 33em;
+}
+
+ 
+.leftcontentbox {
+	float: left;
+	width: 98%;
+	height: 186px;
+	padding: 0px;
+	margin: auto;
+	margin-top: 21px;
+ 	box-shadow: 3px 4px 6px 2px #ccc;
+}
+
+.subleftcontentbox {
+	float: left;
+	width: 410px;
+	height: 14%;
+	padding: 5px;
+	margin: 0;
+	background-color: white;
+	font-size: 1.7em;
+}
+
+
+
+.rightcontent {
+	float: right;
+	width: 33em;
+	float: right;
+}
+
+
+
+table.ranglistetabelle tr {
+	text-align: left;
+	height: 36px;
+	background-color: #FAFAFA;
+}
+
+
+table.ranglistetabelle tr.ungerade {
+	background-color: #D6D6D6;
+}
+
+
+table.ranglistetabelle th {
+	font-size: 1.3em;
+	height: 22px;
+	text-decoration: none;
+	font-style: none;
+	font-weight: normal;
+	padding-left: 10px;
+	background-color: white;
+}
+
+
+tr td:first-child {
+	border-right: 1px solid #D6D6D6;
+	padding-left: 10px;
+}
+
+tr td:last-child{
+	padding-left: 10px;
+}
+
+
+table.ranglistetabelle {
+	margin-top: 19px;
+	width: 420px;
+	font-size: 1.4em;
+	border-collapse: collapse;
+ 	box-shadow: 3px 4px 6px 2px #ccc;
+}
+
+.righcontentbox {
+	margin-top: 21px;
+	width: 420px;
+	height: 186px;
+ 	box-shadow: 3px 4px 6px 2px #ccc;
+}
+
+.subrightcontentbox{
+	width: 410px;
+	height: 14%;
+	padding: 5px;
+	margin: 0;
+	background-color: white;
+	font-size: 1.7em;
+
+}
+
+footer {
+	margin: auto;
+	height: 100px;
+	max-width: 900px;
+	margin-top: 26px;
+ 	box-shadow: 3px 4px 6px 2px #ccc;
+}
+
+
+.clearfix {
+	clear: both;
+}
+
