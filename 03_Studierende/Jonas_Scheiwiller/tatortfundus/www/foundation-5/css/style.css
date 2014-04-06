@@ -97,6 +97,8 @@
     background-color: #fdde8a;
     padding: 3px 6px 3px 6px;
     color: #282828; }
+.neuigkeiten .wh {
+  top: -50px; }
 .neuigkeiten .copyright {
   font-weight: 100;
   font-size: 0.75em;
@@ -130,6 +132,8 @@
     font-weight: 800;
     padding-top: 8px;
     display: block; }
+  .neuigkeiten .text a:hover {
+    color: #ff6412; }
 
 .navi {
   padding-right: 0; }

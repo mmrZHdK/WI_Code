@@ -30,7 +30,7 @@
 					  
 						<ul class="title-area">
 					    <li class="name show-for-small-only">
-					      <h1 class="seitentitel "><a href="#">TATORT FUNDUS</a></h1>
+					      <h1 class="seitentitel "><a href="index.html">TATORT FUNDUS</a></h1>
 					    </li>
 					    
 					    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
@@ -54,9 +54,9 @@
 					
 					    <!-- Left Nav Section -->
 					    <ul class="left unlist">
-					      <li><a href="#">Home</a></li>
+					      <li><a href="index.html">Home</a></li>
 					      <li class="has-dropdown">
-					      	<a href="#">Rangliste</a>
+					      	<a href="ranking.html">Rangliste</a>
 					      	<ul class="dropdown">
 					      		<li><a href="ranking.html">Aktuelle Rangliste</a></li>
 					      		<li><a href="#">Beliebtester Ermittler</a></li>
@@ -66,7 +66,7 @@
 					      <li class="has-dropdown">
 						      	<a href="#">Folgen</a>
 						      	<ul class="dropdown">
-						      		<li><a href="#">Alle Folgen</a></li>
+						      		<li><a href="folge.html">Alle Folgen</a></li>
 						      		<li><a href="#">Nächste Erstsendungen</a></li>
 						      		<li><a href="#">Wiederholungen</a></li>
 						      		<li><a href="#">Drehspiegel</a></li>
@@ -289,9 +289,10 @@
 		$(document).foundation({
 		  orbit: {
 		    animation: 'slide',
-		    timer_speed: 200000,
+		    timer_speed: 2000,
 		    pause_on_hover: true,
-		    animation_speed: 800,
+		    resume_on_mouseout: true,
+		    animation_speed: 1100,
 		    navigation_arrows: true,
 		    bullets: false
 		  }

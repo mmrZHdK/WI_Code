@@ -1,6 +1,8 @@
 #rankingTable {
   width: 100%;
   border: none; }
+  #rankingTable a {
+    color: black; }
 
 table#rankingTable th {
   padding-right: 18px;
