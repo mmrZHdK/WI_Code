@@ -212,26 +212,35 @@ img {
         padding: 45px 10px 0 10px; } }
 
 .switcher {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  margin-bottom: 10px;
   display: none; }
-  .switcher:after {
-    content: "";
-    display: table;
-    clear: both; }
+  .switcher, .switcher--mobile {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    margin-bottom: 10px; }
+    .switcher:after, .switcher--mobile:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .switcher--button, .switcher--mobile--button {
+      text-align: center;
+      font-weight: bold;
+      color: #666666;
+      line-height: 4;
+      background: #f8f8f8;
+      border-radius: 2px; }
   @media screen and (max-width: 767px) {
     .switcher {
       display: block; } }
-  .switcher--button {
-    text-align: center;
-    font-weight: bold;
-    color: #666666;
-    line-height: 4;
-    background: #f8f8f8;
-    border-radius: 2px; }
+  .switcher--mobile {
+    display: none; }
+    .switcher--mobile .switcher--button {
+      font-size: 2800%px;
+      font-size: 2rem;
+      line-height: 2.5; }
+  .switcher--mobile.show {
+    display: block; }
 
 /* main.scss */
 html {

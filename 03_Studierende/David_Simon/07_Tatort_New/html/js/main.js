@@ -21,7 +21,6 @@ $(document).ready(function () {
       , currentBackground = 0
       , setBackground = function () {
             var newBackground = (currentBackground < availableBackgrounds.length) ? currentBackground+1 : 0;
-            console.log(newBackground);
             $('.layout__header-container').removeClass('background-' + availableBackgrounds[currentBackground]).addClass('background-' + availableBackgrounds[newBackground]);
             currentBackground = newBackground;
         };

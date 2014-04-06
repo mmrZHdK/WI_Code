@@ -82,20 +82,33 @@ $main-nav: '.main-nav';
 }
 
 .switcher {
-    @include outer-container;
-    padding: 0 15px;
-    margin-bottom: 10px;
+    &, &--mobile {
+        @include outer-container;
+        padding: 0 15px;
+        margin-bottom: 10px;
+        &--button {
+            text-align: center;
+            font-weight: bold;
+            color: $grey-dark;
+            line-height: 4;
+            background: $grey-lighter;
+            border-radius: 2px;
+        }
+    }
 
     display:none;
     @include media($mobile-l) {
         display: block;
     }
-    &--button {
-        text-align: center;
-        font-weight: bold;
-        color: $grey-dark;
-        line-height: 4;
-        background: $grey-lighter;
-        border-radius: 2px;
+
+    &--mobile {
+        display:none;
+        .switcher--button {
+            @include x-rem(font-size, 2);
+            line-height: 2.5;
+        }
+    }
+    &--mobile.show {
+        display:block;
     }
 }

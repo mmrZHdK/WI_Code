@@ -9,7 +9,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Demo "Desktop-Version"
+        window.onload = function() {
+            var urlParams;
+            var match,
+                pl = /\+/g, // Regex for replacing addition symbol with a space
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function(s) {
+                    return decodeURIComponent(s.replace(pl, " "));
+                },
+                query = window.location.search.substring(1);
+            console.log(query);
+            urlParams = {};
+            while (match = search.exec(query)) {
+                console.log(decode(match[1]));
+                urlParams[decode(match[1])] = decode(match[2]);
+            }
+            if (urlParams["desktop"] == 'true') {
+                console.log('setting desktop');
+                var mvp = document.getElementById('viewport');
+                mvp.setAttribute('content', 'width=768');
+                var switcher = document.getElementById('switcher--mobile');
+                switcher.className = switcher.className + ' show';
+            }
+        }
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Tatort-Fundus.de</title>
@@ -56,7 +82,14 @@
             </header>
         </div>
         <div class="switcher">
-            <div class="switcher--button">Zur Desktop Version wechseln</div>
+            <a href="?desktop=true">
+                <div class="switcher--button">Zur Desktop Version wechseln</div>
+            </a>
+        </div>
+        <div class="switcher--mobile" id="switcher--mobile">
+            <a href="?desktop=false">
+                <div class="switcher--button">Zurück zur mobilen Version</div>
+            </a>
         </div>
         <div class="layout__wrapper">
             <main class="layout__main">
