@@ -93,6 +93,8 @@ $highlightclr2: #fdde8a;
 }
 
 
+
+
 .neuigkeiten {
 	.etikett {
 		width: intrinsic;
@@ -267,6 +269,47 @@ $highlightclr2: #fdde8a;
 
 	}
 
+}
+
+.portrait {
+
+	float:left;
+	display: table;
+	.portraitfoto {
+		width: 85%;
+		height: 85%;
+		max-width: 250px;
+		max-height: 250px;
+	}
+	img {
+		border-radius: 50%;
+		display: table-cell;
+	}
+	.kom {
+		width: 50%;
+		vertical-align: middle;
+		display: table-cell;
+		h3 {
+			font-weight: 800;
+			color: $textgrey;
+		}
+	}
+}
+
+.info1 {
+	padding-top: 20px;
+	h2 {
+		font-size: 1em;
+		display: inline-block;
+	}
+	p {
+		display: inline-block;
+	}
+	p.rating2 {
+		span { color: $highlightclr; }
+		font-size: 1.3em;
+		padding-left: 17px; 
+	}
 }
 
 /*
