@@ -1,0 +1,1 @@
+Der Fokus für eine zeitgenössische Webseite sollte auf Responsiveness und Mobile-First liegen.
