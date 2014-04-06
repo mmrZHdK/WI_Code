@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TATORT-Fundus</title>
+    <style type="text/css">
+      td, input, select, textarea { font-size:12px; font-family:Verdana,sans-serif; font-weight:bold; }
+      input, select, textarea { color:#00c; }
+      .Bereich, .Feld { background-color:#FFF; width:200px; border:1px solid #ddd; }
+      .Auswahl { background-color:#030F66; width:300px; border:0px solid #ddd; }
+      .Check, .Radio { background-color:#030F66; border:0px solid #ddd; }
+      .Button { background-color:#030F66; color:#fff; width:200px; border:1px solid #ddd; }
+      .kursiv { font-style:italic; }
+    </style>
+  </head>
+  
+  <body>
+  
+    <div id="wrapper">
+      
+
+<!--        N A V I G A T I O N        -->
+
+      <article>
+
+        <nav>
+          <div class="dropdown">
+            Home
+            <ul class="submenu">
+              <a href="#">
+                <li>Neuigkeiten</li>
+              </a>
+            <ul>
+          </div>
+
+
+          <div class="dropdown">
+            Ranglisten
+            <ul class="submenu">
+              <a href="#">
+                <li>Ranglisten anschauen</li>
+              </a>
+              <a href="#">
+                <li>Ermittler bewerten</li>
+              </a>
+              <a href="#">
+                <li>Geschichte</li>
+              </a>
+            <ul>
+          </div>
+          <div class="dropdown">
+            Forum
+          </div>
+          <div class="dropdown">Folgen</div>
+          <div class="dropdown">Ermittler</div>
+          <div class="dropdown">Lexikon</div>
+          <div class="dropdown">Medien</div>
+          <div class="dropdown">Zeugen</div>
+        </nav>
+
+      </article>
+
+      <div id="breadcrumb">
+        <span class="kursiv"> > Home</span>
+      </div>
+      
+      <!-- <div id="schraffur">
+      </div> -->
+
+<!--        H E A D E R        -->
+
+      <header id="main-header">
+
+        <div id="headertext">
+          <h1>TATORT-Fundus</h1>
+            <div class="header-untertitel">
+              <h5>Die private Internetseite zum Krimiklassiker von ARD, ORF und SRF</h5>
+            </div>
+        </div>
+    
+      </header>
+
+
+<!--        S I D E B A R        -->
+
+      <div id="sidebar">
+        <h3>F O L G E</h3>
+        <h3>B E W E R T E N</h3>
+        <hr id="hr_sidebar">
+
+        <form action="http://de.selfhtml.org/cgi-bin/comments.pl">
+        <table class="knoepfe" border="0" cellpadding="3" cellspacing="0">
+            <tr>
+               <td align="right"></td><!--Username--><br>
+               <td><input name="Username" type="text" class="Feld" size="30" maxlength="30"></td>
+            </tr>
+            <tr>
+               <td align="right"></td><!--Passwort--><br>
+               <td><input name="Passwort" type="text" class="Feld" size="30" maxlength="30"></td>
+            </tr>
+
+            <tr >
+              <td align="right"></td>
+              <td >
+                <input type="submit" class="Button" value="Anmelden">
+                <input type="submit" class="Button" value="Registrieren">
+              </td>
+            </tr>
+
+        </table>
+      </form>
+     </div>
+
+
+<!--        C O N T E N T        -->
+     
+      <div id="content">
+        <article class="content">
+
+          <h2>Neuigkeiten</h2>
+
+          <div id="contentarticle">
+            <img src="contentbild1.gif" width="180" height="135" align="left" vspace="10" hspace="20">
+            <h3>
+              Der Wüstensohn
+            </h3>
+            <p>
+              Tausend und eine Nacht mitten in München - In der letzten Woche haben unter der Regie von Rainer Kaufmann die Dreharbeiten zum TATORT "Der Wüstensohn" begonnen. Udo Wachtveitl und Miroslav Nemec geraten als Batic und Leitmayr mit dem Sohn des Emir von Kumar in Konflikt.
+            </p>
+          </div>
+          
+          <div id="contentarticle">
+            <img src="contentbild2.gif" width="180" height="135" align="left" vspace="10" hspace="20">
+          <h3>
+            Mediathek-Rekord: 1,7 Mio Zugriffe für „Kopfgeld“
+          </h3> 
+          <p>
+            Die zweite TATORT-Folge mit Til Schweiger als Kommissar Nik Tschiller ist die im Jahr 2014 bisher am häufigsten abgerufene TATORT-Folge in der ARD-Mediathek.
+          </p>
+          </div>
+
+
+          <div id="contentarticle">
+            <img src="contentbild3.gif" width="180" height="135" align="left" vspace="10" hspace="20">
+          <h3>
+            Der neue Frankfurter TATORT
+          </h3>
+          <p>
+            Unter dem Arbeitstitel "Liebe ist kälter als der Tod" dreht der Hessische Rundfunk den ersten TATORT mit Margarita Broich als Selma Jacobi und Wolfram Koch als Paul Brix. In ihrem ersten Fall wurde beinahe eine ganze Familie ausgelöscht.
+          </p>
+          </div>
+
+
+          <div id="contentarticle">
+            <img src="contentbild4.gif" width="180" height="135" align="left" vspace="10" hspace="20">
+          <h3>
+            Dreharbeiten zu "Hydra"
+          </h3>
+          <p>
+            In ihrem fünften Fall müssen die vier Dortmunder Kommissare Peter Faber, Martina Bönisch, Nora Dalay und Daniel Kossik den Mord an einem Neonazi aufklären. Robert Stadlober übernimmt die Rolle von Daniel Kossiks Bruder. Die Ausstrahlung ist für den Herbst 2014 geplant.
+          </p>
+          </div>
+
+          <div id="contentarticle">
+            <img src="contentbild5.gif" width="180" height="135" align="left" vspace="10" hspace="20">
+          <h3>
+            Dreharbeiten zu "Die neuen Ermittler: Meret Becker und Mark Waschke"
+          </h3>
+          <p>
+            Meret Becker und Mark Waschke sind die neuen TATORT-Ermittler aus Berlin. Meret Becker wird ab 2015 die Hauptkommissarin Nina Rothe spielen, eine waschechte Berlinerin mit Herz und Verstand. Sie lebt mit ihrem Mann und den zwei Söhnen im Wedding. Mark Waschke spielt ihren Kollegen Hauptkommissar Robert Karow, einen Single und ehemaligen Jurastudenten aus Pankow.
+          </p>
+          </div> 
+
+        </article>
+      </div>
+
+      <div id="footer">
+        © tatort-fundus 1997 - 2014 |
+        Alle Rechte vorbehalten |
+        Vervielfältigung der Texte, BIlder und Daten nur mit Genehmigung des tatort-fundus
+      </div>
+
+    </div>
+  </body>
+</html>
+
