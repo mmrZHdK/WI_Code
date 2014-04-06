@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+article, aside, footer, header, main, nav, section{
+	display: block;
+}
+
+
+
+html, body, h1, h2, h3, h4, h5, ul, li, a, p, article, aside, footer, header, main, nav, section
+{padding: 0;margin: 0;}
+
+
+.rahmen_aktuell
+{
+	position: absolute;
+	left: 142px;
+	width: 600px;
+	height: 300px;
+	font-size: 12px;
+	border: 1px solid red;
+	white-space: nowrap;
+	overflow: scroll;
+
+}
+
+.aktuell {
+	display: inline-block;
+	float: left;
+	width: 230px;
+	margin-right: 30px;
+	height: 300px;
+	border: 1px solid green;
+}
+.aktuell:last-child {
+	margin-right: 0;
+}
+.aktuell img {
+	width: 100%;
+	
+}
