@@ -408,8 +408,7 @@ nav a:visited {
 	float: left;
 	width: 18%;
 	background-color: black;
-	border: 1px solid rgba(35,35,35,0.94);
-	padding-bottom: 3%;
+	padding-bottom: 10px;
 	padding-top: 5px;
 
 }
@@ -419,7 +418,6 @@ nav a:visited {
 	float: left;
 	width: 18%;
 	background-color: black;
-	border: 1px solid #141414;
 	border-top-right-radius: 15px;
 
 }
