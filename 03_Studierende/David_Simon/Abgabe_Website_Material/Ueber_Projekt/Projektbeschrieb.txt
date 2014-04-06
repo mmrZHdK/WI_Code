@@ -1,0 +1,26 @@
+Tatort-Fundus Redesign
+
+Die Tatort-Fundus Webseite ist die Seite schlechthin, wenn es um aktuelle, recherchierte oder hochwertig erarbeitete Informationen geht zur Sendung Tatort.
+
+Die Seite ist inhaltsmässig über die Jahre stark gewachsen und ist in ihrem Äusseren stehen geblieben. Es galt deshalb die Fülle an Informationen neu zu gliedern und einen frischen Anstrich zu verpassen. Das Zielpublikum ist Teils immer noch mit alten Browsern unterwegs aber vermehrt mit mobilen Geräten (30%!). Somit war schnell klar, dass der mobile Kontext ebenso beachtet werden muss, wie der Desktop-Kontext. Die Wahl fiel auf eine responsive Webseite (Desktop-First).
+
+Doch sollte der User die Möglichkeit erhalten die Desktop-Version der Seite aufrufen zu können, denn oft verwirren responsive Websites die User durch eine komplett andere Navigationsweise. Use Patterns werden über den Haufen geworfen und Features weggelassen. Es findet sich darum ein “Zur Desktop Version”-Button prominent unter der Navigation, so dass User doch zur vollen Version wechseln können.
+
+Einige umgesetzte Punkte:
+ - eher klassisch gewähltes Design/Ästhetik
+ - Modular durch “boxen-artiges” Layout
+ - Responsive
+ - Beispiel einer Detailseite zur Demonstration der Layoutaufteilung
+ - Adaptive Seitenelemente (Element Queries), die sich je nach Breite anders verhalten.
+ - Technologisch so umgesetzt, dass auch IE8 funktional voll unterstützt ist, ebenso auch ältere Browser, wenn auch reduziert in der Funktion/Design
+
+TechStack:
+ - Grunt (SASS, JSHint, HTML-Build, Connect, Livereload)
+ - SASS
+ - Bourbon, Bourbon Neat
+ - CSS-Element-Queries
+ - jQuery
+ - Modernizr
+ - Selectivizr
+ - Respond.js
+ - FastClick
