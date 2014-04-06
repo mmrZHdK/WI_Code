@@ -18,11 +18,12 @@ $(document).ready(function () {
             return v;
         }
       , availableBackgrounds = shuffleArray(['schimanski', 'kurtulus', 'bienzle'])
-      , currentBackground = 0;
-    setInterval(function () {
-        var newBackground = (currentBackground < availableBackgrounds.length) ? currentBackground+1 : 0;
-        console.log(newBackground);
-        $('.layout__header-container').removeClass('background-' + availableBackgrounds[currentBackground]).addClass('background-' + availableBackgrounds[newBackground]);
-        currentBackground = newBackground;
-    },5000);
+      , currentBackground = 0
+      , setBackground = function () {
+            var newBackground = (currentBackground < availableBackgrounds.length) ? currentBackground+1 : 0;
+            console.log(newBackground);
+            $('.layout__header-container').removeClass('background-' + availableBackgrounds[currentBackground]).addClass('background-' + availableBackgrounds[newBackground]);
+            currentBackground = newBackground;
+        };
+    setInterval(setBackground,5000);
 });

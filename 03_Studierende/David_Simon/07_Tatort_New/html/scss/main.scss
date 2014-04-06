@@ -70,6 +70,9 @@ $layout: '.layout';
             background: $blue url('../media/header_schimanski_ultra.jpg') no-repeat center center; //$grey-lighter;
             margin-bottom: 15px;
         }
+        &-container.background-schimanski {
+            background-image: url('../media/header_schimanski_ultra.jpg');
+        }
         &-container.background-kurtulus {
             background-image: url('../media/header_kurtulus_ultra.jpg');
             @include media($desktop) {

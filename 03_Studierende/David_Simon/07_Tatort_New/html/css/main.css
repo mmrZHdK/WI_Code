@@ -299,6 +299,8 @@ a:hover {
     @media screen and (max-width: 1440px) {
       .layout__header-container {
         padding: 0 10px; } }
+  .layout__header-container.background-schimanski {
+    background-image: url("../media/header_schimanski_ultra.jpg"); }
   .layout__header-container.background-kurtulus {
     background-image: url("../media/header_kurtulus_ultra.jpg"); }
     @media screen and (max-width: 1139px) {
