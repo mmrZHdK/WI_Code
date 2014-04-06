@@ -1,0 +1,23 @@
+Projekttitel:
+Neustart am Tatort
+
+Beschreibung:
+Die seit 1997 bestehende Website tatort-fundus.de ist das grösste und älteste Portal zum Krimi-Klassiker. Montags besuchen bis zu 9000 Personen die Website.  Inhaltlich ist das Portal über die Jahre stark gewachsen und besitzt einen einzigartigen Fundus an Tatort-Informationen.
+Die Website wurde das letzte mal im Jahr 2007 umgebaut. Die Struktur und das Erscheinungsbild der Website sind daher nicht mehr zeitgemäss und sollen von unserer Klasse überarbeitet werden.
+
+Analyse
+Für die Analyse wurde eine Umfrage erstellt, in welcher die täglichen Besucher ihre Meinung zur Website äussern konnten. Dazu wurde uns die Statistik der Website zur Verfügung gestellt. Folgende Erkenntnisse wurden daraus gewonnen:
+- Oft wurde eine Volltextsuche gewünscht
+- Die komplizierte Navigationsstruktur wurde bemängelt
+- Die Darstellung der Ranglisten sollte verbessert werden
+- Die wichtigsten Seiten sind Folgen, Rangliste und Ermittler
+- ca. 30% besuchen die Seite mit einem Mobilgerät
+- Die vergangenen Tatort-Wiederholungen sollen angezeigt werden
+- Erstsendungen sollen auf der Startseite angezeigt werden
+
+Konzept
+Die Navigationsstruktur der Website soll aufgebrochen werden, indem sie in eine Hauptnavigation (Folge, Ermittler, Rangliste, Berichte) und eine Sekundärnavigation (Fundus, Produkte, FAQ, Forum) unterteilt wird. Der durchschnittliche regelmässige Besucher soll sich nur mit der Hauptnavigation befassen müssen. Eine Volltextsuche soll auf jeder Seite immer verfügbar sein und ein wichtiger Zugang zum Fundus bieten.
+Die Website soll ein Responsive-Layout haben, so dass sie auch für Smartphones und Tablets gut lesbar dargestellt wird.
+
+Prototyp
+Neben der Startseite habe ich die Seiten Folgen, Alle Folgen und ein Folgen Detail gestaltet. Um die Website etwas lebendiger wirken zu lassen, wird im Header bei jedem Seitenaufruf ein neues Bild geladen. Der Inhaltsbereich der Website besteht aus drei Spalten, welche auf unterschiedlichen Seiten in ihrer Breite variieren können.
