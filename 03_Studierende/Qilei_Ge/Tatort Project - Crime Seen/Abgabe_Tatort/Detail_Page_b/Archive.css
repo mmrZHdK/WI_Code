@@ -1,0 +1,163 @@
+/* === Stildefinitionen für feste Topnaviagtion === */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir next condensed;
+  font-size: 18px;
+
+}
+
+/* --- Layout Container */
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  padding: 1em;
+  background-color: #fdd;
+}
+
+article {
+  margin: auto;
+  padding: 2em;
+  background-color: none;
+}
+
+img{width: 100px;
+
+	
+}
+
+
+nav {
+	margin:auto;
+  padding:0.5em;
+  font-family: avenir next condensed;
+  background-color: #ADADD6;
+  font-size: 18px;
+  color:white;
+  left: 400px;
+}
+
+nav div.dropdown {
+float: right;
+	width: 100px;
+  position: relative;
+  display: inline-block;
+  padding: 0.5em;
+  background-color: none;
+  text-align: center;
+}
+nav div.dropdown ul.submenu {
+  position: absolute;
+  top: 1.2em;
+  left: 0;
+  display: none;
+  padding: 0.5em;
+  background-color: #ADADD6;
+  list-style: none;
+}
+
+nav div.archive {
+float: right;
+	width: 100px;
+  position: relative;
+  display: inline-block;
+  padding: 0.5em;
+  background-color: black;
+  text-align: center;
+}
+
+nav div.archive ul.submenu {
+  position: absolute;
+  top: 1.2em;
+  left: 0;
+  display: none;
+  padding: 0.5em;
+  background-color: #ADADD6;
+  list-style: none;
+}
+
+
+nav div.dropdown:hover ul.submenu {
+  display: block;
+}
+nav div.dropdown a {
+  white-space: nowrap;
+}
+
+
+.side{
+		width:150px;
+		height:600px;
+		background-color: #ADADD6;
+		color: white;
+		text-decoration: none;
+		margin: 0;
+	}
+	
+	.list{
+	padding:1.5em;
+	font-size: 18px;
+
+	}
+	
+
+	
+	#light{
+		font-family: avenir next condensed;
+		
+	}
+
+
+
+nav.detail {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  bottom: 3em;
+  width: 25%;
+  padding: 0.5em;
+  background-color: #ADADD6;
+  margin-left: 10px;
+}
+
+
+section#inhalt {
+  position: absolute;
+  top: 6em;
+  bottom: 3em;
+  width: 70%;
+  padding: 2em;
+  overflow: auto;
+  background-color: white;
+  right:40px;
+  bottom: 0px;
+}
+
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin: 0.2em 0em;
+  background-color: white;
+  list-style: none;
+}
+
+.episode{list-style: none;
+	font-size: 14px;
+}
+/* --- spezielle Elemente */
+
+h1 {
+  color: #660;
+  font-size: 2em;
+}
