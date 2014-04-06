@@ -8,17 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/ranking.css" />
     <script src="js/vendor/modernizr.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
-	<script type="text/javascript" src="js/tablesorter/jquery.tablesorter.js"></script>
-	
-	<script type="text/javascript">
-		jQuery(document).ready(function() 
-		    { 
-		        jQuery("#rankingTable").tablesorter({ debug: false, sortList: [[0, 0]], widgets: ['zebra', 'columnHighlight'] }); 
-		    } 
-		); 	
-	</script>
+
   </head>
   <body>
     
@@ -113,6 +103,18 @@
       		
       		<div class="row">
       			<div class="large-12 columns slideshow">
+      				<ul class="example-orbit" data-orbit>
+					  <li class="active">
+					    <img src="img/slider/slider1.jpg" alt="slide 1" />
+					  </li>
+					  <li>
+					    <img src="img/slider/slider2.jpg" alt="slide 2" />
+					  </li>
+					  <li>
+					    <img src="img/slider/slider3.jpg" alt="slide 3" />
+					  </li>
+					</ul>
+					<div class="folgentitel"><h1>Borowski und die Echse der Wüste Gobi<h1></div>
       			</div>
       		</div>
       		
@@ -130,7 +132,7 @@
       		<div class="row">
       			<div class="large-6 columns">
       				<div class="portrait">
-      					<img src="img/tschiller" title="tschiller">
+      					<img src="img/kommissare/tschiller.jpg" title="tschiller">
       				</div>
       				<h3>Kommissar Tschiller</h3>
       			</div>
@@ -273,10 +275,20 @@
    </div> 
     
     
-<!--     <script src="js/vendor/jquery.js"></script> -->
+    <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.orbit.js"></script>
     <script>
-      $(document).foundation();
-    </script>
+		$(document).foundation({
+		  orbit: {
+		    animation: 'slide',
+		    timer_speed: 2000,
+		    pause_on_hover: true,
+		    animation_speed: 800,
+		    navigation_arrows: true,
+		    bullets: false
+		  }
+		});
+	</script>
   </body>
 </html>

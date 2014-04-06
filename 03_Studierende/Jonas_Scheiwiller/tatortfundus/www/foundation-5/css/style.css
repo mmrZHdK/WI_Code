@@ -206,6 +206,21 @@
       padding: 20px 0 20px 0;
       height: auto; } }
 
+.folgentitel {
+  background-color: rgba(255, 100, 18, 0.75);
+  width: intrinsic;
+  position: absolute;
+  bottom: 7px;
+  left: 22px;
+  padding: 10px 14px 10px 14px; }
+  .folgentitel h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 1.95em;
+    line-height: 1.1em;
+    vertical-align: middle;
+    display: table-cell; }
+
 /*
 -----
 overwrite foundation css:
@@ -268,9 +283,3 @@ ul.dropdown {
   padding-left: 15px;
   position: relative !important;
   left: -15px !important; }
-
-/*
-.has-form .small-3 {
-	width: auto;
-}
-*/
