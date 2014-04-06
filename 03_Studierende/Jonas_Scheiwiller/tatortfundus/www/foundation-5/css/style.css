@@ -16,6 +16,11 @@
   font-family: "Proxima Nova", Helvetica, Verdana, sans-serif;
   font-weight: 100;
   font-size: 0.95em; }
+  .sidebar .folgenwiederh ul li .sendedatum {
+    width: auto;
+    display: inline-block; }
+  .sidebar .folgenwiederh ul li .sender {
+    font-weight: 600; }
   .sidebar .h3bg {
     background-color: #f0f0f0;
     display: block; }
@@ -49,7 +54,11 @@
     .sidebar ul li .sendedatum {
       width: 45px;
       display: inline-block; }
-  .sidebar .wiederholungen .allesend {
+  .sidebar .wiederholungen .allesend, .sidebar .folgenwiederh .allesend {
+    padding: 8px 30px 8px 30px;
+    margin-bottom: 0; }
+  .sidebar .allewiederh {
+    font-size: 1em;
     padding: 8px 30px 8px 30px;
     margin-bottom: 0; }
   .sidebar .rating {
@@ -213,6 +222,9 @@
   bottom: 7px;
   left: 22px;
   padding: 10px 14px 10px 14px; }
+  @media only screen and (max-width: 50em) {
+    .folgentitel {
+      margin-right: 25px; } }
   .folgentitel h1 {
     color: white;
     font-weight: 800;
@@ -221,24 +233,49 @@
     vertical-align: middle;
     display: table-cell; }
 
+.portraitinfos {
+  padding-left: 0.9375em; }
+  .portraitinfos .fakten-1, .portraitinfos .fakten-2 {
+    padding-top: 0.9375em; }
+  .portraitinfos .fakten-2 {
+    padding-left: 0; }
+    @media only screen and (max-width: 64em) {
+      .portraitinfos .fakten-2 {
+        padding-top: 0; } }
+  @media only screen and (max-width: 64em) {
+    .portraitinfos .fakten-1 {
+      padding-left: 0; } }
+
 .portrait {
-  float: left;
-  display: table; }
+  background-color: #f7f7f7;
+  border: solid 1px #f0f0f0;
+  padding: 8px;
+  padding-bottom: 0.9375em; }
   .portrait .portraitfoto {
     width: 85%;
     height: 85%;
-    max-width: 250px;
-    max-height: 250px; }
+    max-width: 180px;
+    max-height: 180px;
+    margin: 0 auto 0 auto; }
   .portrait img {
     border-radius: 50%;
     display: table-cell; }
   .portrait .kom {
-    width: 50%;
-    vertical-align: middle;
-    display: table-cell; }
+    display: block;
+    text-align: center; }
     .portrait .kom h3 {
       font-weight: 800;
       color: #282828; }
+
+.inhalt {
+  padding-top: 20px; }
+
+.besetzung {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .besetzung p {
+    font-size: 0.8em;
+    margin-bottom: 0.54em; }
 
 .info1 {
   padding-top: 20px; }
@@ -247,11 +284,15 @@
     display: inline-block; }
   .info1 p {
     display: inline-block; }
-  .info1 p.rating2 {
+  .info1 .rating2 {
     font-size: 1.3em;
-    padding-left: 17px; }
-    .info1 p.rating2 span {
+    padding-left: 17px;
+    padding-left: 33.33333%; }
+    .info1 .rating2 span {
       color: #ff6412; }
+    @media only screen and (max-width: 64em) {
+      .info1 .rating2 {
+        float: right; } }
 
 /*
 -----
