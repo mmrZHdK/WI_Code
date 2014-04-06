@@ -24,7 +24,7 @@
 
     @for $i from 1 through $max {
         $value: strip-unit(nth($values, $i));
-        $pxValues: #{$pxValues + $value*16}px;
+        $pxValues: #{$pxValues + $value*16*$base-font-size}px;
 
         @if $i < $max {
             $pxValues: #{$pxValues + " "};
