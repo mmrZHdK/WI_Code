@@ -29,6 +29,7 @@ table {
 
 body {
 	margin:0;
+	margin-bottom: 60px;
 }
 
 a {
@@ -468,6 +469,36 @@ table {
 	width: 50%;
 }
 
+
+.hella {
+	background-color: #3c3c3c;
+	font-size: 10px;
+	margin-left: 10px;
+}
+
+
+.dunkela {
+	background-color: #262626;
+	font-size: 10px;
+	margin-left: 10px;
+
+}
+
+.titel1a {
+	background-color: #262626;
+	font-size: 12px;
+	margin-left: 10px;
+	width: 90%;
+}
+
+.titel2a {
+	background-color: #3c3c3c;
+	font-size: 12px;
+	margin-left: 10px;
+	width: 95%;
+}
+
+
 #sidebar .zeugenbox {
 	width: 10%;
 	float: left;
@@ -521,6 +552,7 @@ table {
 	width: 90%;
 	margin:5%;	
 	margin-top: 0; 
+	margin-bottom: 50px;
 }
 
 #sidebar .zeugenbox #zufall {
@@ -564,3 +596,8 @@ table {
 /* Footer --------------------------------- */
 
 
+#footer {
+	text-align: center;
+	padding-top: 150px;
+	font-size: 10px;
+}
