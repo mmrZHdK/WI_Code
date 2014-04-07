@@ -1,0 +1,251 @@
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	font-family: 'Metrophobic';
+}
+
+a:-webkit-any-link {
+color: white;
+text-decoration: none;
+cursor: auto;
+}
+
+h3{
+display: block;
+font-size: 1.17em;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+font-family: 'Metrophobic';
+}
+
+
+
+h4{
+line-height: 0.5em;
+font-weight: bolder;
+-webkit-margin-before: 0.33em;
+-webkit-margin-after: 0.33em;
+font-family: 'Metrophobic';
+font-size: 1.2em;
+}
+
+section.werbung{
+	z-index: 4;
+	width:18%;
+	height: 600px;
+	overflow: auto;
+	float: right;
+	}
+
+.inhalt{
+	width:80%;
+}
+
+nav{
+	z-index: 6;
+	position: fixed;
+	top: 0em;
+	border-top: 7px solid rgba(255, 255, 255, 0.9);
+	z-index: 3;
+	width: 80%;
+	height: 7em;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: white;
+}
+.homeknopf img{
+height:5em;
+	display:inline-block;
+	float: left;
+	opacity: 0.6;
+}
+
+
+.menu{
+	position: relative;
+	width: 8em;
+	padding:1%;
+	float: left;
+	color: white;
+	background-color: lightgray;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid white;
+}
+
+.menu:hover{
+	background-color: grey;
+}
+
+
+.menu .submenu{
+	z-index: 2;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	background-color: #ddd;
+	white-space: nowrap;
+}
+
+.menu:hover .submenu{
+	display: inline-block;
+}
+
+.menu .submenu a {
+	padding: 0.5em;
+	display: inline-block;
+	width: 8em;
+	border: 1px solid white;
+}
+.menu .submenu a:hover{
+	background-color: gray;
+} 
+.menu .submenu#m2 {
+	left: -8em;
+}
+
+.menu .submenu#m2 a:hover {
+background-color: gray;
+}
+.menu .submenu#m3 {
+	left: -16em;
+}
+
+.menu .submenu#m3 a:hover {
+background-color: gray;
+}
+.menu .submenu#m4 {
+	left: -24em;
+}
+
+.menu .submenu#m4 a:hover {
+background-color: gray;
+}
+
+.sucher{
+	float:right;
+	padding-top:2em;
+	display:inline-block;
+}
+
+.wiederstaus{
+	z-index: 5;
+	position: fixed;
+	top: 5.5em;
+	height: 2.2em;
+	width:80%;
+	background-color: rgba(255,255,255, 0.8);
+}
+
+.wiederstaus div{
+	display: inline-block;
+	padding-left: 2%;
+	padding-top: 0.5em;
+	padding-bottom: 0.2em;
+	width: 100%;
+	
+}
+.strahlung{
+	display: inline-block;
+background-color: gray;
+}
+
+.holung{
+float: right;
+background-color: gray;
+}
+
+.programm{
+	z-index: ;
+	position: absolute;
+	top: 10em;
+	width: 80%;
+	height: auto;
+	font-size: 1em;
+	background-color: lightgray;
+	}
+
+.programm img{
+	width:100%;
+	padding: 0%;
+	left: 0%;
+}
+
+.erstausstrahlung{
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	background-color: lightgray;
+	margin-right: 3%;
+	top:-1em;
+}
+
+
+div.textausstrahlung{
+	display: block;
+	font-size: 0.9em;
+	padding-top:5em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	width: 100%;
+	overflow: scroll;
+}
+
+.textausstrahlung a{
+	font-size: 1.5em;
+	line-height: 0.8em;
+
+	display: inline-block;
+}
+.textausstrahlung a:hover{
+	line-height: 5em;
+	background-image: url("imagestatort/erstausstrahlung_1.jpg");
+	size:100%;
+}
+
+.wiederholung{
+	position: absolute;
+	width:49%;
+	right: 0%;
+	background-color: lightgray;
+	display: inline-block;
+
+}
+
+.zeitsender{
+	position: fixed;
+	padding: 1%;
+	color: white;
+	background-color: rgba(0,0,0,1);
+	display: inline-block;
+	width: 80%;
+	height: 2em;
+}
+
+.zeitsender a{
+	width:20%;
+}
+.bildbox div.teaser{
+	position: relative;
+	display:block;
+}
+
+.teaser{
+	position: relative;
+	display: block;
+	right: 1%;
+	margin-bottom:-10em;
+	top: -11em;
+	float: right;
+	width:50%;
+	padding: 2%;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 0.8em;
+	color: white;
+}
+
+
