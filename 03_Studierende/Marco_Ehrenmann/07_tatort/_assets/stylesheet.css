@@ -1,0 +1,821 @@
+body {
+    background: #fff;
+    font: normal 100%;
+    position: relative;
+    height: 100%;
+}
+
+body, div, img, p, button, input, select, textarea {
+    box-sizing: border-box;
+}
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100% }
+
+body { margin: 0; font-size: 100%; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: source-sans-pro, helvetica, arial,"lucida grande", verdana, "メイリオ", "ＭＳ Ｐゴシック", sans-serif; color: #222; }
+
+a:link {
+    text-decoration:none;
+    color: #fff;
+}
+a:visited {
+    text-decoration:none;
+    color: #fff;
+}
+a:hover {
+    color: rgb(60, 180, 250);
+}
+a:active {
+    color: rgb(60, 180, 250);
+}
+
+
+
+/*
+Misc
+------------------------------------------------------
+*/
+
+.imageSlider {
+    position: static;
+    float: left;
+    clear: both;
+    width: 100%;
+    background-image:url("img/bild1.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+
+.top {
+    position: relative;
+    float: none;
+    margin: auto;
+    width: 80%;
+    max-width: 960px;
+    height: 34em;
+}
+
+.top2 {
+    position: relative;
+    float: none;
+    margin: auto;
+    width: 80%;
+    max-width: 960px;
+    height: 20em;
+}
+
+.spenden {
+    background-color: #eee;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    padding-left: 0.8em;
+}
+
+.rangliste {
+    background-color: #eee;
+    float: right;
+    width: 66.6%;
+    height: 100%;
+    padding-left: 0.8em;
+}
+
+.ranglisteTable {
+    text-align: left;
+
+}
+
+td.ranglisteTable {
+    padding: 1em;
+}
+
+#leftTable {
+    width: 3em;
+}
+
+#middleTable {
+    width: 18em;
+}
+
+#rightTable {
+    width: 8em;
+}
+
+.imageHome {
+    position: relative;
+    float: left;
+    width: 66.6%;
+    height: 24em;
+    background-image:url("img/bild1.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat no-repeat;
+    vertical-align: bottom;
+}
+
+.aktuelleFolge {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(200, 200, 200, 0.8);
+    height: 6em;
+    width: 100%;
+    padding-left: 0.8em;
+}
+
+p.uebertitel {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 1.5em;
+}
+
+p.featureTitel {
+    font-size: 2.4em;
+    color: rgb(2, 67, 155);
+    letter-spacing: 0.04em;
+    margin-top: -0.45em;
+}
+
+.wiederholungen {
+    height: 10em;
+    float: left;
+    width: 66.6%;
+    background-color: #eee;
+    padding-left: 0.8em;
+}
+
+.news {
+    position: relative;
+    float: right;
+    width: 33.3%;
+    height: 34em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    background-color: #eee;
+}
+
+.sender {
+    font-weight: 700;
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+    font-size: 1em;    
+}
+
+p.newsUebertitel{
+    font-weight: 700;
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+    font-size: 0.8em;
+}
+
+p.newsTitel {
+    color: rgb(2, 67, 155);
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 0em;
+}
+
+p.newsText {
+    font-weight: 500;
+    font-size: 0.86em;
+    margin-top: -1.2em;
+}
+
+.detailInfos {
+    float: none;
+    position: static;
+    width: 80%;
+    min-height: 20em;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    max-width: 960px;
+}
+
+.spacer {
+    height: 5em;
+}
+
+.suchergebnis {
+    float: none;
+    position: static;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    clear: both;
+    max-width: 960px;
+}
+
+.sucheTable {
+    text-align: left;
+    vertical-align: top;
+}
+
+.sucheTitel {
+    color: rgb(2, 67, 155);
+    font-size: 1.5em;
+    font-weight: 300;
+    vertical-align: top;
+}
+
+footer {
+    float: none;
+    position: relative;
+    width: 80%;
+    height: 10em;
+    margin: 1em auto;
+    clear: both;
+    max-width: 960px;
+}
+
+#logo {
+    float: left;
+    font-size: 2em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1em;
+    margin: auto 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+p.episodeTitle {
+    float: left;
+    font-size: 2.5em;
+    height: auto;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0.6em 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(2, 67, 155);
+    letter-spacing: 0.02em;
+}
+
+p.rankingStars {
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1em;
+    clear: none;
+    min-height: 0px;
+    color: rgb(2, 67, 155);
+    letter-spacing: 0.02em;
+}
+
+p.lauftext {
+    float: left;
+    font-size: 1.2em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0.6em 0px;
+    clear: none;
+    min-height: 0px;
+    color: #777;
+    letter-spacing: 0.01em;
+}
+
+p.episodeInfos {
+    float: left;
+    font-size: 1.2em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0.6em 0px;
+    clear: none;
+    min-height: 0px;
+    color: #777;
+    letter-spacing: 0.01em;
+}
+
+.episodeInfos a:link {
+    text-decoration:none;
+    color: rgb(2, 67, 155);
+}
+.episodeInfos a:visited {
+    text-decoration:none;
+    color: rgb(2, 67, 155);
+}
+.episodeInfos a:hover {
+    text-decoration:underline;
+}
+.episodeInfos a:active {
+    text-decoration:underline;
+}
+
+p.footerInfos {
+    float: left;
+    font-size: 0.8em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0.6em 0px;
+    clear: none;
+    min-height: 0px;
+    color: #777;
+    letter-spacing: 0.01em;
+}
+
+span.auszeichnungInfos {
+    white-space: nowrap;
+}
+
+
+
+
+/*
+Personen
+------------------------------------------------------
+*/
+
+.persons {
+    position: relative;
+    float: none;
+    height: auto;
+    width: 80%;
+    margin: 2em auto;
+    max-width: 960px;
+    padding: 0px;
+}
+
+div.personsTable {
+    margin-top: 5em;
+    position: relative;
+    width: 100%;
+}
+
+table.personsTable {
+    text-align: left;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0px;
+    border-collapse:collapse;
+    border-spacing: 0px;
+}
+
+tr.personsTable {
+    height: 10em;
+}
+
+td.imagePerson {
+    width: 5em%;
+}
+
+td.namePerson {
+    width: 28%;
+    padding-left: 0.4em;
+}
+
+img.resizePerson{
+    width:5em;
+    height: auto;
+    margin: 0px;
+}
+
+.tatortName {
+    color: #444;
+    font-weight: 300;
+}
+
+.realName {
+    color: #444;
+    font-weight: 600;
+    margin-bottom: -2.4em;
+}
+
+.sortierenButton {
+    position: relative;
+    float: right;
+    height: 1.4em;
+    width: 5em;
+    padding-top: 0.1em;
+    background-color: rgb(2, 67, 155);
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.buttonPersons {
+    position: relative;
+    float: right;
+    height: 1.4em;
+    margin-right: 0.4em;
+    width: 1.4em;
+    padding-top: 0.18em;
+    background-color: rgb(2, 67, 155);
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.titelPersons {
+    position: relative;
+    float: left;
+    margin: 0px;
+    font-size: 2em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1em;
+    min-height: 0px;
+    color: rgb(2, 67, 155);
+    letter-spacing: 0.02em;
+}
+
+
+/*
+Navigation
+------------------------------------------------------
+*/
+
+#naviBar {
+    float: left;
+    height: 3em;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(2, 67, 155);
+}
+
+nav {
+    position: static;
+    float: none;
+    width: 80%;
+    height: 100%;
+    margin: 0.5em auto;
+    clear: none;
+    min-height: 0px;
+    max-width: 960px;
+}
+
+.navi {
+    position: static;
+    float: right;
+    font-size: 1.03em;
+    width: auto;
+    height: auto;
+    font-weight: 300;
+    line-height: 1em;
+    margin-top: -2em;
+    margin-right: 10.3em;
+    clear: none;
+    min-height: 0px;
+    color: #fff;
+    text-transform: none;
+    letter-spacing: 0.04em;
+}
+
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+nav ul:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+    nav ul,nav ul li{
+    background-color: rgb(2, 67, 155);
+}
+    nav ul li {
+    list-style: none;
+    float:left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.7em 1em 0.7em 1em;
+}
+
+nav ul li:hover > ul {
+    visibility: visible;
+}
+nav ul li ul{
+    display: inline;
+    visibility: hidden;
+    position: absolute;
+    padding:0px;
+}
+
+nav ul li ul li{
+    float: none;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+ 
+}
+
+nav ul li {
+list-style: none;
+    float:left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 0.7em 1em 0.7em 1em;
+ 
+}
+
+
+/*
+Search Bar
+------------------------------------------------------
+*/
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}
+
+.form-wrapper input {
+    float: right;
+    position: relative;
+    margin-top: 0.2em;
+    height: 1.6em;
+    padding: 10px 5px;
+    font-weight: 500;
+    font-size: 1em;
+    border: 0;
+    background: #eee;
+    -webkit-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
+    clear: none;
+}
+ 
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: 500;
+   font-style: italic;
+}
+ 
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: 500;
+    font-style: italic;
+}
+ 
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+   font-weight: 500;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: static;
+    margin-top: 0.2em;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 1.6em;
+    font-size: 1em;
+    color: #fff;
+    background: rgb(3, 116, 225);
+    clear: none;
+    -webkit-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+}   
+   
+.form-wrapper button:hover{     
+    background: rgb(93, 175, 255);
+}   
+   
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+    background: rgb(93, 175, 255);
+    outline: 0;   
+}
+
+
+.form-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+ 
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+    background: rgb(93, 175, 255);
+}
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+
+
+
+/*
+Ads
+------------------------------------------------------
+*/
+
+.adLeaderboard {
+    float: none;
+    position: relative;
+    width: 80%;
+    max-width: 960px;
+    height: 8em;
+    margin: 4em auto 2em;
+    padding-top: 3.4em;
+    clear: none;
+    background-color: #555;
+    text-align: center;
+}
+
+
+/*
+Media Queries
+------------------------------------------------------
+*/
+
+@media all and (max-width: 500px){
+    .imageSlider {
+    height: 40%;
+    min-height: 10em;
+    max-height: 20em;
+    }
+    .adLeaderboard {
+    width: 100%;
+    }
+    .detailInfos footer nav .persons {
+    width: 94%;
+    }
+    .rankingStars {
+    float: left;
+    font-size: 1.8em;
+    margin: -0.2em 0px 0.5em;
+    }
+    p.episodeTitle {
+    width: 100%;
+    }
+    #logo {
+    visibility: hidden;
+    width: 0px;
+    }
+    .form-wrapper button {
+    width: 0em;
+    }
+    .form-wrapper input {
+    width: 0em;
+    visibility: hidden;
+    display: none;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 500px) {
+    .imageSlider {
+    height: 40%;
+    min-height: 30em;
+    max-height: 40em;
+    }
+    .adLeaderboard {
+    width: 100%;
+    }
+    .detailInfos footer nav .persons {
+    width: 90%;
+    }
+    .rankingStars {
+    float: left;
+    font-size: 2em;
+    margin: -0.2em 0px 0.5em;
+    }
+    p.episodeTitle {
+    width: 100%;
+    }
+    #logo {
+    visibility: hidden;
+    width: 0px;
+    }
+    .form-wrapper button {
+    width: 0em;
+    }
+    .form-wrapper input {
+    width: 0em;
+    visibility: hidden;
+    display: none;
+    }
+}
+
+@media all and (max-width: 1500px) and (min-width: 1000px) {
+    .imageSlider {
+    height: 30%;
+    min-height: 33em;
+    max-height: 45em;
+    }
+    .rankingStars {
+    float: right;
+    font-size: 2.5em;
+    margin: 0.6em 0px;
+    }
+    .cat6 {
+    visibility: hidden;
+    width: 0px;
+    }
+    .form-wrapper input {
+    width: 20%;
+    min-width: 4em;
+    max-width: 8em;
+    }
+    .form-wrapper button {
+    width: 2em;
+    }
+}
+
+@media all and (max-width: 2000px) and (min-width: 1500px) {
+    .imageSlider {
+    height: 40%;
+    min-height: 40em;
+    max-height: 70em;
+    }
+    .rankingStars {
+    float: right;
+    font-size: 2.5em;
+    margin: 0.6em 0px;
+    }
+    .cat6 {
+    visibility: hidden;
+    width: 0px;
+    }
+    .form-wrapper input {
+    width: 20%;
+    min-width: 4em;
+    max-width: 8em;
+    }
+    .form-wrapper button {
+    width: 2em;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .imageSlider {
+    height: 40%;
+    min-height: 50em;
+    max-height: 100em;
+    }
+    .rankingStars {
+    float: right;
+    font-size: 2.5em;
+    margin: 0.6em 0px;
+    }
+    .cat6 {
+    visibility: hidden;
+    width: 0px;
+    }
+    .form-wrapper input {
+    width: 20%;
+    min-width: 4em;
+    max-width: 8em;
+    }
+    .form-wrapper button {
+    width: 2em;
+    }
+}
