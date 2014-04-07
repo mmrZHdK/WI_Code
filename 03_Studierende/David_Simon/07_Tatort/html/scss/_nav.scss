@@ -97,7 +97,7 @@ $main-nav: '.main-nav';
     }
 
     display:none;
-    @include media($mobile-l) {
+    @include media($max-device-mobile) {
         display: block;
     }
 
