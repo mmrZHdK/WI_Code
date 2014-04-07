@@ -1,0 +1,378 @@
+/* Manually changed */
+
+html .NnSlideshow.fullscreen .footer .links .relatedArticle {
+  /* The following !important is necessary, otherwise "#mainColLeft p" is stronger */
+  font-family: "Benton Sans Cond" !important;
+}
+
+.fullscreenOverlay {
+  z-index: 10000; /* Use 10000 becuase 1 was too less, ads sometimes overlapped (espacially by flash ads sidebar) */
+}
+
+
+/* 1:1 copy from NN2, do NOT CHANGE ANYTHING below this line */
+
+/* line 4, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow:not(.imagesAvailable) .carousel .back, html .NnSlideshow:not(.imagesAvailable) .carousel .forward {
+  display: none;
+}
+/* line 12, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .carousel .back img.white, html .NnSlideshow.fullscreen .carousel .forward img.white {
+  display: inline;
+}
+/* line 15, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .carousel .back img.blue, html .NnSlideshow.fullscreen .carousel .back img.blueGlow, html .NnSlideshow.fullscreen .carousel .back img.whiteGlow, html .NnSlideshow.fullscreen .carousel .forward img.blue, html .NnSlideshow.fullscreen .carousel .forward img.blueGlow, html .NnSlideshow.fullscreen .carousel .forward img.whiteGlow {
+  display: none;
+}
+/* line 21, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .back img.white, html .NnSlideshow .carousel .back img.whiteGlow, html .NnSlideshow .carousel .back img.blueGlow, html .NnSlideshow .carousel .forward img.white, html .NnSlideshow .carousel .forward img.whiteGlow, html .NnSlideshow .carousel .forward img.blueGlow {
+  display: none;
+}
+/* line 24, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .back img.blue, html .NnSlideshow .carousel .forward img.blue {
+  display: inline;
+}
+/* line 34, ../../../app/styles/lib/_slideshow.sass */
+html.no-touch .NnSlideshow.fullscreen .carousel .back:hover img.blue, html.no-touch .NnSlideshow.fullscreen .carousel .back:hover img.blueGlow, html.no-touch .NnSlideshow.fullscreen .carousel .back:hover img.white, html.no-touch .NnSlideshow.fullscreen .carousel .forward:hover img.blue, html.no-touch .NnSlideshow.fullscreen .carousel .forward:hover img.blueGlow, html.no-touch .NnSlideshow.fullscreen .carousel .forward:hover img.white {
+  display: none;
+}
+/* line 37, ../../../app/styles/lib/_slideshow.sass */
+html.no-touch .NnSlideshow.fullscreen .carousel .back:hover img.whiteGlow, html.no-touch .NnSlideshow.fullscreen .carousel .forward:hover img.whiteGlow {
+  display: inline;
+}
+/* line 44, ../../../app/styles/lib/_slideshow.sass */
+html.no-touch .NnSlideshow .carousel .back:hover img.white, html.no-touch .NnSlideshow .carousel .back:hover img.whiteGlow, html.no-touch .NnSlideshow .carousel .back:hover img.blue, html.no-touch .NnSlideshow .carousel .forward:hover img.white, html.no-touch .NnSlideshow .carousel .forward:hover img.whiteGlow, html.no-touch .NnSlideshow .carousel .forward:hover img.blue {
+  display: none;
+}
+/* line 47, ../../../app/styles/lib/_slideshow.sass */
+html.no-touch .NnSlideshow .carousel .back:hover img.blueGlow, html.no-touch .NnSlideshow .carousel .forward:hover img.blueGlow {
+  display: inline;
+}
+/* line 50, ../../../app/styles/lib/_slideshow.sass */
+html .fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000);
+}
+/* line 65, ../../../app/styles/lib/_slideshow.sass */
+html .fullscreenOverlay.disabled {
+  position: static;
+  background: transparent;
+  filter: none;
+}
+/* line 70, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow {
+  visibility: hidden;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+  cursor: default;
+}
+/* line 77, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.hidden {
+  display: none;
+}
+/* line 83, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreenEnabled .carousel .images .center {
+  cursor: pointer;
+}
+/* line 86, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreenEnabled .carousel .magnifier {
+  display: block;
+}
+/* line 89, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen {
+  cursor: default;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  min-width: 768px;
+  min-height: 600px;
+}
+/* line 97, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen a {
+  color: white;
+  font-family: "Benton Sans Cond Black";
+  text-decoration: none;
+}
+/* line 102, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen a .icon:after {
+  color: white;
+}
+/* line 105, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen h1, html .NnSlideshow.fullscreen h2 {
+  font-size: 22px;
+  line-height: 24px;
+  padding: 0 48px 0 24px;
+}
+/* line 109, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen h1 {
+  font-family: "Benton Sans Cond Black";
+  padding-top: 15px;
+  padding-bottom: 2px;
+  height: 22px;
+}
+/* line 115, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen h2 {
+  font-family: "Benton Sans Cond Light";
+  height: 60px;
+  vertical-align: top;
+  font-weight: normal;
+}
+/* line 121, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .closeButton {
+  position: absolute;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  border: 20px solid transparent;
+  cursor: pointer;
+}
+/* line 130, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .carousel {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* line 135, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .carousel .back img, html .NnSlideshow.fullscreen .carousel .forward img {
+  width: 13px;
+  height: 28px;
+  top: 50%;
+  margin-top: -14px;
+}
+/* line 141, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .carousel .magnifier {
+  display: none;
+}
+/* line 144, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer {
+  height: 100%;
+}
+/* line 147, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .paging {
+  margin-left: 24px;
+}
+/* line 150, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .caption {
+  width: 55%;
+  min-height: 118px;
+}
+/* line 154, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .caption .link {
+  display: block;
+  font-family: "Benton Sans Cond Light";
+  margin-top: 8px;
+}
+/* line 159, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .caption .socialMedia {
+  margin-top: 12px;
+}
+/* line 162, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .caption .socialMedia iframe {
+  float: left;
+  width: 135px;
+}
+/* line 163, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .caption .socialMedia iframe:first-of-type {
+  width: 120px;
+}
+/* line 169, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .links {
+  float: right;
+  width: 30%;
+  margin: 10px 24px 10px 0;
+}
+/* line 174, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen .footer .links .title {
+  font-family: "Benton Sans Cond Black";
+}
+/* line 177, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen.whity {
+  background-color: white;
+}
+/* line 180, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen.blacky {
+  background-color: #333333;
+}
+/* line 183, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.fullscreen.blacky * {
+  color: white;
+}
+/* line 189, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.normalImage .carousel .magnifier:hover {
+  background: url("http://www.tagesanzeiger.ch/images/slideshow/magnify.png") no-repeat center;
+}
+/* line 196, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.staticMode .carousel .images .center .content {
+  position: static;
+}
+/* line 199, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.staticMode .carousel .images .center .content > img {
+  position: static;
+}
+/* line 202, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .row {
+  display: table-row;
+}
+/* line 205, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .cell {
+  display: table-cell;
+}
+/* line 208, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel {
+  height: 100%;
+}
+/* line 211, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .back, html .NnSlideshow .carousel .forward {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 20%;
+  height: 100%;
+  top: 0;
+  cursor: pointer;
+}
+/* line 225, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .back img, html .NnSlideshow .carousel .forward img {
+  position: absolute;
+  width: 13px;
+  height: 28px;
+  top: 50%;
+  margin-top: -14px;
+}
+/* line 233, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .back img.svg, html .NnSlideshow .carousel .forward img.svg {
+  -webkit-filter: drop-shadow(1px 1px 7px black);
+  filter: url(http://www.tagesanzeiger.ch/images/slideshow/shadow.svg#dropShadow);
+  width: 30px;
+  height: 36px;
+  top: 50%;
+  margin-top: -18px;
+}
+/* line 240, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .back {
+  left: -24px;
+}
+/* line 243, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .back img {
+  left: 5px;
+}
+/* line 246, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .forward {
+  right: -24px;
+}
+/* line 249, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .forward img {
+  right: 5px;
+}
+/* line 253, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel:hover .back, html .NnSlideshow .carousel:hover .forward {
+  visibility: visible;
+}
+/* line 256, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .magnifier {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -36px;
+  margin-right: -36px;
+  left: 20%;
+  right: 20%;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  cursor: pointer;
+}
+/* line 269, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+/* line 278, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .images .center {
+  cursor: default;
+  display: table-row;
+  height: 100%;
+}
+/* line 283, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .images .center .content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* line 294, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .carousel .images .center .content > img {
+  position: absolute;
+}
+/* line 298, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .footer .paging {
+  margin: 10px 0 10px 0;
+  float: left;
+  width: 60px;
+}
+/* line 303, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .footer .paging .first {
+  font-family: "Benton Sans Cond Black";
+}
+/* line 306, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow .footer .caption {
+  margin: 10px 10px 10px 0;
+  padding: 0;
+  padding-top: 0;
+  float: left;
+  width: 88%;
+}
+/* line 317, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.inline .carousel {
+  background-color: #1a1a1a;
+}
+/* line 320, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.inline h1, html .NnSlideshow.inline h2, html .NnSlideshow.inline .closeButton {
+  display: none;
+}
+/* line 325, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.inline .footer .caption .link {
+  display: none;
+}
+/* line 328, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.inline .footer .caption .socialMedia {
+  display: none;
+}
+/* line 331, ../../../app/styles/lib/_slideshow.sass */
+html .NnSlideshow.inline .footer .links {
+  display: none;
+}
+
+/* line 2, ../../../app/styles/lib/_slideshowAdManager.sass */
+.NnSlideshow .ads {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 9, ../../../app/styles/lib/_slideshowAdManager.sass */
+.NnSlideshow.adMode .carousel .magnifier {
+  display: none;
+}
+/* line 12, ../../../app/styles/lib/_slideshowAdManager.sass */
+.NnSlideshow.adMode .carousel .images .center .content {
+  position: static;
+}
+/* line 15, ../../../app/styles/lib/_slideshowAdManager.sass */
+.NnSlideshow.adMode .paging, .NnSlideshow.adMode .caption {
+  font-weight: bold;
+}

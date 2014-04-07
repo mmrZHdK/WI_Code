@@ -1,0 +1,63 @@
+#tamediaToolbar {
+    display: none;
+}
+
+#adtopBanner,
+#wideBoard {
+    display: none;
+}
+
+#header #topNav,
+#header #mainNav,
+#header #subnavigation {
+    display: none;
+}
+
+#article {
+    margin: 0;
+}
+
+#mainColLeft #aside {
+    display: none;
+}
+
+#mainColLeft #mainContent {
+    width: 640px;
+}
+
+#mainColRight #asidePrint {
+    display: block !important;
+    border-top: 1px solid #797979;
+    margin: 4px 0 24px 0;
+}
+
+#mainColRight #asidePrint .storyInfo .author,
+#mainColRight #asidePrint .storyInfo time,
+#mainColRight #asidePrint .storyInfo .time {
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
+#mainColRight .teaserEditorialContent,
+#mainColRight .contextBoxAd,
+#mainColRight .leserRep,
+#mainColRight .publireportage,
+#mainColRightPublireportage {
+    display: none;
+}
+
+#colRightAd,
+#sidebarSky {
+    display: none;
+}
+
+#mainColBottom,
+#mainColBottomMore,
+#mainColBottomAd,
+#mainColBottomDiashow {
+    display: none;
+}
+
+#footer {
+    display: none;
+}

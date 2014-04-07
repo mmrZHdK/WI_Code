@@ -1,0 +1,349 @@
+/* Helpers */
+a {
+    color: #007abf;
+    text-decoration: none;
+}
+
+a:hover nobr {
+    color: #007abf;
+}
+
+a:hover span {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+h3 a:hover {
+    color: #007abf !important;
+}
+
+.blueTitle {
+    font-family: "Benton Sans Cond";
+    color: #007abf;
+}
+
+.icon {
+    color: #007abf;
+}
+
+.icon-search:before {
+    color: #007abf;
+}
+
+.blueKeyword {
+    margin: 0 4px 0 0;
+    color: #007abf;
+    font-weight: bold !important;
+    font-family: "Benton Sans Cond Black" !important;
+}
+
+.keyword a {
+    color: #007abf;
+}
+
+.author a:hover {
+    color: #007abf !important;
+}
+
+/* header */
+#topNav .loginNav .login a {
+    background-color: #007abf;
+}
+
+ul li a.active {
+    color: #007abf !important;
+}
+
+#mainNav li a:hover {
+    color: #007abf;
+}
+
+#masthead ul li#headerDate, #masthead ul li#headerWeather {
+    width: 156px; 
+    height: 90px;
+}
+
+#masthead li#headerWeather a span {
+    color: #007abf;
+}
+
+#masthead ul li#tagiLogo {
+    text-align: center;
+}
+
+#mainLogo {
+    width: 414px;
+    height: 80px;
+}
+
+#subnavigation ul li a:hover {
+    color: #007abf !important;
+}
+
+/* mainContainer Helpers */
+#mainContainer .contextBoxTitle a,
+#mainContainer .title a {
+    color: #007abf;
+}
+
+#mainContainer .contextBoxTitle a:hover {
+    color: #333;
+}
+
+/*h4.contextBoxTitle span a:hover {
+    color: #999 !important;
+}
+*/
+
+
+
+#mainContainer .greyBackground .articleStory h4 a:hover {
+    color: #007abf !important;
+}
+
+.boerse_box h4 a.title {    
+    color: #007abf !important;
+}
+
+#mainColLeft ul.ui-tabs-nav li.ui-tabs-selected a {
+    color: #007abf !important;
+}
+
+
+/*front*/
+#mostPopularLink:hover,
+#newsTickerLink:hover {
+    color: #007abf;“
+}
+
+.mostSharedArticles table td a:hover, 
+.boxNews table td a:hover {
+    color: #007abf !important;
+}
+
+#mainColLeft #mainColMiddle #bestOfFacebook ul li a:hover {
+    color: #007abf;
+}
+
+#mainColLeft #mainColMiddle #recommendedStories .story p a:hover{    
+    color: #007abf;
+}
+
+#mainColRight .sidelineBoxFront p a:hover,
+#mainColRight .sidelineBoxFront p a:hover span {
+    color: #007abf;
+}
+
+#mainColRight .smallTextBox a:hover,
+#mainColRight .smallTextBox a:hover span {
+    color: #007abf;
+}
+
+.boxNews ul li a:hover,
+#meistgelesen_rubrik ul li a:hover {
+    color: #007abf;
+}
+
+.ressort .ressortMiddle h4 a:hover {
+    color: #007abf;
+}
+
+.ressortRight h4 a:hover {
+    color: #007abf;
+}
+
+.ressort .ressortRight.dasMagazin h5 a:hover {
+    color: #007abf;
+}
+
+.mostDiscussedArticles td a:hover {
+    color: #007abf;
+}
+
+/*category(ressorts)*/
+.dossiers .search .ui-tabs-nav li.ui-tabs-selected a {
+    color: #007abf !important;
+}
+
+.letters ul li:hover {
+    background-color: #007abf;
+    border-color: #007abf;
+}
+
+h4 a.showMore {
+    color: #007abf !important;
+}
+
+h4 a.showMore:hover {
+    color: #333 !important;
+}
+
+.dossierDiashow p a:hover {
+    color: #007abf !important;
+}
+
+#mainColLeft ul.ui-tabs-nav li a:hover {
+    color: #007abf !important;
+}
+
+#slideshowOverview .slideshows .story p a:hover,
+#slideshowOverview .slideshows.home .featureStory p a:hover {
+    color: #007abf;
+}
+
+#mainColRight .relatedThemaMedia p a:hover {
+    color: #007abf;
+}
+
+.multimediaNav a:hover {
+    color: #007abf;
+}
+
+.diashowTeaser a:hover h4 span {
+    color: #007abf;
+}
+
+/*article*/
+#aside .author a.twitterLink {
+    color: #007abf !important;
+}
+
+.kommentOptions span, .replyToCommentTxt, .backToStoryLink {
+    color: #007abf !important;
+}
+
+.relatedArticle h5 a:hover {
+    color: #007abf;
+}
+
+#mainColBottomMore .bottomLinks .relatedThemaMedia p a:hover,
+#mainColBottomMore .bottomLinks .relatedThemaMedia p a:hover span {
+    color: #007abf;
+}
+
+#mainColBottomMore .bottomLinks .relatedThema .story p a:hover,
+#mainColBottomMore .bottomLinks .relatedThema .story p a:hover span {
+    color: #007abf;
+}
+
+/*sideline, teasers*/
+.teaserEditorialContent .leftCol ul li a,
+.teaserEditorialContent .rightCol ul li a {
+    color: #007abf !important;
+}
+
+.publireportage .adsBox h5 a:hover,
+.publireportage .adsBox h5 a:hover nobr,
+.teaserEditorialContent h4.title a:hover,
+.teaserEditorialContent .adsBox a:hover {
+    color: #007abf !important;
+}
+
+.teaserEditorialContent p a:hover,
+.teaserEditorialContent p a:hover span {
+    color: #007abf;
+}
+
+.boxExclusiv ul a:hover {
+    color: #007abf;
+}
+
+.relatedArticle h5 a:hover {
+    color: #007abf;
+}
+
+.bottomLinks .slideshows p:hover,
+.bottomLinks .slideshows p:hover span,
+.bottomLinks .videos p:hover,
+.bottomLinks .videos p:hover span {
+    color: #007abf;
+}
+
+/* zhTipp */
+#zhTipp span {
+    font-family: "Benton Sans Cond";
+}
+
+#zhTipp li.zhTippIcon {
+    list-style-type: none;
+    background: url(http://files.newsnetz.ch/css/images/zhtipp.png) no-repeat top left;
+    padding: 0 0 0 44px;
+    min-height: 24px;
+    font-size: 16px;
+}
+
+#zhTipp li a {
+    font-family: "Benton Sans Cond";
+    color: #333;
+}
+
+#zhTipp li a:hover {
+    color: #007abf;
+}
+
+#zhTipp .ressortLeft .featureStory {
+    padding: 0;
+}
+
+#zhTipp .ressortMiddle .featureStory {
+    padding: 0 12px;
+    position: relative;
+    top: -12px;
+}
+
+#zhTipp .ressortMiddle .featureStory a img {
+    margin: 0 0 8px 0 !important;
+}
+
+#zhTipp .ressortMiddle .featureStory ul {
+    position: relative;
+    top: -22px;
+}
+
+#zhTipp .ressortMiddle .featureStory ul li {
+    font-family: "Benton Sans Cond";
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#zhTipp .ressortMiddle .featureStory .overlappingIcon {
+    position: relative;
+    left: -4px;
+}
+
+/* mainColRight contextBoxes */
+#mainColRight .contextBox p.desc a:hover span {
+    color: #007abf !important;
+}
+
+
+#mainColRight .contextBox a span ,
+#mainColRight .contextBox a b {
+    color: #007abf;
+}
+
+#mainColRight .contextBox a:hover span ,
+#mainColRight .contextBox a:hover b {
+    color: #333;
+}
+
+.relatedThemaMedia p a {
+    color: #333;
+}
+
+.relatedThemaMedia p a:hover span,
+.relatedThemaMedia p a:hover {
+    color: #007abf;
+}
+
+/* footer */
+#bottomNav li a:hover {
+    color: #007abf;
+}
+
+#bottomNav li.active {
+    color: #007abf;
+}

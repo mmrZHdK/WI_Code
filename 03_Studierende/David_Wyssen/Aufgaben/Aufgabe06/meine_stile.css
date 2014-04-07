@@ -1,0 +1,23 @@
+
+h1 {     margin: 0 0 0 0;
+color: blue; 
+	
+}
+
+h2 {}
+
+p {
+	font-size: 14px;
+	color: #000;
+	
+}
+
+
+.caption {
+    /*width: 640px;*/
+    font-family: "helvetica";
+    margin: 10px 0 0 0;
+    color: #191919;
+}
+
+.lauftext {}
