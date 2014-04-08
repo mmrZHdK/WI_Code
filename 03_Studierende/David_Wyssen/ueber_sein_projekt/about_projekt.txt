@@ -1,0 +1,3 @@
+Redesign Tatort
+
+Designvorschlag- überarbeitung der bestehenden Webauftritt. Als Scribble definiert sind die Navigation, umgesetzt in Html ein «Look and feel» der Seiten «home» und «folge». Wobei nicht alle Elemente (z.B Tabelle oder Liste) nicht ausgestaltet worden sind. Lösung soll als Mobile-first angesehen werden, wobei die Desktopversion sind nicht unterscheiden soll von der Tablet-, Mobile-Version (Navigation fliesst immer von links rein).
