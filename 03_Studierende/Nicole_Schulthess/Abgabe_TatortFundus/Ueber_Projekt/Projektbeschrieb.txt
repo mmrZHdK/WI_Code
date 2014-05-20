@@ -1,0 +1,9 @@
+Als erstes habe ich mir die Website möglichst unvoreingenommen angeschaut und festgehalten was mir aufgefallen ist. Ebenfalls habe ich die Notizen durchgekämmt, welche ich mir währen dem Vortrag gemacht habe. Dann ging ich auf Piwik und habe mir auch von dort die relevanten Informationen zusammengesucht. 
+
+Es war klar und wichtig, dass man die neue Seite auf einer neuen und übersichtlichen Struktur aufbaut. So habe ich mittels Text der Ist-Stand festgehalten und angefangen zu löschen und aufzuräumen. Alles was ich umgebaut habe in der Struktur habe ich in meinen Notizen, in ein helles Grün gefärbt, da Herr Werner so die konkrete Veränderungen nachvollziehen könnte und es ihm möglich wäre, mit zu bestimmen. Dann habe ich aufgrund der verfügbaren Informationen entschieden, welche Punkte im Menü und welche auf der Vorderseite immer ersichtlich sein sollen. 
+
+Dann war es Zeit, das ganze im Coda umzusetzen. Aufgrund eines von Hand aufgezeichneten Wireframe habe ich zuerst die Boxen platziert und den Code schön Übersichtlich anhand dieser Boxen aufgebaut. Da der Code nun in einigen Verschachtelungen daherkam, war ich sehr froh um diese Übersicht. 
+
+Dann wurden Breadcrumbs und das aufklappbare Login eingebaut. Welches übrigens beides Funktioniert, nur im Video nicht optimal zur Geltung kommt. Eine Suchfunktion war wichtig auf der ersten Seite und auch der Footer durfte nicht fehlen. Bevor mir die Zeit dann endgültig davon raste, habe ich den Titel und das Titelbild eingefügt. 
+
+Die Arbeit hat mir viel spass gemacht und meinen Horizont erweitert. Die gehaltene Unterrichtsform habe ich sehr Geschätzt und konnte viel profitieren. Ich bin zufrieden mit meiner Arbeit, ausser das ich noch ein bisschen mehr Zeit gebraucht hätte um das ganze in einem fertigen Zustand zu präsentieren. 

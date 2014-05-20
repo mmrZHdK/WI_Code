@@ -1,0 +1,146 @@
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  } 
+  
+  .titelbalken{
+  			  	height: 4em; 
+  			  	background-color: #f1f1f1;
+  			  	margin: 10px 0px 0px 0px;
+  			  	}
+
+   nav{
+   				height: 4em;
+   				background-color: #f1f1f1;
+   				margin: 10px 0px 0px 0px;
+   				}
+ 
+ p {
+				float: left;
+				width: 49%;
+				height: 4em;
+   				background-color: #f1f1f1;
+   				margin: 10px 2% 0px 0px;
+   				
+   				}
+   		
+ form {
+				float: left;
+				width: 49%;
+				height: 4em;
+   				background-color: #f1f1f1;
+   				margin: 10px 0px 0px 0px;
+   				}
+   				
+
+.sec1 {
+	 			z-index: 10;
+	 			float: left;
+				width: 100%;
+				height: 35em;
+   				background-color: #f1f1f1;
+   				margin: 10px 0px 0px 0px;
+   				}		
+  		
+  		
+.sec2{
+				z-index: 20;	
+				float: left;
+				width: 100%;
+				background-color: #f2d9d9;
+   				margin: 0px 0px 0px 0px;
+	
+				} 		
+.sec4{
+				z-index: 30;
+				float: left;
+				width: 47%;
+				height: 16em;
+   				background-color: #f49696;
+   				margin: 10px 0px 10px 10px;	
+				} 		
+	  		
+.sec6{
+				z-index: 30;
+				float: right;
+				width: 47%;
+				height: 16em;
+   				background-color: #f49696;
+   				margin: 10px 10px 0px 0px;	
+				} 		
+	  		
+  		
+h4 {			
+				
+}	
+  		
+ul {
+	
+}  				
+
+.sec3{
+				z-index: 20;
+				float: left;
+				width: 100%;
+   				background-color:#ccc ;
+   				margin: 10px 0px 10px 0px;
+   	}
+
+.sec5{			
+	z-index: 30;
+	float: left;
+	width: 47.5%;
+	height: 16em;
+	background-color:#f49696;
+	margin: 10px 1% 10px 1%;	
+				} 
+
+
+
+.ko {			
+	z-index: 40;
+	float: right;
+	width: 47.5%;
+	height: 7.3em;
+	background-color:#f49696;
+	margin: 10px 1% 10px 1%;
+
+}
+
+
+.ku {			
+	z-index: 40;
+	float: right;
+	width: 47.5%;
+	height: 7.3em;
+	background-color:#f49696;
+	margin: 10px 1% 10px 1%;
+
+}
+
+
+.foodiv {
+	height: 4em;
+ 	background-color: #f1f1f1;
+ 	margin: 10px 0px 0px 0px;
+   	}			
+   	
+.foonav{
+	height: 4em;
+	background-color: #f1f1f1;
+	margin: 10px 0px 0px 0px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

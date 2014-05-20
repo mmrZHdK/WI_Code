@@ -1,0 +1,82 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  } 
+
+body {
+  	margin: 0;
+  	padding: 0;
+  	}
+
+header {
+  	width: 100%;
+  	height: 4em;
+  	padding: 3em;
+  	background-color: #f1f1f1;
+  	}
+
+nav {
+	 font-style:  "Verdana", sans-serif;
+	 font-size: 11pt;
+	 width: 100%;
+	 background-color: #dfdfdf;
+	 color: #000000;
+	 border-right-color: #FFFFFF;
+	 padding: 10px;
+	 margin: 1.5px;
+	 }
+
+a	{
+	color: #20009c;
+	font-family: serif;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+p 	{
+	background-color: #d0d0d0;
+	float: left;
+	width: 50%;
+	margin: 1px 0px 0px 0px;
+	padding: 8px;
+	}	
+
+fieldset {
+  	float: right;
+  	margin: 1px 0px 0px 0px;
+  	width: 50%;
+  	padding: 4px;
+  	}
+
+section {
+	width: 50%;	 font-style:  "Verdana", sans-serif;
+	margin: 1px 0px 0px 0px;
+	font-size: 11pt;
+	background-color: #dfdfdf;
+	color: #000000;
+	border-right-color: #FFFFFF;	
+	}
+	
+.topuser {
+	float: left;
+	}
+
+.wiederholungen{
+	float: right;
+	}
+
+.topSender {	
+	float: left
+	}
+
+.kontakt {  
+	margin: 500px 0px 4px 0px;
+	width: 100%;
+	}
+
+dt {
+	background-color: white;
+}
+dt:nth-child(2n+0) {
+	background-color: red;
+}
