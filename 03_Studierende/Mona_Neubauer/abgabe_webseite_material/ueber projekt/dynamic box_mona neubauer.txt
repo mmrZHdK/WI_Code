@@ -1,0 +1,20 @@
+DYNAMIC BOX
+
+In meinem Design Vorschlag war es mir wichtig das Design auf möglichst wenig Elemente herunter zu brechen. Hierfür reduzierte ich alle wiederholenden Elemente auf der Seite und in der Navigation.
+
+Ich kristallisierte 3 Seitentypen heraus:
+- Titelseiten
+- 'Box'-Seiten
+- Textseiten
+
+Optional könnte ich mir die 'Box'-Seiten (Unterseiten) mit einem Slider für die Bewerbung etwas spezieller Contents vorstellen.
+
+Als Elemente auf meinen Seiten gestaltete ich folgende Elemente:
+
+- Slider
+- Boxen
+- Text - Elemente
+
+Alle Box-Elemente reagieren dynamisch. Hover über die Box-Elemente lässt diese ergrauen.
+
+
