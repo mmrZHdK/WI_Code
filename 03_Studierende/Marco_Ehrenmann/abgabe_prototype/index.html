@@ -6,47 +6,47 @@
         <link rel="stylesheet" href="_assets/font-awesome/css/font-awesome.min.css">
     	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     	<script src="http://use.edgefonts.net/source-sans-pro:n4,n9,n7,i7,i4,n3,i3,n6,i6,i9,n2,i2:all.js"></script>
-
     </head>
+
     <body>
         <header>
             <div id="naviBar">
                 <nav>
                     <p id="logo">
-                    Tatortfundus
+                        <a href="index.html" class="title-link">Tatortfundus</a>
                     </p>
 
                     <form class="form-wrapper cf">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button type="submit" onClick="location.href='suche.html'"><i class="fa fa-search"></i></button>
                         <input type="text" placeholder="Suchen..." required>
                     </form>
 
             <div class="navi">
                 <ul>
                     <li class = "cat1">
-                        <a href="#">Tatort</a>
+                        <a href="folge.html">Tatort</a>
                         <ul>
-                            <li><a href="#">Folgen</a></li>
-                            <li><a href="#">Ermittler</a></li>
-                            <li><a href="#">Zeugen</a></li>
-                            <li><a href="#">Lexikon</a></li>
-                            <li><a href="#">Rangliste</a></li>
+                            <li><a href="folge.html">Folgen</a></li>
+                            <li><a href="folge.html">Ermittler</a></li>
+                            <li><a href="folge.html">Zeugen</a></li>
+                            <li><a href="folge.html">Lexikon</a></li>
+                            <li><a href="folge.html">Rangliste</a></li>
                         </ul>
                     </li>
                     <li class = "cat2">
-                        <a href="#">Medien</a>
+                        <a href="folge.html">Medien</a>
                     </li>
                     <li class = "cat3">
-                         <a href="#">Forum</a>
+                         <a href="folge.html">Forum</a>
                     </li>
                     <li class = "cat4">
-                        <a href="#">FAQ</a>
+                        <a href="folge.html">FAQ</a>
                     </li>
                     <li class = "cat5">
-                        <a href="#"><i class="fa fa-user"></i></a>
+                        <a href="folge.html"><i class="fa fa-user"></i></a>
                     </li>
                     <li class = "cat6">
-                        <a href="#"><i class="fa fa-search"></i></a>
+                        <a href="folge.html"><i class="fa fa-search"></i></a>
                     </li>
                 </ul>
             </div>
@@ -55,16 +55,18 @@
         </header>
         
         <div class="top">
-            <div class="imageHome">
-                <div class="aktuelleFolge">
-                    <p class="uebertitel">
-                        Aktuelle Folge
-                    </p>
-                    <p class="featureTitel">
-                        Der Fall Reinhardt
-                    </p>
+            <a href="folge.html" class="content-link">
+                <div class="imageHome">
+                    <div class="aktuelleFolge">
+                        <p class="uebertitel">
+                            Aktuelle Folge
+                        </p>
+                        <p class="featureTitel">
+                            Der Fall Reinhardt
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <div class="news">
                 <p class="uebertitel">News</p>
@@ -90,12 +92,20 @@
                 08.04.&nbsp;&nbsp;<span class="sender">ORF2</span>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet<br>
                 08.04.&nbsp;&nbsp;<span class="sender">ORF2</span>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br>
             </div>
-        </div>
 
-        <div class="top2">
             <div class="spenden">
                 <p class="uebertitel">Spenden</p>
                 Die Macher des privaten Hobbyprojekts <span class="sender">tatort-fundus.de </span>freuen sich über jede Unterstützung und Anerkennung. Mit dem Geld werden primär die laufenden Kosten des Server- Betriebs beglichen. Danke für Ihre Unterstützung!
+
+                <p></p>
+
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="MNW2G5ZB9D2WA">
+                    <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
             </div>
             <div class="rangliste">
                 <p class="uebertitel">Rangliste</p>
@@ -192,9 +202,7 @@
             </div>
         </div>
 
-        <div class="adLeaderboard">
-        Werbung
-        </div>
+        <div class="adLeaderboard">Werbung</div>
 
         <footer>
             <p class="footerInfos">
