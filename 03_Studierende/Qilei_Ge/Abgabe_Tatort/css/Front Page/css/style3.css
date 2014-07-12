@@ -364,6 +364,13 @@
 	 cursor: pointer;
  }
  
+ .wholePage a{
+	 
+	 display: block;
+	 width: 100%;
+	 
+ }
+ 
  nav div.language_dropdown{
  	position: relative;
  	font-family: Avenir Next Condensed;

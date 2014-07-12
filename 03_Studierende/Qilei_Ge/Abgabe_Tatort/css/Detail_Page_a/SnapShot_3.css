@@ -133,7 +133,7 @@ nav div.dropdown a {
       
       	float: left;
         width: 20%;
-		height:600px;
+		height:300px;
 		border: none;
 		padding: 0;
 		margin: 20px;
@@ -151,7 +151,7 @@ nav div.dropdown a {
       
       	float: right;
         width: 250px;
-		height:600px;
+		height:300px;
 		border: none;
 		padding: 0;
 
@@ -160,8 +160,8 @@ nav div.dropdown a {
 
      
      .snap5{
-		 clear: left;
-	     width: 600px;
+     
+	     width: 550px;
      }
 	
 footer {
